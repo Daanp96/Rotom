@@ -1,32 +1,40 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    background-color: #356b6f;
+html {
+    width: 100vw;
+    height: 100vh;
 }
+
+
+body{
+    background: linear-gradient(180deg, #0ac8e7 0%, #290AE7 100%);
+}
+
+
 
 h3{
     text-align:center;
+    margin: 20px 0;
 }
 
-.box{
-    width:600px;
-    margin:100px auto;
-    border:1px solid #ccc;
-    background-color:white;
-    border-radius: 15px;
+.box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px #FFB800 solid;
 }
 
-#rotom-logo{
-    width: 140px;
-    margin: 25px auto;
+.logo{
+    width: 60%;
+    margin: 10% auto;
     display: block;
-}
-
-@media only screen and (max-width: 600px)  {
-    .box{
-        width: 85vw;
-    }
 }
