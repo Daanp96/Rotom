@@ -13,7 +13,7 @@
 
 <body>
   <main>
-    <img src={{URL::asset("img/logo.png")}} alt="rotom-logo" class="logo">
+    <img src="{{URL::asset("img/logo.png")}}" alt="rotom-logo" class="logo">
     @yield('content')
   </main>
 </body>

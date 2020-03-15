@@ -1,6 +1,5 @@
 @extends('layout')
 @section('content')
-<body>
 <div class="container box">
     <h3>Rotom User Create</h3>
 

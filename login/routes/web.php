@@ -24,3 +24,5 @@ Route::get('main/logout', 'MainController@logout');
 
 Route::get('/create', 'MainController@create');
 Route::post('/checkcreate', 'MainController@checkcreate');
+
+Route::get('/testprofile', 'MainController@testprofile');

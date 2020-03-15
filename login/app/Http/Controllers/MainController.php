@@ -66,4 +66,9 @@ class MainController extends Controller
             return redirect('create/');
         }
     }
+
+    public function testprofile(){
+        return view('testprofile');
+
+    }
 }
