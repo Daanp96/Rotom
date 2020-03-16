@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('login.layout')
 @section('content')
 <div class="container box">
     <h3>Rotom User Create</h3>

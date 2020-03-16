@@ -12,7 +12,7 @@ use Hash;
 class MainController extends Controller
 {
     public function index(){
-        return view('login');
+        return view('login.login');
     }
 
     public function checklogin(Request $request) {
@@ -40,7 +40,7 @@ class MainController extends Controller
     }
 
     public function successlogin(){
-        return view('successlogin');
+        return view('login.successlogin');
     }
 
     public function logout(){
@@ -49,7 +49,7 @@ class MainController extends Controller
     }
 
     public function create(){
-        return view('create');
+        return view('login.create');
     }
 
     public function checkcreate(Request $request){
@@ -68,7 +68,7 @@ class MainController extends Controller
     }
 
     public function testprofile(){
-        return view('testprofile');
+        return view('profile.testprofile');
 
     }
 }

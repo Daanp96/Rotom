@@ -7,13 +7,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href={{URL::asset('css/main.css')}}>
+    <link rel="stylesheet" href={{URL::asset('css/profile.css')}}>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <main>
-    <img src="{{URL::asset("img/logo.png")}}" alt="rotom-logo" class="logo">
     @yield('content')
   </main>
 </body>
