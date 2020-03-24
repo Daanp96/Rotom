@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +165,7 @@
       <workItem from="1584446802243" duration="126000" />
       <workItem from="1584461360318" duration="190000" />
       <workItem from="1585009889225" duration="2743000" />
+      <workItem from="1585046152362" duration="300000" />
     </task>
     <task id="LOCAL-00001" summary="Added login &amp; register from laravel/ui package">
       <created>1585010226216</created>
@@ -176,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585010226216</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added roles &amp; add_to_roles tables + seeders">
+      <created>1585046360525</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585046360525</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,13 +189,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added login &amp; register from laravel/ui package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added login &amp; register from laravel/ui package" />
+    <MESSAGE value="Added roles &amp; add_to_roles tables + seeders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added roles &amp; add_to_roles tables + seeders" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2" timestamp="1585046263169">
+    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2" timestamp="1585046520123">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585046263169" />
+    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585046520123" />
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1584356752680">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -215,10 +221,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583868740433" />
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1585010229759">
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1585046366340">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585010229759" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585046366340" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1585046155384">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
