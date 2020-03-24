@@ -68,6 +68,5 @@ class MainController extends Controller
 
     public function testprofile(){
         return view('profile.testprofile');
-
     }
 }
