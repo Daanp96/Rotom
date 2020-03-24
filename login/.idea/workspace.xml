@@ -2,32 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="SASS DOET HET!">
-      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/js/components/ExampleComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ringtones/php6VmANe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ringtones/phpAWwsKP" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ringtones/phpHFEexP" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/ringtones/phpNzyzaI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/login.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/login.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ContactTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ContactTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +51,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -162,6 +151,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/yoeunes/toastr" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YuMWjslfF5QqliusvZGgAxpCM4" />
@@ -217,6 +207,8 @@
       <workItem from="1585009889225" duration="261000" />
       <workItem from="1585063753091" duration="3453000" />
       <workItem from="1585067317110" duration="2069000" />
+      <workItem from="1585073296996" duration="685000" />
+      <workItem from="1585086614922" duration="2836000" />
     </task>
     <task id="LOCAL-00001" summary="SASS DOET HET!">
       <created>1585068396269</created>
@@ -237,10 +229,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="SASS DOET HET!" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="129" width="1258" height="847" key="CommitChangelistDialog2" timestamp="1585069388089">
-      <screen x="70" y="27" width="1850" height="1053" />
+    <state x="558" y="129" width="1258" height="847" key="CommitChangelistDialog2" timestamp="1585089817027">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585010206246" />
+    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585089817027" />
     <state x="560" y="129" width="1258" height="847" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1585069388089" />
     <state x="537" y="317" width="908" height="452" key="EditFileWatcherDialog" timestamp="1585065763938">
       <screen x="70" y="27" width="1850" height="1053" />
@@ -280,17 +272,17 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1585068403497" />
-    <state x="651" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1585067869114">
-      <screen x="70" y="27" width="1850" height="1053" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1585086630164">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1584356154737" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585086630164" />
     <state x="651" y="381" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585067869114" />
     <state x="651" y="356" key="com.intellij.ide.util.TipDialog/70.27.1850.980@70.27.1850.980" timestamp="1585063753805" />
-    <state x="763" y="441" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585065200576">
-      <screen x="70" y="27" width="1850" height="980" />
+    <state x="761" y="472" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585087425403">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="599" y="396" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1584461380764" />
-    <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1584356445322" />
+    <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585087425403" />
     <state x="763" y="441" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1850.980@70.27.1850.980" timestamp="1585065200576" />
     <state x="194" y="253" key="run.anything.popup" timestamp="1583869394994">
       <screen x="67" y="27" width="1853" height="1053" />

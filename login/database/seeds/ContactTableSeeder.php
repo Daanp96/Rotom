@@ -16,7 +16,7 @@ class ContactTableSeeder extends Seeder
 //            'banner' => 'img/banner.jpg',
 //            'profile' => 'img/avatar.jpg',
             'door_access' => 'custom',
-            'ringtone' => 'music/megalovania.mp3',
+            'ringtone' => 'ringtones/megalovania.mp3',
             'priority' => true
         ]);
     }

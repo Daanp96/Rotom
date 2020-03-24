@@ -84,9 +84,11 @@ class MainController extends Controller
 
         try {
             $contact->save();
+            toastr()->success('Contact aangemaakt!');
             return redirect('/testprofile');
         } catch(Exception $e){
-            return redirect('/');
+            toastr()->error('Contact aanmaken is mislukt...');
+            return redirect('/testprofile');
         }
     }
 }
