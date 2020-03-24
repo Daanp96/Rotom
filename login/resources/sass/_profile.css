@@ -45,7 +45,7 @@
 }
 .profile__main__name__label {
     font-family: "Montserrat", sans-serif;
-    font-weight: 150;
+    font-weight: 150px;
     transition: 0.2s all;
     pointer-events: none;
     overflow: hidden;
@@ -64,9 +64,10 @@
 }
 .profile__main__options__option__text {
     font-family: "Montserrat", sans-serif;
-    font-weight: 150;
+    font-weight: 150px;
 }
 .profile__main__options__option__select {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
+
