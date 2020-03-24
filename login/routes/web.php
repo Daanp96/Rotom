@@ -26,6 +26,7 @@ Route::get('/create', 'MainController@create');
 Route::post('/checkcreate', 'MainController@checkcreate');
 
 Route::get('/testprofile', 'MainController@testprofile');
+Route::post('/testprofile/store', 'MainController@store');
 
 Auth::routes();
 

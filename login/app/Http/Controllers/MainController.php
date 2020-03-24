@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 use App\User;
+use App\Contact;
 use Validator;
 use Auth;
 use Hash;
@@ -68,5 +69,24 @@ class MainController extends Controller
 
     public function testprofile(){
         return view('profile.testprofile');
+    }
+
+    public function store(Request $request){
+        $contact = new Contact();
+        $contact->name = $request->input('name');
+        $contact->door_access = $request->input('door_access');
+
+        $ringtoneName = $request->input('ringtone');
+        $path = $request->file('ringtone')->move('ringtones/', $ringtoneName);
+        $contact->ringtone = $path;
+
+        $contact->priority = $request->input('priority');
+
+        try {
+            $contact->save();
+            return redirect('/testprofile');
+        } catch(Exception $e){
+            return redirect('/');
+        }
     }
 }

@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_24_110929_create_contact_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/ContactTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/testprofile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/testprofile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,16 +135,19 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1YuMWjslfF5QqliusvZGgAxpCM4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../laravel" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -165,7 +177,7 @@
       <workItem from="1584446802243" duration="126000" />
       <workItem from="1584461360318" duration="190000" />
       <workItem from="1585009889225" duration="2743000" />
-      <workItem from="1585046152362" duration="300000" />
+      <workItem from="1585046152362" duration="12422000" />
     </task>
     <task id="LOCAL-00001" summary="Added login &amp; register from laravel/ui package">
       <created>1585010226216</created>
@@ -188,19 +200,24 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added login &amp; register from laravel/ui package" />
     <MESSAGE value="Added roles &amp; add_to_roles tables + seeders" />
     <option name="LAST_COMMIT_MESSAGE" value="Added roles &amp; add_to_roles tables + seeders" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="687" y="357" width="602" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585064407786">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="687" y="357" width="602" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1585064407786" />
     <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2" timestamp="1585046520123">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585046520123" />
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1584356752680">
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585063018518">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1584356752680" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1585063018518" />
     <state width="1554" height="228" key="GridCell.Tab.0.bottom" timestamp="1584446927497">
       <screen x="0" y="27" width="1600" height="873" />
     </state>

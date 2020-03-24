@@ -14,7 +14,9 @@ body{
     background: linear-gradient(180deg, #0ac8e7 0%, #290AE7 100%);
 }
 
-
+input{
+    curosr: pointer;
+}
 
 h3{
     text-align:center;
