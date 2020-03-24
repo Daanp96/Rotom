@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="" />
+    <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/login.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/login.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login/successlogin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login/successlogin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +35,10 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -116,9 +136,11 @@
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YuMWjslfF5QqliusvZGgAxpCM4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -127,7 +149,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../laravel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -150,7 +172,13 @@
       <workItem from="1583788061100" duration="2799000" />
       <workItem from="1583832984610" duration="5608000" />
       <workItem from="1583868585104" duration="2179000" />
-      <workItem from="1583912024947" duration="1131000" />
+      <workItem from="1583912024947" duration="2897000" />
+      <workItem from="1583922012477" duration="34000" />
+      <workItem from="1583922894431" duration="1799000" />
+      <workItem from="1584355998561" duration="756000" />
+      <workItem from="1584446802243" duration="126000" />
+      <workItem from="1584461360318" duration="190000" />
+      <workItem from="1585009889225" duration="261000" />
     </task>
     <servers />
   </component>
@@ -158,18 +186,43 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583868949951">
+    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2" timestamp="1585010206246">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583868949951" />
+    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585010206246" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1584356752680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1584356752680" />
+    <state width="1554" height="228" key="GridCell.Tab.0.bottom" timestamp="1584446927497">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="228" key="GridCell.Tab.0.bottom/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1584446927497" />
+    <state width="1554" height="228" key="GridCell.Tab.0.center" timestamp="1584446927497">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="228" key="GridCell.Tab.0.center/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1584446927497" />
+    <state width="1554" height="228" key="GridCell.Tab.0.left" timestamp="1584446927497">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="228" key="GridCell.Tab.0.left/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1584446927497" />
+    <state width="1554" height="228" key="GridCell.Tab.0.right" timestamp="1584446927497">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="228" key="GridCell.Tab.0.right/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1584446927497" />
     <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1583868740433">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583868740433" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1583912024574">
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1584356154737">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583912024574" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1584356154737" />
+    <state x="599" y="396" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584461380764">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="599" y="396" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1584461380764" />
+    <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1584356445322" />
     <state x="194" y="253" key="run.anything.popup" timestamp="1583869394994">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

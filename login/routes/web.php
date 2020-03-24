@@ -26,3 +26,7 @@ Route::get('/create', 'MainController@create');
 Route::post('/checkcreate', 'MainController@checkcreate');
 
 Route::get('/testprofile', 'MainController@testprofile');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -57,7 +57,6 @@ class MainController extends Controller
         $user->name = $request->input('name');
         $user->email = $request->input('email');
         $user->password = Hash::make($request->input('password'));
-//        $user->password = $request->input('password');
 
         try{
             $user->save();

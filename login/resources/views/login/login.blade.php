@@ -20,7 +20,7 @@
                 </div>
             @endif
             <form method="post" action="{{ url('/main/checklogin') }}">
-                {{ csrf_field() }}
+                @csrf
                 <div class="form-group">
                     <label>Enter Name</label>
                     <input type="text" name="name" class="form-control" />
