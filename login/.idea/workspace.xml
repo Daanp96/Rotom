@@ -1,33 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="SASS DOET HET!">
-      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/js/components/ExampleComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resources/views/layouts/app.blade.php" afterDir="false" />
+    <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="welcome.view + css done">
+      <change afterPath="$PROJECT_DIR$/../resources/sass/_welcome.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/../public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/css/inlog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/sass/_profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/sass/_profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/sass/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/views/profile/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/views/profile/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +203,8 @@
       <workItem from="1584461360318" duration="190000" />
       <workItem from="1585009889225" duration="261000" />
       <workItem from="1585063753091" duration="3453000" />
-      <workItem from="1585067317110" duration="2069000" />
+      <workItem from="1585067317110" duration="6355000" />
+      <workItem from="1585082776278" duration="10579000" />
     </task>
     <task id="LOCAL-00001" summary="SASS DOET HET!">
       <created>1585068396269</created>
@@ -225,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585068396269</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SASS DOET HET!">
+      <created>1585069554975</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585069554975</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,14 +229,16 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="SASS DOET HET!" />
-    <option name="LAST_COMMIT_MESSAGE" value="SASS DOET HET!" />
+    <MESSAGE value="welcome.view + css done" />
+    <option name="LAST_COMMIT_MESSAGE" value="welcome.view + css done" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="129" width="1258" height="847" key="CommitChangelistDialog2" timestamp="1585069388089">
-      <screen x="70" y="27" width="1850" height="1053" />
+    <state x="555" y="120" width="1258" height="847" key="CommitChangelistDialog2" timestamp="1585133890544">
+      <screen x="70" y="27" width="1832" height="962" />
     </state>
     <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585010206246" />
-    <state x="560" y="129" width="1258" height="847" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1585069388089" />
+    <state x="555" y="120" key="CommitChangelistDialog2/70.27.1832.962@70.27.1832.962" timestamp="1585133890544" />
+    <state x="560" y="129" width="1258" height="847" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1585069554212" />
     <state x="537" y="317" width="908" height="452" key="EditFileWatcherDialog" timestamp="1585065763938">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -267,6 +264,14 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state width="1554" height="228" key="GridCell.Tab.0.right/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1584446927497" />
+    <state x="245" y="121" width="1480" height="879" key="MergeDialog" timestamp="1585069695768">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="245" y="121" width="1480" height="879" key="MergeDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585069695768" />
+    <state x="221" y="159" width="1215" height="571" key="MultipleFileMergeDialog" timestamp="1585069695802">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="221" y="159" width="1215" height="571" key="MultipleFileMergeDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585069695802" />
     <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1583868740433">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -276,21 +281,22 @@
     </state>
     <state x="484" y="161" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1585066495849" />
     <state x="484" y="152" width="1022" height="737" key="SettingsEditor/70.27.1850.980@70.27.1850.980" timestamp="1585065299857" />
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1585068403497">
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1585069731599">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1585068403497" />
-    <state x="651" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1585067869114">
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1585069731599" />
+    <state x="651" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1585082975518">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1584356154737" />
-    <state x="651" y="381" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585067869114" />
+    <state x="651" y="381" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585082975518" />
     <state x="651" y="356" key="com.intellij.ide.util.TipDialog/70.27.1850.980@70.27.1850.980" timestamp="1585063753805" />
-    <state x="763" y="441" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585065200576">
-      <screen x="70" y="27" width="1850" height="980" />
+    <state x="763" y="472" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585085560184">
+      <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="599" y="396" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1584461380764" />
     <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1584356445322" />
+    <state x="763" y="472" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1850.1053@70.27.1850.1053" timestamp="1585085560184" />
     <state x="763" y="441" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1850.980@70.27.1850.980" timestamp="1585065200576" />
     <state x="194" y="253" key="run.anything.popup" timestamp="1583869394994">
       <screen x="67" y="27" width="1853" height="1053" />
