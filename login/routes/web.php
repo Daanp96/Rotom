@@ -17,16 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Oude Login
 Route::get('/main', 'MainController@index');
 Route::post('/main/checklogin', 'MainController@checklogin');
 Route::get('main/successlogin', 'MainController@successlogin');
 Route::get('main/logout', 'MainController@logout');
-
 Route::get('/create', 'MainController@create');
 Route::post('/checkcreate', 'MainController@checkcreate');
 
+// Profiles
 Route::get('/testprofile', 'MainController@testprofile');
 Route::post('/testprofile/store', 'MainController@store');
+Route::get('/profile/{profile}', 'MainController@savedProfile');
 
 Auth::routes();
 

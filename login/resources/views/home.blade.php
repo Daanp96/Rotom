@@ -26,7 +26,9 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Mijn Contacten</div>
-
+                @foreach($contacts as $contact)
+                    <p><a href="/profile/{{$contact->name}}">{{$contact->name}}</a></p>
+                @endforeach
                 <div class="card-body">
                 </div>
             </div>

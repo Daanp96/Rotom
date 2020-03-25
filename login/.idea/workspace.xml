@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="SASS DOET HET!">
-      <change afterPath="$PROJECT_DIR$/public/ringtones/php6VmANe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/ringtones/phpAWwsKP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/ringtones/phpHFEexP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/ringtones/phpNzyzaI" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/login.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/login.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/ringtones/phpa6CkDW" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/profile/savedprofile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ContactTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ContactTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +160,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../laravel" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -208,7 +200,8 @@
       <workItem from="1585063753091" duration="3453000" />
       <workItem from="1585067317110" duration="2069000" />
       <workItem from="1585073296996" duration="685000" />
-      <workItem from="1585086614922" duration="2836000" />
+      <workItem from="1585086614922" duration="3046000" />
+      <workItem from="1585124244149" duration="7882000" />
     </task>
     <task id="LOCAL-00001" summary="SASS DOET HET!">
       <created>1585068396269</created>
@@ -217,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585068396269</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added toastr notifications">
+      <created>1585089862382</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585089862382</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,23 +226,24 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="SASS DOET HET!" />
-    <option name="LAST_COMMIT_MESSAGE" value="SASS DOET HET!" />
+    <MESSAGE value="Added toastr notifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added toastr notifications" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="129" width="1258" height="847" key="CommitChangelistDialog2" timestamp="1585089817027">
+    <state x="558" y="129" width="1258" height="847" key="CommitChangelistDialog2" timestamp="1585089861864">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585089817027" />
+    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585089861864" />
     <state x="560" y="129" width="1258" height="847" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1585069388089" />
     <state x="537" y="317" width="908" height="452" key="EditFileWatcherDialog" timestamp="1585065763938">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="537" y="317" key="EditFileWatcherDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585065763938" />
     <state x="537" y="297" width="908" height="452" key="EditFileWatcherDialog/70.27.1850.980@70.27.1850.980" timestamp="1585065299081" />
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1584356752680">
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585168698927">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1584356752680" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1585168698927" />
     <state width="1554" height="228" key="GridCell.Tab.0.bottom" timestamp="1584446927497">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
@@ -259,30 +260,31 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state width="1554" height="228" key="GridCell.Tab.0.right/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1584446927497" />
-    <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1583868740433">
+    <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1585168551569">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583868740433" />
+    <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585168551569" />
     <state x="484" y="161" width="1022" height="737" key="SettingsEditor" timestamp="1585066495849">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="484" y="161" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1585066495849" />
     <state x="484" y="152" width="1022" height="737" key="SettingsEditor/70.27.1850.980@70.27.1850.980" timestamp="1585065299857" />
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1585068403497">
-      <screen x="70" y="27" width="1850" height="1053" />
-    </state>
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1585068403497" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1585086630164">
+    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1585089865254">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585086630164" />
+    <state x="588" y="289" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585089865254" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1585068403497" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1585124255507">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585124255507" />
     <state x="651" y="381" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585067869114" />
     <state x="651" y="356" key="com.intellij.ide.util.TipDialog/70.27.1850.980@70.27.1850.980" timestamp="1585063753805" />
-    <state x="761" y="472" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585087425403">
+    <state x="761" y="472" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585137206640">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="599" y="396" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1584461380764" />
-    <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585087425403" />
+    <state x="761" y="472" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585137206640" />
     <state x="763" y="441" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1850.980@70.27.1850.980" timestamp="1585065200576" />
     <state x="194" y="253" key="run.anything.popup" timestamp="1583869394994">
       <screen x="67" y="27" width="1853" height="1053" />

@@ -71,6 +71,10 @@ class MainController extends Controller
         return view('profile.testprofile');
     }
 
+    public function savedProfile($profile){
+        return view('profile.savedprofile')->with('profile', Contact::where('name', '=', $profile)->first());
+    }
+
     public function store(Request $request){
         $contact = new Contact();
         $contact->name = $request->input('name');
