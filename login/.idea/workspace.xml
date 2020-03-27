@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/ringtones/phpa6CkDW" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/profile/savedprofile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +195,7 @@
       <workItem from="1585067317110" duration="2069000" />
       <workItem from="1585073296996" duration="685000" />
       <workItem from="1585086614922" duration="3046000" />
-      <workItem from="1585124244149" duration="7882000" />
+      <workItem from="1585124244149" duration="8009000" />
     </task>
     <task id="LOCAL-00001" summary="SASS DOET HET!">
       <created>1585068396269</created>
@@ -217,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585089862382</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Kan nu een contact kiezen en de gegevens van dat contact inzien.">
+      <created>1585170592847</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585170592847</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,13 +228,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="SASS DOET HET!" />
     <MESSAGE value="Added toastr notifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added toastr notifications" />
+    <MESSAGE value="Kan nu een contact kiezen en de gegevens van dat contact inzien." />
+    <option name="LAST_COMMIT_MESSAGE" value="Kan nu een contact kiezen en de gegevens van dat contact inzien." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="129" width="1258" height="847" key="CommitChangelistDialog2" timestamp="1585089861864">
+    <state x="558" y="129" width="1258" height="847" key="CommitChangelistDialog2" timestamp="1585170592623">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585089861864" />
+    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585170592623" />
     <state x="560" y="129" width="1258" height="847" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1585069388089" />
     <state x="537" y="317" width="908" height="452" key="EditFileWatcherDialog" timestamp="1585065763938">
       <screen x="70" y="27" width="1850" height="1053" />
@@ -269,10 +271,10 @@
     </state>
     <state x="484" y="161" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1585066495849" />
     <state x="484" y="152" width="1022" height="737" key="SettingsEditor/70.27.1850.980@70.27.1850.980" timestamp="1585065299857" />
-    <state x="588" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1585089865254">
+    <state x="588" y="289" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1585170597444">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="588" y="289" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585089865254" />
+    <state x="588" y="289" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585170597444" />
     <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1585068403497" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1585124255507">
       <screen x="67" y="27" width="1853" height="1053" />
