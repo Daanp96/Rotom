@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);@import url(https://fonts.googleapis.com/css2?family=Roboto);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -10886,6 +10886,7 @@ a.text-dark:focus {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  list-style: none;
 }
 
 html {
@@ -11048,5 +11049,131 @@ body {
 .profile__main__options__option__select {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+
+.back {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 200%;
+  margin: 10px;
+}
+
+.volumeText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.volumeControl {
+  width: 80vw;
+  margin: 100px auto;
+}
+
+.volumeControl__slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  -moz-appearance: none;
+       appearance: none;
+  background-color: black;
+  height: 5px;
+  width: 100%;
+}
+
+.volumeControl__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  background: linear-gradient(180deg, #FFB601 0%, #FF5101 100%);
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.volumeControl__slider__image {
+  width: 40px;
+  height: 40px;
+}
+
+.volume_up {
+  float: left;
+}
+
+.volume_down {
+  float: right;
+}
+
+/* notification */
+
+.notificationBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+
+.notificationBox__background {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.notificationBox__window {
+  position: fixed;
+  z-index: 101;
+  height: 70vh;
+  width: 70vw;
+  margin: 15vh 15vw;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.notificationBox__topBar {
+  background: linear-gradient(270deg, #FFB601 0%, #FF5101 100%);
+  width: 100%;
+  min-height: 40px;
+}
+
+.notificationBox__topBar__title {
+  float: left;
+  margin: 5px 0 0 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.notificationBox__topBar__close {
+  float: right;
+  font-size: 200%;
+  margin: 0 8px;
+  font-weight: bold;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.notificationBox__topBar__close:hover {
+  transform: rotateZ(90deg);
+  color: red;
+}
+
+.notificationBox__main__text {
+  font-family: "Roboto", sans-serif;
+  margin: 16px;
+}
+
+.notificationBox__main__button {
+  width: 80%;
+  height: 40px;
+  background: linear-gradient(90deg, #00B812 0%, #00B812 0.01%, #058B2B 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 16px;
+  left: 10%;
+  font-family: "Montserrat", sans-serif;
 }
 
