@@ -16,6 +16,24 @@ class MainController extends Controller
         return view('login.login');
     }
 
+
+    //VOLUME
+    public function volume(){
+        return view('volume');
+    }
+
+    //RINGTONES
+    public function ringtone(){
+        return view('ringtone');
+    }
+
+    public function ringtoneAdd(Request $request){
+      //RINGTONE DINGEN
+
+    }
+
+
+
     public function checklogin(Request $request) {
         try {
             $this->validate($request, [

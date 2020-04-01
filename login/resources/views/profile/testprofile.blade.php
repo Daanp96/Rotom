@@ -1,4 +1,4 @@
-@extends('login.layout')
+@extends('layouts.layout')
 @section('content')
     <div class="profile">
         <div class="profile__banner"></div>
