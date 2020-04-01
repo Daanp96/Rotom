@@ -1,4 +1,4 @@
-@extends('profile.layout')
+@extends('login.layout')
 
 @section('content')
     <img src="{{URL::asset("img/logo.png")}}" alt="placeholder profile picture" class="welcome__logo">
@@ -11,3 +11,4 @@
         </a>
     </div>
 @endsection
+

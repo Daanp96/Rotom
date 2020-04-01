@@ -24,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
+        toastr()->success('Data has been saved successfully!');
         return view('home')->with('contacts', Contact::all());
     }
 }
+ 
