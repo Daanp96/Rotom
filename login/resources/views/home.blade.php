@@ -41,9 +41,27 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Mijn Geschiedenis</div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                <div class="card-body">
-                </div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <a href="ringtone" class="card-header">Mijn Ringtones</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <a href="volume" class="card-header">Geluidsettings</a>
             </div>
         </div>
     </div>

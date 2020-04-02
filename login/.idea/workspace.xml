@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +35,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -138,6 +136,8 @@
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/yoeunes/toastr" />
+      <path value="$PROJECT_DIR$/../vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/../vendor/brick/math" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YuMWjslfF5QqliusvZGgAxpCM4" />
@@ -192,6 +192,7 @@
       <workItem from="1584461360318" duration="190000" />
       <workItem from="1585009889225" duration="261000" />
       <workItem from="1585063753091" duration="3453000" />
+<<<<<<< HEAD
       <workItem from="1585067317110" duration="2069000" />
       <workItem from="1585073296996" duration="685000" />
       <workItem from="1585086614922" duration="3046000" />
@@ -201,6 +202,14 @@
       <workItem from="1585477925593" duration="1351000" />
       <workItem from="1585728261063" duration="9165000" />
       <workItem from="1585833099175" duration="2309000" />
+=======
+      <workItem from="1585067317110" duration="6355000" />
+      <workItem from="1585082776278" duration="14651000" />
+      <workItem from="1585142901300" duration="1123000" />
+      <workItem from="1585343650076" duration="180000" />
+      <workItem from="1585344565488" duration="2251000" />
+      <workItem from="1585736890330" duration="442000" />
+>>>>>>> origin/master
     </task>
     <task id="LOCAL-00001" summary="SASS DOET HET!">
       <created>1585068396269</created>
@@ -209,19 +218,19 @@
       <option name="project" value="LOCAL" />
       <updated>1585068396269</updated>
     </task>
-    <task id="LOCAL-00002" summary="Added toastr notifications">
-      <created>1585089862382</created>
+    <task id="LOCAL-00002" summary="SASS DOET HET!">
+      <created>1585069554975</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1585089862382</updated>
+      <updated>1585069554975</updated>
     </task>
-    <task id="LOCAL-00003" summary="Kan nu een contact kiezen en de gegevens van dat contact inzien.">
-      <created>1585170592847</created>
+    <task id="LOCAL-00003" summary="welcome.view + css done">
+      <created>1585137069103</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1585170592847</updated>
+      <updated>1585137069104</updated>
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
@@ -229,28 +238,48 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="SASS DOET HET!" />
-    <MESSAGE value="Added toastr notifications" />
-    <MESSAGE value="Kan nu een contact kiezen en de gegevens van dat contact inzien." />
-    <option name="LAST_COMMIT_MESSAGE" value="Kan nu een contact kiezen en de gegevens van dat contact inzien." />
+    <MESSAGE value="welcome.view + css done" />
+    <option name="LAST_COMMIT_MESSAGE" value="welcome.view + css done" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="129" width="1258" height="847" key="CommitChangelistDialog2" timestamp="1585170592623">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="454" y="27" width="860" height="854" key="CommitChangelistDialog2" timestamp="1585137067872">
+      <screen x="70" y="27" width="1832" height="962" />
     </state>
-    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585170592623" />
-    <state x="560" y="129" width="1258" height="847" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1585069388089" />
+    <state x="558" y="129" width="860" height="847" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1585010206246" />
+    <state x="454" y="27" width="860" height="854" key="CommitChangelistDialog2/70.27.1832.962@70.27.1832.962" timestamp="1585137067872" />
+    <state x="560" y="129" width="1258" height="847" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1585069554212" />
     <state x="537" y="317" width="908" height="452" key="EditFileWatcherDialog" timestamp="1585065763938">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="537" y="317" key="EditFileWatcherDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585065763938" />
     <state x="537" y="297" width="908" height="452" key="EditFileWatcherDialog/70.27.1850.980@70.27.1850.980" timestamp="1585065299081" />
+<<<<<<< HEAD
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585485743424">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1585485743424" />
+=======
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1584356752680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1584356752680" />
+>>>>>>> origin/master
     <state width="1554" height="228" key="GridCell.Tab.0.bottom" timestamp="1584446927497">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
@@ -267,19 +296,36 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state width="1554" height="228" key="GridCell.Tab.0.right/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1584446927497" />
-    <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1585168551569">
+    <state x="243" y="113" width="1619" height="806" key="MergeDialog" timestamp="1585137158061">
+      <screen x="70" y="27" width="1832" height="962" />
+    </state>
+    <state x="243" y="113" width="1619" height="806" key="MergeDialog/70.27.1832.962@70.27.1832.962" timestamp="1585137158061" />
+    <state x="245" y="121" width="1480" height="879" key="MergeDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585069695768" />
+    <state x="220" y="148" width="580" height="571" key="MultipleFileMergeDialog" timestamp="1585137159080">
+      <screen x="70" y="27" width="1832" height="962" />
+    </state>
+    <state x="220" y="148" width="580" height="571" key="MultipleFileMergeDialog/70.27.1832.962@70.27.1832.962" timestamp="1585137159080" />
+    <state x="221" y="159" width="1215" height="571" key="MultipleFileMergeDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585069695802" />
+    <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1583868740433">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
+<<<<<<< HEAD
     <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585168551569" />
     <state x="482" y="161" width="1022" height="737" key="SettingsEditor" timestamp="1585728282543">
       <screen x="67" y="27" width="1853" height="1053" />
+=======
+    <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583868740433" />
+    <state x="484" y="152" width="1022" height="737" key="SettingsEditor" timestamp="1585344614340">
+      <screen x="70" y="27" width="1850" height="980" />
+>>>>>>> origin/master
     </state>
     <state x="482" y="161" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1585728282543" />
     <state x="484" y="161" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1585066495849" />
-    <state x="484" y="152" width="1022" height="737" key="SettingsEditor/70.27.1850.980@70.27.1850.980" timestamp="1585065299857" />
-    <state x="588" y="289" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1585170597444">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="484" y="152" width="1022" height="737" key="SettingsEditor/70.27.1850.980@70.27.1850.980" timestamp="1585344614340" />
+    <state x="729" y="275" width="522" height="491" key="VCS.ChangeListViewerDialog" timestamp="1585344737897">
+      <screen x="70" y="27" width="1850" height="980" />
     </state>
+<<<<<<< HEAD
     <state x="588" y="289" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585170597444" />
     <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1585068403497" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1585833107112">
@@ -290,10 +336,34 @@
     <state x="651" y="356" key="com.intellij.ide.util.TipDialog/70.27.1850.980@70.27.1850.980" timestamp="1585063753805" />
     <state x="761" y="472" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585137206640">
       <screen x="67" y="27" width="1853" height="1053" />
+=======
+    <state x="729" y="275" width="522" height="491" key="VCS.ChangeListViewerDialog/70.27.1850.980@70.27.1850.980" timestamp="1585344737897" />
+    <state x="590" y="270" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1585344724987">
+      <screen x="70" y="27" width="1850" height="980" />
+    </state>
+    <state x="585" y="266" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1832.962@70.27.1832.962" timestamp="1585137191778" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1585069731599" />
+    <state x="590" y="270" key="Vcs.Push.Dialog.v2/70.27.1850.980@70.27.1850.980" timestamp="1585344724987" />
+    <state x="651" y="356" key="com.intellij.ide.util.TipDialog" timestamp="1585736888889">
+      <screen x="70" y="27" width="1850" height="980" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1584356154737" />
+    <state x="645" y="350" key="com.intellij.ide.util.TipDialog/70.27.1832.962@70.27.1832.962" timestamp="1585142903187" />
+    <state x="651" y="381" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585082975518" />
+    <state x="651" y="356" key="com.intellij.ide.util.TipDialog/70.27.1850.980@70.27.1850.980" timestamp="1585736888889" />
+    <state x="763" y="441" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585737281921">
+      <screen x="70" y="27" width="1850" height="980" />
+>>>>>>> origin/master
     </state>
     <state x="599" y="396" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1584461380764" />
-    <state x="761" y="472" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585137206640" />
-    <state x="763" y="441" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1850.980@70.27.1850.980" timestamp="1585065200576" />
+    <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1584356445322" />
+    <state x="756" y="434" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1832.962@70.27.1832.962" timestamp="1585142778681" />
+    <state x="763" y="472" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1850.1053@70.27.1850.1053" timestamp="1585085560184" />
+    <state x="763" y="441" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1850.980@70.27.1850.980" timestamp="1585737281921" />
+    <state x="721" y="211" width="537" height="619" key="git4idea.branch.GitSmartOperationDialog" timestamp="1585344757960">
+      <screen x="70" y="27" width="1850" height="980" />
+    </state>
+    <state x="721" y="211" width="537" height="619" key="git4idea.branch.GitSmartOperationDialog/70.27.1850.980@70.27.1850.980" timestamp="1585344757960" />
     <state x="194" y="253" key="run.anything.popup" timestamp="1583869394994">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -302,5 +372,9 @@
       <screen x="70" y="27" width="1850" height="980" />
     </state>
     <state x="585" y="186" width="800" height="684" key="scopes/70.27.1850.980@70.27.1850.980" timestamp="1585065297165" />
+    <state x="649" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1585142683640">
+      <screen x="70" y="27" width="1832" height="962" />
+    </state>
+    <state x="649" y="236" width="672" height="678" key="search.everywhere.popup/70.27.1832.962@70.27.1832.962" timestamp="1585142683640" />
   </component>
 </project>

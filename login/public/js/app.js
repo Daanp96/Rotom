@@ -49505,6 +49505,8 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./main.js */ "./resources/js/main.js");
+
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /**
  * The following block of code may be used to automatically register your
@@ -49643,6 +49645,63 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/main.js":
+/*!******************************!*\
+  !*** ./resources/js/main.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.onload = function () {
+  $(function () {
+    if ($('div').is('.volumeControl')) {
+      //NOTIFICATIE
+      var notification = document.getElementById("js--notification");
+      var notification_background = document.getElementsByClassName("notificationBox__background")[0];
+      var notification_title = document.getElementById("js--notification_title");
+      var notification_close = document.getElementById("js--notification_close");
+      var notification_text = document.getElementById("js--notification_text");
+      var notification_confirm = document.getElementById("js--notification_ok");
+
+      var open_notification = function open_notification(title, text, button_text) {
+        notification_title.innerHTML = title;
+        notification_text.innerHTML = text;
+        notification_confirm.innerHTML = button_text;
+        notification.style.display = "block";
+      };
+
+      notification_close.onclick = function (event) {
+        notification.style.display = "none";
+      };
+
+      notification_background.onclick = function (event) {
+        notification.style.display = "none";
+      }; //temp NOTIIFCATIE TEST
+
+
+      var header = document.getElementsByClassName("volumeText")[0];
+      var temp_values = {
+        title: "NOTIFICATIE",
+        text: "Er is iets fout met de bel! Er is geen vingerafdruk gescanned. Het is mogelijk dat de scanner vervangen moet worden.",
+        button: "begrepen"
+      };
+
+      header.onclick = function () {
+        open_notification(temp_values.title, temp_values.text, temp_values.button);
+      }; //SLIDER
+
+
+      var volumeSlider = document.getElementsByClassName("volumeControl__slider")[0];
+
+      volumeSlider.onchange = function () {
+        console.log(volumeSlider.value);
+      };
+    }
+  });
+};
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -49661,8 +49720,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/kimmymochi/rotom/Rotom/login/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/kimmymochi/rotom/Rotom/login/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/kimmymochi/ipmedt5/Rotom/login/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/kimmymochi/ipmedt5/Rotom/login/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
