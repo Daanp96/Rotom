@@ -17,7 +17,6 @@ class MainController extends Controller
         return view('login.login');
     }
 
-
     //VOLUME
     public function volume(){
         return view('volume');
@@ -25,11 +24,25 @@ class MainController extends Controller
 
     //RINGTONES
     public function ringtone(){
-        return view('ringtone');
+        return view('ringtone')->with('ringtones', Ringtone::all());
     }
 
     public function ringtoneAdd(Request $request){
-      //RINGTONE DINGEN
+        //RINGTONE DINGEN
+
+        $ringtone = new Ringtone();
+        $ringtone->title = $request->input('title');
+        $ringtoneName = $request->input('ringtone');
+        $ringtone->ringtone = "ringtones/".$ringtoneName;
+
+        try {
+            $ringtone->save();
+            toastr()->success('Ringtone aangemaakt!');
+            return redirect('/home');
+        } catch(Exception $e){
+            toastr()->error('Ringtone aanmaken is mislukt...');
+            return redirect('/ringtone');
+        }
 
     }
 
@@ -98,9 +111,7 @@ class MainController extends Controller
         $contact = new Contact();
         $contact->name = $request->input('name');
         $contact->door_access = $request->input('door_access');
-
         $contact->ringtone = $request->input('ringtone');
-
         $contact->priority = $request->input('priority');
 
         try {
