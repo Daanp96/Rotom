@@ -37,5 +37,4 @@ Route::post('ringtone/add', 'MainController@ringtoneAdd');
 
 
 Auth::routes();
-
 Route::get('home', 'HomeController@index')->name('home');

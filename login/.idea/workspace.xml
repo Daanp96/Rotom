@@ -192,12 +192,24 @@
       <workItem from="1584461360318" duration="190000" />
       <workItem from="1585009889225" duration="261000" />
       <workItem from="1585063753091" duration="3453000" />
+<<<<<<< HEAD
+      <workItem from="1585067317110" duration="2069000" />
+      <workItem from="1585073296996" duration="685000" />
+      <workItem from="1585086614922" duration="3046000" />
+      <workItem from="1585124244149" duration="8009000" />
+      <workItem from="1585343393743" duration="844000" />
+      <workItem from="1585344297618" duration="249000" />
+      <workItem from="1585477925593" duration="1351000" />
+      <workItem from="1585728261063" duration="9165000" />
+      <workItem from="1585833099175" duration="2309000" />
+=======
       <workItem from="1585067317110" duration="6355000" />
       <workItem from="1585082776278" duration="14651000" />
       <workItem from="1585142901300" duration="1123000" />
       <workItem from="1585343650076" duration="180000" />
       <workItem from="1585344565488" duration="2251000" />
       <workItem from="1585736890330" duration="442000" />
+>>>>>>> origin/master
     </task>
     <task id="LOCAL-00001" summary="SASS DOET HET!">
       <created>1585068396269</created>
@@ -257,10 +269,17 @@
     </state>
     <state x="537" y="317" key="EditFileWatcherDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585065763938" />
     <state x="537" y="297" width="908" height="452" key="EditFileWatcherDialog/70.27.1850.980@70.27.1850.980" timestamp="1585065299081" />
+<<<<<<< HEAD
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585485743424">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1585485743424" />
+=======
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1584356752680">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1584356752680" />
+>>>>>>> origin/master
     <state width="1554" height="228" key="GridCell.Tab.0.bottom" timestamp="1584446927497">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
@@ -290,15 +309,34 @@
     <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1583868740433">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
+<<<<<<< HEAD
+    <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585168551569" />
+    <state x="482" y="161" width="1022" height="737" key="SettingsEditor" timestamp="1585728282543">
+      <screen x="67" y="27" width="1853" height="1053" />
+=======
     <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583868740433" />
     <state x="484" y="152" width="1022" height="737" key="SettingsEditor" timestamp="1585344614340">
       <screen x="70" y="27" width="1850" height="980" />
+>>>>>>> origin/master
     </state>
+    <state x="482" y="161" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1585728282543" />
     <state x="484" y="161" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1585066495849" />
     <state x="484" y="152" width="1022" height="737" key="SettingsEditor/70.27.1850.980@70.27.1850.980" timestamp="1585344614340" />
     <state x="729" y="275" width="522" height="491" key="VCS.ChangeListViewerDialog" timestamp="1585344737897">
       <screen x="70" y="27" width="1850" height="980" />
     </state>
+<<<<<<< HEAD
+    <state x="588" y="289" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585170597444" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1585068403497" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1585833107112">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585833107112" />
+    <state x="651" y="381" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585067869114" />
+    <state x="651" y="356" key="com.intellij.ide.util.TipDialog/70.27.1850.980@70.27.1850.980" timestamp="1585063753805" />
+    <state x="761" y="472" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585137206640">
+      <screen x="67" y="27" width="1853" height="1053" />
+=======
     <state x="729" y="275" width="522" height="491" key="VCS.ChangeListViewerDialog/70.27.1850.980@70.27.1850.980" timestamp="1585344737897" />
     <state x="590" y="270" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1585344724987">
       <screen x="70" y="27" width="1850" height="980" />
@@ -315,6 +353,7 @@
     <state x="651" y="356" key="com.intellij.ide.util.TipDialog/70.27.1850.980@70.27.1850.980" timestamp="1585736888889" />
     <state x="763" y="441" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585737281921">
       <screen x="70" y="27" width="1850" height="980" />
+>>>>>>> origin/master
     </state>
     <state x="599" y="396" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1600.0.1920.1080/0.27.1600.873@0.27.1600.873" timestamp="1584461380764" />
     <state x="761" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1584356445322" />
