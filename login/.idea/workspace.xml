@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Ringtone.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_01_102227_create_ringtone_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/RingtoneTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_24_110929_create_contact_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_01_112253_create_contact_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ContactTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ContactTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/testprofile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/testprofile.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +200,7 @@
       <workItem from="1585344297618" duration="249000" />
       <workItem from="1585477925593" duration="1351000" />
       <workItem from="1585728261063" duration="9165000" />
-      <workItem from="1585833099175" duration="494000" />
+      <workItem from="1585833099175" duration="2309000" />
     </task>
     <task id="LOCAL-00001" summary="SASS DOET HET!">
       <created>1585068396269</created>
