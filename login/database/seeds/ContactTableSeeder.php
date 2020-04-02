@@ -11,13 +11,13 @@ class ContactTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('contact')->insert([
-            'name' => 'Daan',
+//        DB::table('contact')->insert([
+//            'name' => 'Daan',
 //            'banner' => 'img/banner.jpg',
 //            'profile' => 'img/avatar.jpg',
-            'door_access' => 'custom',
-            'ringtone' => 'ringtones/megalovania.mp3',
-            'priority' => true
-        ]);
+//            'door_access' => 'custom',
+//            'ringtone' => 'ringtones/phpa6CkDW',
+//            'priority' => true
+//        ]);
     }
 }

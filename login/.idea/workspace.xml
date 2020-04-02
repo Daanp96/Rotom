@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb68da2-4b2e-43ec-b1c2-b8fcc4bb825b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ringtone.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_01_102227_create_ringtone_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/RingtoneTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_24_110929_create_contact_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_01_112253_create_contact_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ContactTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ContactTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/testprofile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/testprofile.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,10 +162,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../laravel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -199,7 +206,9 @@
       <workItem from="1585124244149" duration="8009000" />
       <workItem from="1585343393743" duration="844000" />
       <workItem from="1585344297618" duration="249000" />
-      <workItem from="1585477925593" duration="127000" />
+      <workItem from="1585477925593" duration="1351000" />
+      <workItem from="1585728261063" duration="9165000" />
+      <workItem from="1585833099175" duration="494000" />
     </task>
     <task id="LOCAL-00001" summary="SASS DOET HET!">
       <created>1585068396269</created>
@@ -246,10 +255,10 @@
     </state>
     <state x="537" y="317" key="EditFileWatcherDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585065763938" />
     <state x="537" y="297" width="908" height="452" key="EditFileWatcherDialog/70.27.1850.980@70.27.1850.980" timestamp="1585065299081" />
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585168698927">
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585485743424">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1585168698927" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1585485743424" />
     <state width="1554" height="228" key="GridCell.Tab.0.bottom" timestamp="1584446927497">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
@@ -270,9 +279,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585168551569" />
-    <state x="484" y="161" width="1022" height="737" key="SettingsEditor" timestamp="1585066495849">
-      <screen x="70" y="27" width="1850" height="1053" />
+    <state x="482" y="161" width="1022" height="737" key="SettingsEditor" timestamp="1585728282543">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
+    <state x="482" y="161" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1585728282543" />
     <state x="484" y="161" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1585066495849" />
     <state x="484" y="152" width="1022" height="737" key="SettingsEditor/70.27.1850.980@70.27.1850.980" timestamp="1585065299857" />
     <state x="588" y="289" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1585170597444">
@@ -280,10 +290,10 @@
     </state>
     <state x="588" y="289" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1585170597444" />
     <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1585068403497" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1585477926041">
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1585833107112">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585477926041" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1585833107112" />
     <state x="651" y="381" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585067869114" />
     <state x="651" y="356" key="com.intellij.ide.util.TipDialog/70.27.1850.980@70.27.1850.980" timestamp="1585063753805" />
     <state x="761" y="472" width="464" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585137206640">

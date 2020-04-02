@@ -6,7 +6,7 @@
             <img src="{{URL::asset("img/pfp_placeholder.png")}}" alt="placeholder profile picture" class="profile__photo__img">
         </div>
         <div class="profile__main">
-            <form action="/testprofile/store" method="post" enctype="multipart/form-data">
+            <form action="/testprofile/store" method="post">
                 @csrf
                 <div class="profile__main__top-bar"></div>
                 <div class="profile__main__name">
@@ -24,8 +24,11 @@
                     </div>
                     <div class="profile__main__options__option">
                         <p class="profile__main__options__option__text">ringtone</p>
-                        <input class="ringtone_input" type="file" name="ringtone">
-{{--                        <p class="profile__main__options__option__select">megalovania</p>--}}
+                        <select class="ringtone_select" name="ringtone">
+                            @foreach($ringtones as $ringtone)
+                                <option value="{{$ringtone->title}}">{{$ringtone->title}}</option>
+                            @endforeach
+                        </select>
                     </div>
                     <div class="profile__main__options__option">
                         <p class="profile__main__options__option__text">hogere prioriteit</p>

@@ -20,6 +20,7 @@ class CreateContactTable extends Migration
             $table->string('ringtone');
             $table->string('door_access');
             $table->boolean('priority');
+            $table->foreign('ringtone')->references('title')->on('ringtone');
         });
     }
 

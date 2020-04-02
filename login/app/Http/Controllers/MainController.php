@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 use App\User;
 use App\Contact;
+use App\Ringtone;
 use Validator;
 use Auth;
 use Hash;
@@ -68,7 +69,7 @@ class MainController extends Controller
     }
 
     public function testprofile(){
-        return view('profile.testprofile');
+        return view('profile.testprofile')->with('ringtones', Ringtone::all());
     }
 
     public function savedProfile($profile){
@@ -80,9 +81,7 @@ class MainController extends Controller
         $contact->name = $request->input('name');
         $contact->door_access = $request->input('door_access');
 
-        $ringtoneName = $request->input('ringtone');
-        $path = $request->file('ringtone')->move('ringtones/', $ringtoneName);
-        $contact->ringtone = $path;
+        $contact->ringtone = $request->input('ringtone');
 
         $contact->priority = $request->input('priority');
 
