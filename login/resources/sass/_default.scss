@@ -1,0 +1,36 @@
+@import 'variables';
+
+//GENERAL STYLING
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+
+ html{
+    background: $body-bg fixed;
+}
+
+.banner {
+    width: 60%;
+
+    &__logo {
+        width: inherit;
+        position: relative;
+        left: -5px;
+    }
+}
+
+.container{
+    margin-top: 15px;
+}
+
+.back{
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 150%;
+  margin: 10px;
+}

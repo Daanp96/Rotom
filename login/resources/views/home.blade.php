@@ -13,8 +13,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    <p>Hallo  {{ Auth::user()->name }} !</p>
+                    <h1>Hallo  {{ Auth::user()->name }} !</h1>
+                    <p>Hier kan misschien staan wie er voor het laatst aangebeld heeft?</p>
                 </div>
             </div>
         </div>
@@ -25,12 +25,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Mijn Contacten</div>
-                @foreach($contacts as $contact)
-                    <p><a href="/profile/{{$contact->name}}">{{$contact->name}}</a></p>
-                @endforeach
-                <div class="card-body">
-                </div>
+                  <a href="profiles" class="card-header">Mijn Contacten</a>
             </div>
         </div>
     </div>
@@ -40,7 +35,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Mijn Geschiedenis</div>
+                <a href="" class="card-header">Mijn Geschiedenis</a>
             </div>
         </div>
     </div>
@@ -61,7 +56,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <a href="volume" class="card-header">Geluidsettings</a>
+                <a href="volume" class="card-header">Geluid Instellingen</a>
             </div>
         </div>
     </div>

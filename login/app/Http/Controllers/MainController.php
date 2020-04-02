@@ -13,10 +13,6 @@ use Hash;
 
 class MainController extends Controller
 {
-    public function index(){
-        return view('login.login');
-    }
-
     //VOLUME
     public function volume(){
         return view('volume');
@@ -28,12 +24,17 @@ class MainController extends Controller
     }
 
     public function ringtoneAdd(Request $request){
-        //RINGTONE DINGEN
+
+        $audio = $request->file('ringtone');
+        $name = time().'.'.$audio->getClientOriginalExtension();
+        $destinationPath = base_path('ringtones');
+        $audio->move('ringtones', $name);
 
         $ringtone = new Ringtone();
         $ringtone->title = $request->input('title');
-        $ringtoneName = $request->input('ringtone');
-        $ringtone->ringtone = "ringtones/".$ringtoneName;
+        $ringtone->ringtone = "ringtones/".$name;
+        // $ringtoneName = $request->input('ringtone');
+        // $ringtone->ringtone = "ringtones/".$ringtoneName;
 
         try {
             $ringtone->save();
@@ -43,60 +44,11 @@ class MainController extends Controller
             toastr()->error('Ringtone aanmaken is mislukt...');
             return redirect('/ringtone');
         }
+      }
 
-    }
-
-
-
-    public function checklogin(Request $request) {
-        try {
-            $this->validate($request, [
-                'name' => 'required',
-                'password' => 'required|min:3'
-            ]);
-        } catch (ValidationException $e) {
-            return back()->with('error', 'Wrong Login Details');
-        }
-
-        $user_data = array(
-            'name'  => $request->get('name'),
-            'password' => $request->get('password')
-        );
-
-        if(Auth::attempt($user_data)) {
-            return redirect('main/successlogin');
-        }
-        else {
-            return back()->with('error', 'Wrong Login Details');
-        }
-
-    }
-
-    public function successlogin(){
-        return view('login.successlogin');
-    }
-
-    public function logout(){
-        Auth::logout();
-        return redirect('main');
-    }
-
-    public function create(){
-        return view('login.create');
-    }
-
-    public function checkcreate(Request $request){
-        $user = new User();
-        $user->name = $request->input('name');
-        $user->email = $request->input('email');
-        $user->password = Hash::make($request->input('password'));
-
-        try{
-            $user->save();
-            return redirect('main/');
-        } catch(Exception $e) {
-            return redirect('create/');
-        }
+    //CONTACTS
+    public function profiles(){
+        return view('profile.profiles')->with('contact', Contact::all());
     }
 
     public function testprofile(){
@@ -124,3 +76,64 @@ class MainController extends Controller
         }
     }
 }
+
+
+
+
+
+
+// OUDE LOGIN
+    // public function index(){
+    //     return view('login.login');
+    // }
+
+    // public function successlogin(){
+    //     return view('login.successlogin');
+    // }
+    //
+    // public function logout(){
+    //     Auth::logout();
+    //     return redirect('main');
+    // }
+    //
+    // public function create(){
+    //     return view('login.create');
+    // }
+    //
+    // public function checkcreate(Request $request){
+    //     $user = new User();
+    //     $user->name = $request->input('name');
+    //     $user->email = $request->input('email');
+    //     $user->password = Hash::make($request->input('password'));
+    //
+    //     try{
+    //         $user->save();
+    //         return redirect('main/');
+    //     } catch(Exception $e) {
+    //         return redirect('create/');
+    //     }
+    // }
+    //
+    // public function checklogin(Request $request) {
+    //     try {
+    //         $this->validate($request, [
+    //             'name' => 'required',
+    //             'password' => 'required|min:3'
+    //         ]);
+    //     } catch (ValidationException $e) {
+    //         return back()->with('error', 'Wrong Login Details');
+    //     }
+    //
+    //     $user_data = array(
+    //         'name'  => $request->get('name'),
+    //         'password' => $request->get('password')
+    //     );
+    //
+    //     if(Auth::attempt($user_data)) {
+    //         return redirect('main/successlogin');
+    //     }
+    //     else {
+    //         return back()->with('error', 'Wrong Login Details');
+    //     }
+    //
+    // }
