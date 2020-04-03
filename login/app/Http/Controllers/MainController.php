@@ -39,7 +39,7 @@ class MainController extends Controller
         try {
             $ringtone->save();
             toastr()->success('Ringtone aangemaakt!');
-            return redirect('/home');
+            return redirect('/ringtone');
         } catch(Exception $e){
             toastr()->error('Ringtone aanmaken is mislukt...');
             return redirect('/ringtone');
