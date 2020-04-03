@@ -14,17 +14,42 @@
 }
 
 .banner {
-    width: 60%;
+  flex-wrap: nowrap;
 
-    &__logo {
-        width: inherit;
-        position: relative;
-        left: -5px;
+
+
+  &__logo {
+      width: 60%;
+
+      &__img {
+          width: inherit;
+          position: relative;
+          left: -5px;
+      }
+  }
+
+  &__nav {
+    flex-direction: row;
+
+    &__item {
+      padding: 0 10px;
     }
+
+  }
+}
+.container {
+  margin-top: 15px;
+}
+.noflexwrap{
+    margin-top: 15px;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.container{
-    margin-top: 15px;
+.logout {
+  min-width: 5rem;
 }
 
 .back{

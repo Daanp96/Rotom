@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card welcome">
                 <div class="card-body">
 
                       <h1 class="welcome__title">Welkom bij de ROTOM App!</h1>
