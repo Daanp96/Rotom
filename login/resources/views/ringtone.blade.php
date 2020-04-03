@@ -10,15 +10,17 @@
               <div class="card-header">Mijn Ringtones</div>
               <div class="card-body">
                   @foreach($ringtones as $ringtone)
+                    <form action="/ringtone/remove/{{$ringtone->title}}" method="POST">
+                    @csrf
+                    @method("DELETE")
                     <div class="grid">
                       <p class="grid__title">{{$ringtone->title}}</p>
-                      <button class="grid__delete" type="button" name="delete">VERWIJDER</button>
+                        <button class="grid__delete" type="submit" name="delete">VERWIJDER</button>
                       <audio class="grid__player" controls preload>
                           <source src="{{$ringtone->ringtone}}" type="audio/mpeg">
                       </audio>
-
                     </div>
-
+                    </form>
                   @endforeach
               </div>
           </div>

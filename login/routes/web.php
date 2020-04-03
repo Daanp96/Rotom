@@ -34,6 +34,7 @@ Route::get('volume', 'MainController@volume');
 
 Route::get('ringtone', 'MainController@ringtone');
 Route::post('ringtone/add', 'MainController@ringtoneAdd');
+Route::delete('ringtone/remove/{remove}', 'MainController@ringtoneRemove');
 
 Route::get('profiles', 'MainController@profiles');
 Route::get('profiles/{profile}', 'MainController@savedProfile');

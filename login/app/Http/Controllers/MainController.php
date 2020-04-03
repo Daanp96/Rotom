@@ -46,6 +46,17 @@ class MainController extends Controller
         }
       }
 
+    public function ringtoneRemove($remove){
+      try{
+          Ringtone::where('title', $remove)->delete();
+          toastr()->success('Ringtone verwijderd!');
+          return redirect('/ringtone');
+      } catch(Exception $e){
+          toastr()->error("Ringtone verwijderen is mislukt...");
+          return redirect('/ringtone');
+      }
+    }
+
     //CONTACTS
     public function profiles(){
         return view('profile.profiles')->with('contact', Contact::all());
