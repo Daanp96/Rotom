@@ -4,6 +4,21 @@
 
 <a href="home" class="back">< Terug naar Dashboard</a>
 <div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">Ringtone Terughalen</div>
+          <div class="card-body">
+            <form class="form add" action="/ringtone/restore" method="POST">
+              @csrf
+              <button class="add__submit" type="submit" name="button">Breng ringtone terug</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
           <div class="card">

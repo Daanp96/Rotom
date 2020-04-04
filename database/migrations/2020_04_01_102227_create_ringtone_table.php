@@ -16,6 +16,7 @@ class CreateRingtoneTable extends Migration
         Schema::create('ringtone', function (Blueprint $table) {
             $table->string("title")->unique();
             $table->string("ringtone");
+            $table->timestamp("deleted_at")->nullable();
         });
     }
 

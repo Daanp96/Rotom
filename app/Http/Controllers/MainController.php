@@ -7,6 +7,7 @@ use Illuminate\Validation\ValidationException;
 use App\User;
 use App\Contact;
 use App\Ringtone;
+use File;
 use Validator;
 use Auth;
 use Hash;
@@ -55,6 +56,17 @@ class MainController extends Controller
           toastr()->error("Ringtone verwijderen is mislukt...");
           return redirect('/ringtone');
       }
+    }
+
+    public function ringtoneRestore(){
+        try{
+            Ringtone::onlyTrashed()->restore();
+            toastr()->success('Ringtone succesvol terug gebracht!');
+            return redirect('/ringtone');
+        } catch(Exception $e){
+            toastr()->error('Ringtone terughalen mislukt...');
+            return redirect('/ringtone');
+        }
     }
 
     //CONTACTS
