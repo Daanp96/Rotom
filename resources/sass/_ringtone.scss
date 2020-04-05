@@ -1,24 +1,18 @@
 //Ringtone Pagina
 
-.grid {
-  margin: 10px 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+.flex {
+  display: flex;
+  justify-content: space-between;
     &__title {
-      grid-area: 1 / 1 / 2 / 3;
+
     }
 
     &__delete {
-      grid-area: 1 / 3 / 2 / 4;
+
     }
 
     &__player {
-      grid-area: 2 / 1 / 3 / 4;
-      width: 200px;
-      justify-content: center;
+      width: 50px;
     }
 }
 

@@ -19,6 +19,11 @@ class MainController extends Controller
         return view('volume');
     }
 
+    //GESCHIEDENIS
+    public function history(){
+        return view('history');
+    }
+
     //RINGTONES
     public function ringtone(){
         return view('ringtone')->with('ringtones', Ringtone::all());
@@ -97,6 +102,10 @@ class MainController extends Controller
             toastr()->error('Contact aanmaken is mislukt...');
             return redirect('/testprofile');
         }
+    }
+
+    public function updateProfile($profile){
+        return view('profile.updateprofile')->with('profile', Contact::where('name', '=', $profile)->first());
     }
 }
 

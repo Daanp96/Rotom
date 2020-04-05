@@ -28,12 +28,12 @@
                     <form action="/ringtone/remove/{{$ringtone->title}}" method="POST">
                     @csrf
                     @method("DELETE")
-                    <div class="grid">
-                      <p class="grid__title">{{$ringtone->title}}</p>
-                        <button class="grid__delete" type="submit" name="delete">VERWIJDER</button>
-                      <audio class="grid__player" controls preload>
+                    <div class="flex">
+                      <audio class="flex__player" controls preload>
                           <source src="{{$ringtone->ringtone}}" type="audio/mpeg">
                       </audio>
+                      <p class="flex__title">{{$ringtone->title}}</p>
+                      <button class="flex__delete" type="submit" name="delete">VERWIJDER</button>
                     </div>
                     </form>
                   @endforeach

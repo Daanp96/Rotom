@@ -35,7 +35,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <a href="" class="card-header">Mijn Geschiedenis</a>
+                <a href="history" class="card-header">Mijn Geschiedenis</a>
             </div>
         </div>
     </div>
