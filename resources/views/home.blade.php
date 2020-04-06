@@ -13,7 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <h1>Hallo  {{ Auth::user()->name }} !</h1>
+                    <h1>Hallo  {{ Auth::user()->name }}!</h1>
                     <p>Hier kan misschien staan wie er voor het laatst aangebeld heeft?</p>
                 </div>
             </div>
@@ -35,7 +35,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <a href="" class="card-header">Mijn Geschiedenis</a>
+                <a href="history" class="card-header">Mijn Geschiedenis</a>
             </div>
         </div>
     </div>

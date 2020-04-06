@@ -11,7 +11,14 @@
               <div class="card-body">
 
                 @foreach($contact as $contact)
-                    <p><a href="/profiles/{{$contact->name}}">{{$contact->name}}</a></p>
+                <div class="contact">
+                  <div class="contact__photo">
+                      <img src="{{URL::asset("img/pfp_placeholder.png")}}" alt="placeholder profile picture" class="contact__photo__img">
+                  </div>
+                    <p class="contact__name">
+                      <a href="/profiles/{{$contact->name}}">{{$contact->name}}</a>
+                    </p>
+                </div>
                 @endforeach
               </div>
           </div>
