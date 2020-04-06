@@ -42,3 +42,5 @@ Route::get('profiles/{profile}', 'MainController@savedProfile');
 
 Auth::routes();
 Route::get('home', 'HomeController@index')->name('home');
+
+//testest
