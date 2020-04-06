@@ -10898,13 +10898,11 @@ html {
 }
 
 .banner__logo {
-  width: 60%;
+  width: 35vw;
 }
 
 .banner__logo__img {
   width: inherit;
-  position: relative;
-  left: -5px;
 }
 
 .banner__nav {
@@ -10920,7 +10918,8 @@ html {
 }
 
 .noflexwrap {
-  margin-top: 15px;
+  width: 100vw;
+  margin: 15px 0 0 0;
   flex-wrap: nowrap;
   display: flex;
   align-items: center;
@@ -10929,6 +10928,7 @@ html {
 
 .logout {
   min-width: 5rem;
+  border: none;
 }
 
 .back {
@@ -10937,6 +10937,54 @@ html {
   font-weight: bold;
   font-size: 150%;
   margin: 10px;
+}
+
+.confirm {
+  color: white;
+  background: linear-gradient(90deg, #FFB301 0%, #FF6C01 100%);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  border: none;
+  transition: 0.5s ease all;
+}
+
+.confirm:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.confirm:active {
+  background: linear-gradient(90deg, #FFD646 0%, #FF9C54 100%);
+}
+
+.cancel {
+  background: #D5D5D5;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  transition: 0.5s ease all;
+  border: none;
+}
+
+.cancel:hover {
+  text-decoration: none;
+  background: #D5D5D5;
+  color: #717171;
+}
+
+.cancel:active {
+  text-decoration: none;
+  background: #717171;
+  color: white;
+}
+
+@media (min-width: 1025px) {
+  .banner__logo {
+    width: 10vw;
+  }
+
+  .noflexwrap {
+    margin: 15px 25px 10px 25px;
+  }
 }
 
 .welcome {
@@ -10966,29 +11014,31 @@ html {
 
 .welcome__button {
   cursor: pointer;
-  border: 1px solid #186fe7;
   text-align: center;
   color: white;
-  background: #0ac7e7;
-  width: 60%;
   display: block;
   margin: 0 auto;
   padding: 5px;
-  border-radius: 40px;
   transition: 0.5s ease all;
+  width: 240px;
+  height: 50px;
+  background: linear-gradient(90deg, #FFB301 0%, #FF6C01 100%);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  text-decoration: none;
 }
 
 .welcome__button__text {
   text-decoration: none;
+  line-height: normal;
 }
 
 .welcome__button:hover {
-  background: #39a5ff;
+  text-decoration: none;
 }
 
 .welcome__button:active {
-  background: #39a5ff;
-  width: 40%;
+  width: 200px;
 }
 
 @media (min-width: 1025px) {
@@ -11003,9 +11053,24 @@ html {
   margin: 10px 0;
 }
 
+.profile__edit__img {
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
+
 .profile__banner {
   background-color: #333;
-  height: 30vh;
+  width: 100%;
+  height: 100%;
+}
+
+.profile__banner__img {
+  width: inherit;
+  height: inherit;
 }
 
 .profile__photo {
@@ -11061,6 +11126,7 @@ html {
 }
 
 .profile__main__options__option {
+  margin: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -11074,6 +11140,52 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   justify-content: flex-start;
+  width: 150px;
+}
+
+.profile__main__submit {
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.edit {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.edit__button {
+  width: 40%;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact {
+  display: inline-flex;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.contact__photo {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: linear-gradient(180deg, #FFB800 0%, #FF4D00 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.contact__photo__img {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.contact__name {
+  margin-left: 20px;
 }
 
 .volumeText {
@@ -11199,10 +11311,43 @@ html {
 .flex {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
+}
+
+.flex__title {
+  line-height: normal;
+  transform: translateY(50%);
+}
+
+.flex__delete {
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+}
+
+.flex__delete__img {
+  width: inherit;
 }
 
 .flex__player {
   width: 50px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.undo {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.undo__button {
+  padding: 5px 15px;
+}
+
+.add {
+  display: grid;
 }
 
 .add__label {
@@ -11210,16 +11355,17 @@ html {
 }
 
 .add__name {
-  border-bottom: solid 1px;
   padding-bottom: 20px;
 }
 
 .add__ringtone {
+  border-bottom: solid 1px;
   padding-bottom: 20px;
 }
 
 .add__submit {
   margin: 20px 0;
   padding: 5px;
+  width: 175px;
 }
 

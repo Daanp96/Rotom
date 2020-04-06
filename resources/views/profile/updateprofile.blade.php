@@ -2,12 +2,14 @@
 @section('content')
 
 
-<a href="/profiles/{{$profile->name}}" class="back">< Cancel </a>
+
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
       <div class="profile">
-        <div class="profile__banner"></div>
+        <div class="profile__banner">
+          <img src="{{URL::asset("img/banner_placeholder.jpg")}}" class="profile__banner__img"  alt="">
+        </div>
         <div class="profile__photo">
             <img src="{{URL::asset("img/pfp_placeholder.png")}}" alt="placeholder profile picture" class="profile__photo__img">
         </div>
@@ -37,5 +39,10 @@
     </div>
   </div>
 </div>
+<div class="edit">
+  <a href="/profiles/{{$profile->name}}" class="edit__button cancel">Cancel </a>
+  <a href="" class="edit__button confirm">Opslaan</a>
+</div>
+
 
 @endsection

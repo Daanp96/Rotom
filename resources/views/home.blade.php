@@ -13,7 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <h1>Hallo  {{ Auth::user()->name }} !</h1>
+                    <h1>Hallo  {{ Auth::user()->name }}!</h1>
                     <p>Hier kan misschien staan wie er voor het laatst aangebeld heeft?</p>
                 </div>
             </div>

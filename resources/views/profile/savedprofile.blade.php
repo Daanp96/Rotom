@@ -6,8 +6,14 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
+      
       <div class="profile">
-        <div class="profile__banner"></div>
+        <div class="profile__banner">
+          <img src="{{URL::asset("img/banner_placeholder.jpg")}}" class="profile__banner__img"  alt="">
+          <a href="/profiles/{{$profile->name}}/update" class="profile__edit">
+            <img src="{{URL::asset("img/edit.png")}}" class="profile__edit__img"  alt="">
+          </a>
+        </div>
         <div class="profile__photo">
             <img src="{{URL::asset("img/pfp_placeholder.png")}}" alt="placeholder profile picture" class="profile__photo__img">
         </div>

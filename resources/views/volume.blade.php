@@ -23,15 +23,6 @@
         </div>
     </div>
 </div>
-
-
-    <!-- <h1 class="volumeText">Volume</h1>
-    <div class="volumeControl">
-      <input type="range" min="0" max="100" class="volumeControl__slider" id="volumecontrol">
-      <img src="img/volume_down.webp" alt="volume down" class="volumeControl__slider__image volume_up">
-      <img src="img/volume_up.svg" alt="volume up" class="volumeControl__slider__image volume_down">
-    </div> -->
-
 @endsection
 
 <div class="notificationBox" id="js--notification">

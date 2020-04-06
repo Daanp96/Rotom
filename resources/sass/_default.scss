@@ -19,12 +19,10 @@
 
 
   &__logo {
-      width: 60%;
+      width: 35vw;
 
       &__img {
           width: inherit;
-          position: relative;
-          left: -5px;
       }
   }
 
@@ -41,7 +39,8 @@
   margin-top: 15px;
 }
 .noflexwrap{
-    margin-top: 15px;
+    width: 100vw;
+    margin: 15px 0 0 0;
     flex-wrap: nowrap;
     display: flex;
     align-items: center;
@@ -50,6 +49,7 @@
 
 .logout {
   min-width: 5rem;
+  border: none;
 }
 
 .back{
@@ -58,4 +58,56 @@
   font-weight: bold;
   font-size: 150%;
   margin: 10px;
+}
+
+.confirm {
+  color: white;
+  background: linear-gradient(90deg, #FFB301 0%, #FF6C01 100%);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  border: none;
+  transition: 0.5s ease all;
+
+  &:hover{
+    text-decoration: none;
+    color: black;
+  }
+  &:active{
+    background: linear-gradient(90deg, #FFD646 0%, #FF9C54 100%);
+  }
+}
+
+.cancel {
+  background: #D5D5D5;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  transition: 0.5s ease all;
+  border: none;
+
+  &:hover{
+    text-decoration: none;
+    background: #D5D5D5;
+    color: #717171;
+  }
+  &:active{
+    text-decoration: none;
+    background: #717171;
+    color: white;
+  }
+}
+
+
+
+@media (min-width: 1025px) {
+  .banner {
+
+    &__logo {
+        width: 10vw;
+      }
+    }
+
+
+  .noflexwrap {
+    margin: 15px 25px 10px 25px;
+  }
 }
