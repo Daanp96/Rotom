@@ -31,6 +31,19 @@
   cursor:pointer;
 }
 
+.volumeControl__slider::-webkit-slider-thumb{
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  background: linear-gradient(180deg, #FFB601 0%, #FF5101 100%);
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+  cursor:pointer;
+}
+
 .volumeControl__slider__image{
   width: 40px;
   height: 40px;
