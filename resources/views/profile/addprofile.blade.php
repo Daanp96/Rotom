@@ -6,7 +6,7 @@
   <div class="row justify-content-center">
     <div class="col-md-8">
       <div class="profile">
-        <form class="addProfile" action="/testprofile/store" method="post" enctype="multipart/form-data">
+        <form class="addProfile" action="addprofile/store" method="post" enctype="multipart/form-data">
             @csrf
           <div class="profile__banner">
             <img id="js--banner" src="{{URL::asset("img/banner_placeholder.jpg")}}" class="profile__banner__img"  alt="">
