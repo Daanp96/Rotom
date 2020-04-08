@@ -11065,13 +11065,13 @@ html {
 .profile__banner {
   background-color: #333;
   width: 100%;
-  height: 100%;
+  height: 25px;
   position: relative;
+  overflow: hidden;
 }
 
 .profile__banner__img {
   width: inherit;
-  height: inherit;
 }
 
 .profile__photo {
@@ -11193,7 +11193,6 @@ html {
 .image_upload {
   opacity: 0;
   position: absolute;
-  inset: 0px;
   width: 100%;
   height: 100%;
   cursor: pointer;
