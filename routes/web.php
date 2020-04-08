@@ -26,12 +26,12 @@ Route::middleware(['auth'])->group(function() {
     // Route::get('create', 'MainController@create');
     // Route::post('checkcreate', 'MainController@checkcreate');
 
-    Route::get('testprofile', 'MainController@testprofile');
-    Route::post('testprofile/store', 'MainController@store');
 
     Route::get('volume', 'MainController@volume');
 
     Route::get('history', 'MainController@history');
+    Route::get('history/addprofile', 'MainController@addprofile');
+    Route::post('history/addprofile/store', 'MainController@store');
 
     Route::get('ringtone', 'MainController@ringtone');
     Route::post('ringtone/add', 'MainController@ringtoneAdd');
