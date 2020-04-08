@@ -89,6 +89,17 @@ class MainController extends Controller
     public function store(Request $request){
         $contact = new Contact();
         $contact->name = $request->input('name');
+
+        // avatar
+        $avatar = $request->input('avatar');
+        $path = $request->file('avatar')->move('img/avatar/', $avatar);
+        $contact->avatar = $path;
+
+        // banner
+        $banner = $request->input('banner');
+        $path = $request->file('banner')->move('img/banner/', $banner);
+        $contact->banner = $path;
+
         $contact->door_access = $request->input('door_access');
         $contact->ringtone = $request->input('ringtone');
         $contact->priority = $request->input('priority');

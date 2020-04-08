@@ -13,7 +13,7 @@
                 @foreach($contact as $contact)
                 <div class="contact">
                   <div class="contact__photo">
-                      <img src="{{URL::asset("img/pfp_placeholder.png")}}" alt="placeholder profile picture" class="contact__photo__img">
+                      <img src="{{URL::asset($contact->avatar)}}" alt="placeholder profile picture" class="contact__photo__img">
                   </div>
                     <p class="contact__name">
                       <a href="/profiles/{{$contact->name}}">{{$contact->name}}</a>
