@@ -33,7 +33,6 @@ class MainController extends Controller
 
         $audio = $request->file('ringtone');
         $name = time().'.'.$audio->getClientOriginalExtension();
-        $destinationPath = base_path('ringtones');
         $audio->move('ringtones', $name);
 
         $ringtone = new Ringtone();
