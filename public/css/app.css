@@ -11198,6 +11198,19 @@ html {
   cursor: pointer;
 }
 
+.add_img {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 80px;
+  transform: translate(-50%);
+}
+
+.add_img_avatar {
+  position: absolute;
+  width: 40px;
+}
+
 .volumeText {
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
