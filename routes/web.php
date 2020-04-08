@@ -43,6 +43,8 @@ Route::middleware(['auth'])->group(function() {
     Route::get('profiles/{profile}/update', 'MainController@updateProfile');
 });
 
+Route::get('visitors', 'Maincontroller@visitors');
+
 
 Auth::routes();
 Route::get('home', 'HomeController@index')->name('home');
