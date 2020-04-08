@@ -18,12 +18,12 @@
     &__banner {
         background-color: #333;
         width: 100%;
-        height: 100%;
+        height: 25px;
         position: relative;
+        overflow: hidden;
 
         &__img{
           width: inherit;
-          height: inherit;
         }
     }
 
@@ -150,4 +150,17 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+.add_img{
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 80px;
+  transform: translate(-50%);
+
+  &_avatar{
+    position: absolute;
+    width: 40px;
+  }
 }
