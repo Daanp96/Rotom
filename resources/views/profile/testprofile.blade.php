@@ -6,15 +6,15 @@
   <div class="row justify-content-center">
     <div class="col-md-8">
       <div class="profile">
-        <form action="/testprofile/store" method="post" enctype="multipart/form-data">
+        <form class="addProfile" action="/testprofile/store" method="post" enctype="multipart/form-data">
             @csrf
           <div class="profile__banner">
-            <img src="{{URL::asset("img/banner_placeholder.jpg")}}" class="profile__banner__img"  alt="">
-            <input type="file" name="banner" class="image_upload" accept="image/*"/>
+            <img id="js--banner" src="{{URL::asset("img/banner_placeholder.jpg")}}" class="profile__banner__img"  alt="">
+            <input id="js--bannerInput" type="file" name="banner" class="image_upload" accept="image/*"/>
           </div>
             <div class="profile__photo">
-                <img src="{{URL::asset("img/pfp_placeholder.png")}}" alt="placeholder profile picture" class="profile__photo__img">
-                <input type="file" name="avatar" class="image_upload" accept="image/*"/>
+                <img id="js--avatar" src="{{URL::asset("img/pfp_placeholder.png")}}" alt="" class="profile__photo__img">
+                <input id="js--avatarInput" type="file" name="avatar" class="image_upload" accept="image/*"/>
             </div>
             <div class="profile__main">
                     <!-- <input class="add__name" type="file" name="profile"> -->

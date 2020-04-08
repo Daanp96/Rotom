@@ -49653,48 +49653,94 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports) {
 
 window.onload = function () {
+  //NOTIFICATIE
+  var notification = document.getElementById("js--notification");
+  var notification_background = document.getElementsByClassName("notificationBox__background")[0];
+  var notification_title = document.getElementById("js--notification_title");
+  var notification_close = document.getElementById("js--notification_close");
+  var notification_text = document.getElementById("js--notification_text");
+  var notification_confirm = document.getElementById("js--notification_ok");
+
+  var open_notification = function open_notification(title, text, button_text) {
+    notification_title.innerHTML = title;
+    notification_text.innerHTML = text;
+    notification_confirm.innerHTML = button_text;
+    notification.style.display = "block";
+  };
+
+  notification_close.onclick = function (event) {
+    notification.style.display = "none";
+  };
+
+  notification_background.onclick = function (event) {
+    notification.style.display = "none";
+  }; //temp NOTIIFCATIE TEST
+
+
+  var header = document.getElementById("js--header");
+  var temp_values = {
+    title: "NOTIFICATIE",
+    text: "Er is iets fout met de bel! Er is geen vingerafdruk gescanned. Het is mogelijk dat de scanner vervangen moet worden.",
+    button: "begrepen"
+  };
+
+  header.onclick = function () {
+    open_notification(temp_values.title, temp_values.text, temp_values.button);
+  };
+
   $(function () {
     if ($('div').is('.volumeControl')) {
-      //NOTIFICATIE
-      var notification = document.getElementById("js--notification");
-      var notification_background = document.getElementsByClassName("notificationBox__background")[0];
-      var notification_title = document.getElementById("js--notification_title");
-      var notification_close = document.getElementById("js--notification_close");
-      var notification_text = document.getElementById("js--notification_text");
-      var notification_confirm = document.getElementById("js--notification_ok");
-
-      var open_notification = function open_notification(title, text, button_text) {
-        notification_title.innerHTML = title;
-        notification_text.innerHTML = text;
-        notification_confirm.innerHTML = button_text;
-        notification.style.display = "block";
-      };
-
-      notification_close.onclick = function (event) {
-        notification.style.display = "none";
-      };
-
-      notification_background.onclick = function (event) {
-        notification.style.display = "none";
-      }; //temp NOTIIFCATIE TEST
-
-
-      var header = document.getElementsByClassName("volumeText")[0];
-      var temp_values = {
-        title: "NOTIFICATIE",
-        text: "Er is iets fout met de bel! Er is geen vingerafdruk gescanned. Het is mogelijk dat de scanner vervangen moet worden.",
-        button: "begrepen"
-      };
-
-      header.onclick = function () {
-        open_notification(temp_values.title, temp_values.text, temp_values.button);
-      }; //SLIDER
-
-
+      //SLIDER
       var volumeSlider = document.getElementsByClassName("volumeControl__slider")[0];
 
       volumeSlider.onchange = function () {
         console.log(volumeSlider.value);
+      };
+    }
+  });
+  $(function () {
+    if ($('form').is('.addProfile')) {
+      var previewBanner = function previewBanner(bannerInput) {
+        var banner = document.getElementById('js--banner');
+        var file = bannerInput.files[0];
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+          banner.src = reader.result;
+        };
+
+        if (file) {
+          reader.readAsDataURL(file);
+        } else {
+          banner.src = "";
+        }
+      };
+
+      var previewAvatar = function previewAvatar(avatarInput) {
+        var avatar = document.getElementById('js--avatar');
+        var file = avatarInput.files[0];
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+          avatar.src = reader.result;
+        };
+
+        if (file) {
+          reader.readAsDataURL(file);
+        } else {
+          avatar.src = "";
+        }
+      };
+
+      var bannerInput = document.getElementById("js--bannerInput");
+      var avatarInput = document.getElementById("js--avatarInput");
+
+      bannerInput.onchange = function () {
+        previewBanner(bannerInput);
+      };
+
+      avatarInput.onchange = function () {
+        previewAvatar(avatarInput);
       };
     }
   });
@@ -49720,8 +49766,8 @@ window.onload = function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/daan96/Laravel/ROTOM/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/daan96/Laravel/ROTOM/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/kimmymochi/ipmedt5/Rotom/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/kimmymochi/ipmedt5/Rotom/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

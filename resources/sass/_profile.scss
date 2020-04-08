@@ -107,7 +107,7 @@
     justify-content: space-evenly;
 
     &__button {
-      width: 240px;
+      width: 150px;
       padding: 10px;
       text-align: center;
 
@@ -121,8 +121,8 @@
   margin: 10px 0;
 
   &__photo {
-      width: 25px;
-      height: 25px;
+      width: 50px;
+      height: 50px;
       border-radius: 100%;
       background: linear-gradient(180deg, #FFB800 0%, #FF4D00 100%);
       display: flex;
@@ -132,13 +132,14 @@
 
 
       &__img {
-        width: 20px;
-        height: 20px;
+        width: 45px;
+        height: 45px;
         border-radius: 100%;
         overflow: hidden;
       }
   }
   &__name{
+    transform: translateY(50%);
     margin-left: 20px;
   }
 }
