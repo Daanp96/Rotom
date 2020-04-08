@@ -11233,6 +11233,18 @@ html {
   cursor: pointer;
 }
 
+.volumeControl__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  background: linear-gradient(180deg, #FFB601 0%, #FF5101 100%);
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
 .volumeControl__slider__image {
   width: 40px;
   height: 40px;
@@ -11342,7 +11354,7 @@ html {
 }
 
 .flex__player {
-  width: 50px;
+  width: 85px;
   border-radius: 40px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
 }

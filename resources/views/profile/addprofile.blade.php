@@ -9,12 +9,12 @@
         <form class="addProfile" action="addprofile/store" method="post" enctype="multipart/form-data">
             @csrf
           <div class="profile__banner">
-            <img id="js--banner" src="{{URL::asset("img/banner_placeholder.jpg")}}" class="profile__banner__img"  alt="">
             <input id="js--bannerInput" type="file" name="banner" class="image_upload" accept="image/*"/>
+            <img id="js--banner" src="{{URL::asset("img/banner_placeholder.jpg")}}" class="profile__banner__img"  alt="">
           </div>
             <div class="profile__photo">
-                <img id="js--avatar" src="{{URL::asset("img/pfp_placeholder.png")}}" alt="" class="profile__photo__img">
                 <input id="js--avatarInput" type="file" name="avatar" class="image_upload" accept="image/*"/>
+                <img id="js--avatar" src="{{URL::asset("img/pfp_placeholder.png")}}" alt="" class="profile__photo__img">  
             </div>
             <div class="profile__main">
                     <!-- <input class="add__name" type="file" name="profile"> -->
