@@ -39,8 +39,8 @@ Route::post('ringtone/restore', 'MainController@ringtoneRestore');
 Route::get('profiles', 'MainController@profiles');
 Route::get('profiles/{profile}', 'MainController@savedProfile');
 
+Route::get('visitors', 'Maincontroller@visitors');
+
 
 Auth::routes();
 Route::get('home', 'HomeController@index')->name('home');
-
-//testest
