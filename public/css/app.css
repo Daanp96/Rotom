@@ -11446,6 +11446,7 @@ input:checked + .slider:before {
 
 .add {
   display: grid;
+  overflow: hidden;
 }
 
 .add__label {

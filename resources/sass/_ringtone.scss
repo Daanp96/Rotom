@@ -41,6 +41,7 @@
 
 .add {
   display: grid;
+  overflow: hidden;
 
   &__label {
     margin: 10px 0;
