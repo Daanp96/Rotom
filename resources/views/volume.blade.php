@@ -24,18 +24,3 @@
     </div>
 </div>
 @endsection
-
-<div class="notificationBox" id="js--notification">
-  <div class="notificationBox__background" id="js--notification_background"></div>
-  <div class="notificationBox__window">
-    <div class="notificationBox__topBar">
-      <h2 class="notificationBox__topBar__title" id="js--notification_title">NOTIFICATIE</h2>
-      <span class="notificationBox__topBar__close" id="js--notification_close">&times;</span>
-    </div>
-    <div class="notificationBox__main">
-      <p class="notificationBox__main__text" id="js--notification_text">Er is iets fout met de bel! Er is geen vingerafdruk gescanned. Het is mogelijk dat de scanner vervangen moet worden.</p>
-
-      <div class="notificationBox__main__button" id="js--notification_ok">begrepen</div>
-    </div>
-  </div>
-</div>

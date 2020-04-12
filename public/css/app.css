@@ -11065,13 +11065,13 @@ html {
 .profile__banner {
   background-color: #333;
   width: 100%;
-  height: 100%;
+  height: 25px;
   position: relative;
+  overflow: hidden;
 }
 
 .profile__banner__img {
   width: inherit;
-  height: inherit;
 }
 
 .profile__photo {
@@ -11156,7 +11156,7 @@ html {
 }
 
 .edit__button {
-  width: 40%;
+  width: 150px;
   padding: 10px;
   text-align: center;
 }
@@ -11168,8 +11168,8 @@ html {
 }
 
 .contact__photo {
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   background: linear-gradient(180deg, #FFB800 0%, #FF4D00 100%);
   display: flex;
@@ -11179,20 +11179,20 @@ html {
 }
 
 .contact__photo__img {
-  width: 20px;
-  height: 20px;
+  width: 45px;
+  height: 45px;
   border-radius: 100%;
   overflow: hidden;
 }
 
 .contact__name {
+  transform: translateY(50%);
   margin-left: 20px;
 }
 
 .image_upload {
   opacity: 0;
   position: absolute;
-  inset: 0px;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -11239,6 +11239,18 @@ html {
        appearance: none;
   height: 20px;
   width: 20px;
+  background: linear-gradient(180deg, #FFB601 0%, #FF5101 100%);
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.volumeControl__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  height: 30px;
+  width: 30px;
   background: linear-gradient(180deg, #FFB601 0%, #FF5101 100%);
   border-radius: 50%;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
@@ -11354,7 +11366,7 @@ html {
 }
 
 .flex__player {
-  width: 50px;
+  width: 85px;
   border-radius: 40px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
 }

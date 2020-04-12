@@ -33,7 +33,6 @@ class MainController extends Controller
 
         $audio = $request->file('ringtone');
         $name = time().'.'.$audio->getClientOriginalExtension();
-        $destinationPath = base_path('ringtones');
         $audio->move('ringtones', $name);
 
         $ringtone = new Ringtone();
@@ -79,8 +78,8 @@ class MainController extends Controller
         return view('profile.profiles')->with('contact', Contact::all());
     }
 
-    public function testprofile(){
-        return view('profile.testprofile')->with('ringtones', Ringtone::all());
+    public function addprofile(){
+        return view('profile.addprofile')->with('ringtones', Ringtone::all());
     }
 
     public function savedProfile($profile){
@@ -116,7 +115,7 @@ class MainController extends Controller
             return redirect('/profiles');
         } catch(Exception $e){
             toastr()->error('Contact aanmaken is mislukt...');
-            return redirect('/testprofile');
+            return redirect('/history/addprofile');
         }
     }
 
