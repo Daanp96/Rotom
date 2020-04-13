@@ -18,14 +18,13 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth'])->group(function() {
-    // // Oude Login
+    // Oude Login
     // Route::get('main', 'MainController@index');
     // Route::post('main/checklogin', 'MainController@checklogin');
     // Route::get('main/successlogin', 'MainController@successlogin');
     // Route::get('main/logout', 'MainController@logout');
     // Route::get('create', 'MainController@create');
     // Route::post('checkcreate', 'MainController@checkcreate');
-
 
     Route::get('volume', 'MainController@volume');
 
@@ -38,9 +37,10 @@ Route::middleware(['auth'])->group(function() {
     Route::delete('ringtone/remove/{remove}', 'MainController@ringtoneRemove');
     Route::post('ringtone/restore', 'MainController@ringtoneRestore');
 
-    Route::get('profiles', 'MainController@profiles');
-    Route::get('profiles/{profile}', 'MainController@savedProfile');
-    Route::get('profiles/{profile}/update', 'MainController@updateProfile');
+    Route::get('/profiles', 'MainController@profiles');
+    Route::get('/profiles/{profile}', 'MainController@savedProfile');
+    Route::get('/profiles/updateProfile/{profile}', 'MainController@updateProfile');
+    Route::put('/profiles/updateProfile/update/{profile}', 'MainController@update');
 });
 
 
