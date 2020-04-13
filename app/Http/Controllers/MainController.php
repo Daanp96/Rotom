@@ -120,7 +120,38 @@ class MainController extends Controller
     }
 
     public function updateProfile($profile){
-        return view('profile.updateprofile')->with('profile', Contact::where('name', '=', $profile)->first());
+        return view('profile.updateprofile')->with('profile', Contact::where('name', '=', $profile)->first())->with('ringtones', Ringtone::all());
+    }
+
+    public function update(Request $request, $contact){
+
+      if($request->has('avatar')){
+        $avatar = $request->input('avatar');
+        $pathAvatar = $request->file('avatar')->move('img/avatar/', $avatar);
+      }
+
+      // banner
+      if($request->has('banner')){
+        $banner = $request->input('banner');
+        $pathBanner = $request->file('banner')->move('img/banner/', $banner);
+      }
+
+      try{
+        Contact::where('name', $contact)->update([
+            'avatar' => $pathAvatar,
+            'banner' => $pathBanner,
+            'name' => $request->input('name'),
+            'door_access' => $request->input('door_access'),
+            'ringtone' => $request->input('ringtone'),
+            'priority' => $request->input('priority')
+        ]);
+        toastr()->success('Succesvol aangepast!');
+        return redirect("profiles");
+      }
+      catch(Exception $e) {
+        toastr()->error('Dat ging niet goed...');
+        return redirect('profiles');
+      }
     }
 }
 
