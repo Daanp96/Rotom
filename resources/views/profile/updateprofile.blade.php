@@ -7,7 +7,7 @@
   <div class="row justify-content-center">
     <div class="col-md-8">
       <div class="profile">
-        <form class="addProfile" action="profiles/updateProfile/update/{{$profile->name}}" method="post" enctype="multipart/form-data">
+        <form class="addProfile" action="update/{{$profile->name}}" method="post" enctype="multipart/form-data">
           @csrf
           @method('PUT')
           <div class="profile__banner">
