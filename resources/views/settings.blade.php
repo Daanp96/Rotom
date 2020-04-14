@@ -9,10 +9,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <form action="volume/update/{{$volume->id}}" method="post">
+                <form action="settings/update/{{$volume->id}}" method="post">
                   @csrf
                   @method('PUT')
-                  <div class="card-header">Geluids Instellingen</div>
+                  <div class="card-header">Instellingen Deurbel</div>
                   <div class="card-body">
                     <h1 class="volumeText">Volume</h1>
                     <div class="volumeControl">
@@ -34,6 +34,21 @@
                     </label>
                       <p>* Alleen contacten met hoge prioriteit kunnen nog aanbellen.</p>
                   </div>
+
+                  <h1 class="volumeText">Tekst Display</h1>
+
+                  <div class="volumeControl">
+                  <label>Dit is de tekst die bezoekers zullen lezen op de display:</label>
+                  <select class="" name="display">
+                    <option value="default">Leg uw vinger op de scanner.</option>
+                    <option value="away">Ik ben niet thuis.</option>
+                    <option value="mute">Niet storen a.u.b.</option>
+                    <option value="later">Kom later terug</option>
+                    <option value="johova">Geen Johova's</option>
+                  </select>
+                </div>
+
+
                   <button class="edit__button confirm" type="submit" name="button">Opslaan</button>
                   </div>
               </form>

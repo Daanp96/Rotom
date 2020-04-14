@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);@import url(https://fonts.googleapis.com/css2?family=Roboto);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);@import url(https://fonts.googleapis.com/css?family=Roboto);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -11104,10 +11104,12 @@ html {
 }
 
 .profile__main__name__form {
+  color: white;
   border: none;
   font-family: "Montserrat", sans-serif;
   background: transparent;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #fff;
+  font-size: 150%;
 }
 
 .profile__main__name__label {
@@ -11149,7 +11151,7 @@ html {
 }
 
 .edit {
-  margin-top: 60px;
+  margin-top: 50px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;

@@ -56,7 +56,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <a href="volume" class="card-header">Geluid Instellingen</a>
+                <a href="settings" class="card-header">Instellingen Deurbel</a>
             </div>
         </div>
     </div>
