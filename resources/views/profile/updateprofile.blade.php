@@ -55,7 +55,10 @@
                   </select>
                 </div>
               </div>
-              <button class="profile__main__submit confirm" type="submit" name="button">Maak contact aan</button>
+              <div class="edit">
+                <a href="/profiles/{{$profile->name}}" class="edit__button cancel">Cancel</a>
+                <button class="edit__button confirm" type="submit" name="button">Opslaan</button>
+              </div>
             </div>
         </div>
       </form>
@@ -63,9 +66,6 @@
     </div>
   </div>
 </div>
-<div class="edit">
-  <a href="/profiles/{{$profile->name}}" class="edit__button cancel">Cancel </a>
-  <a href="" class="edit__button confirm">Opslaan</a>
 </div>
 
 
