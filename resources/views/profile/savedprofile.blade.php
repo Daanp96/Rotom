@@ -9,7 +9,7 @@
       <div class="profile">
         <div class="profile__banner">
           <img src="{{URL::asset($profile->banner)}}" class="profile__banner__img"  alt="">
-          <a href="/profiles/{{$profile->name}}/update" class="profile__edit">
+          <a href="/profiles/updateProfile/{{$profile->name}}" class="profile__edit">
             <img src="{{URL::asset("img/edit.png")}}" class="profile__edit__img"  alt="">
           </a>
         </div>

@@ -15,8 +15,8 @@ class CreateContactTable extends Migration
     {
         Schema::create('contact', function (Blueprint $table) {
             $table->string('name')->unique();
-            $table->string('banner');
-            $table->string('avatar');
+            $table->string('banner')->default("/img/banner_placeholder.jpg");
+            $table->string('avatar')->default("/img/pfp_placeholder.png");
             $table->string('ringtone');
             $table->string('door_access');
             $table->boolean('priority');
