@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Contact;
 
 class HomeController extends Controller
 {
@@ -24,7 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // toastr()->success('Data has been saved successfully!');
-        return view('home')->with('contacts', Contact::all());
+        return view('home');
     }
 }
