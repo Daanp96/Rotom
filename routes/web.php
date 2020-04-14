@@ -18,29 +18,22 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth'])->group(function() {
-    // Oude Login
-    // Route::get('main', 'MainController@index');
-    // Route::post('main/checklogin', 'MainController@checklogin');
-    // Route::get('main/successlogin', 'MainController@successlogin');
-    // Route::get('main/logout', 'MainController@logout');
-    // Route::get('create', 'MainController@create');
-    // Route::post('checkcreate', 'MainController@checkcreate');
 
-    Route::get('volume', 'MainController@volume');
+    Route::get('volume', 'VolumeController@volume');
 
-    Route::get('history', 'MainController@history');
-    Route::get('history/addprofile', 'MainController@addprofile');
-    Route::post('history/addprofile/store', 'MainController@store');
+    Route::get('history', 'HistoryController@history');
+    Route::get('history/addprofile', 'HistoryController@addprofile');
+    Route::post('history/addprofile/store', 'HistoryController@store');
 
-    Route::get('ringtone', 'MainController@ringtone');
-    Route::post('ringtone/add', 'MainController@ringtoneAdd');
-    Route::delete('ringtone/remove/{remove}', 'MainController@ringtoneRemove');
-    Route::post('ringtone/restore', 'MainController@ringtoneRestore');
+    Route::get('ringtone', 'RingtonesController@ringtone');
+    Route::post('ringtone/add', 'RingtonesController@ringtoneAdd');
+    Route::delete('ringtone/remove/{remove}', 'RingtonesController@ringtoneRemove');
+    Route::post('ringtone/restore', 'RingtonesController@ringtoneRestore');
 
-    Route::get('/profiles', 'MainController@profiles');
-    Route::get('/profiles/{profile}', 'MainController@savedProfile');
-    Route::get('/profiles/updateProfile/{profile}', 'MainController@updateProfile');
-    Route::put('/profiles/updateProfile/update/{profile}', 'MainController@update');
+    Route::get('/profiles', 'ContactsController@profiles');
+    Route::get('/profiles/{profile}', 'ContactsController@savedProfile');
+    Route::get('/profiles/updateProfile/{profile}', 'ContactsController@updateProfile');
+    Route::put('/profiles/updateProfile/update/{profile}', 'ContactsController@update');
 });
 
 Route::get('history', 'MainController@history');
@@ -48,3 +41,11 @@ Route::get('history', 'MainController@history');
 
 Auth::routes();
 Route::get('home', 'HomeController@index')->name('home');
+
+// Oude Login
+// Route::get('main', 'MainController@index');
+// Route::post('main/checklogin', 'MainController@checklogin');
+// Route::get('main/successlogin', 'MainController@successlogin');
+// Route::get('main/logout', 'MainController@logout');
+// Route::get('create', 'MainController@create');
+// Route::post('checkcreate', 'MainController@checkcreate');
