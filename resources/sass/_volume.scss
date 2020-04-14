@@ -9,6 +9,7 @@
 .volumeControl{
   width: 100%;
   margin: 50px auto;
+  text-align: center;
 }
 
 .volumeControl__slider{
@@ -31,6 +32,19 @@
   cursor:pointer;
 }
 
+.volumeControl__slider::-webkit-slider-thumb{
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  background: linear-gradient(180deg, #FFB601 0%, #FF5101 100%);
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+  cursor:pointer;
+}
+
 .volumeControl__slider__image{
   width: 40px;
   height: 40px;
@@ -43,78 +57,67 @@
   float: right;
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 26px;
+  margin-left: 20px;
+}
 
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-
-/* notification */
-.notificationBox{
-  position: fixed;
+.slider {
+  position: absolute;
+  cursor: pointer;
   top: 0;
   left: 0;
-  z-index: 100;
-  display: none;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-.notificationBox__background{
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0,0,0,0.75);
-}
-
-.notificationBox__window{
-  position: fixed;
-  z-index: 101;
-  height: 70vh;
-  width: 70vw;
-  margin: 15vh 15vw;
-  background-color: white;
-  overflow: hidden;
-  border-radius: 15px;
-}
-
-.notificationBox__topBar{
-  background: linear-gradient(270deg, #FFB601 0%, #FF5101 100%);
-  width: 100%;
-  min-height: 40px;
-}
-
-.notificationBox__topBar__title{
-  float: left;
-  margin: 5px 0 0 16px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.notificationBox__topBar__close{
-  float: right;
-  font-size: 200%;
-  margin: 0 8px;
-  font-weight: bold;
-  transition: 0.5s all;
-  cursor: pointer;
-}
-
-.notificationBox__topBar__close:hover{
-  transform: rotateZ(90deg);
-  color: red;
-}
-
-.notificationBox__main__text{
-  font-family: 'Roboto', sans-serif;
-  margin: 16px;
-}
-
-.notificationBox__main__button{
-  width: 80%;
-  height: 40px;
-  background: linear-gradient(90deg, #00B812 0%, #00B812 0.01%, #058B2B 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
+.slider:before {
   position: absolute;
-  bottom: 16px;
-  left: 10%;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
 
-  font-family: 'Montserrat', sans-serif;
+input:checked + .slider {
+  background-color: #ff9f01;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ff9f01;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.mute {
+  margin-top: 75px;
 }

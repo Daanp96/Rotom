@@ -11065,13 +11065,13 @@ html {
 .profile__banner {
   background-color: #333;
   width: 100%;
-  height: 100%;
+  height: 250px;
   position: relative;
+  overflow: hidden;
 }
 
 .profile__banner__img {
   width: inherit;
-  height: inherit;
 }
 
 .profile__photo {
@@ -11156,7 +11156,7 @@ html {
 }
 
 .edit__button {
-  width: 40%;
+  width: 150px;
   padding: 10px;
   text-align: center;
 }
@@ -11168,8 +11168,8 @@ html {
 }
 
 .contact__photo {
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   background: linear-gradient(180deg, #FFB800 0%, #FF4D00 100%);
   display: flex;
@@ -11179,23 +11179,36 @@ html {
 }
 
 .contact__photo__img {
-  width: 20px;
-  height: 20px;
+  width: 45px;
+  height: 45px;
   border-radius: 100%;
   overflow: hidden;
 }
 
 .contact__name {
+  transform: translateY(50%);
   margin-left: 20px;
 }
 
 .image_upload {
   opacity: 0;
   position: absolute;
-  inset: 0px;
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+.add_img {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 80px;
+  transform: translate(-50%);
+}
+
+.add_img_avatar {
+  position: absolute;
+  width: 40px;
 }
 
 .volumeText {
@@ -11207,6 +11220,7 @@ html {
 .volumeControl {
   width: 100%;
   margin: 50px auto;
+  text-align: center;
 }
 
 .volumeControl__slider {
@@ -11232,6 +11246,18 @@ html {
   cursor: pointer;
 }
 
+.volumeControl__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  background: linear-gradient(180deg, #FFB601 0%, #FF5101 100%);
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
 .volumeControl__slider__image {
   width: 40px;
   height: 40px;
@@ -11243,6 +11269,68 @@ html {
 
 .volume_down {
   float: right;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 26px;
+  margin-left: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ff9f01;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ff9f01;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.mute {
+  margin-top: 75px;
 }
 
 /* notification */
@@ -11341,7 +11429,7 @@ html {
 }
 
 .flex__player {
-  width: 50px;
+  width: 85px;
   border-radius: 40px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
 }
@@ -11358,6 +11446,7 @@ html {
 
 .add {
   display: grid;
+  overflow: hidden;
 }
 
 .add__label {
@@ -11365,6 +11454,7 @@ html {
 }
 
 .add__name {
+  width: 250px;
   padding-bottom: 20px;
 }
 

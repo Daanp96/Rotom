@@ -33,7 +33,6 @@ class MainController extends Controller
 
         $audio = $request->file('ringtone');
         $name = time().'.'.$audio->getClientOriginalExtension();
-        $destinationPath = base_path('ringtones');
         $audio->move('ringtones', $name);
 
         $ringtone = new Ringtone();
@@ -79,8 +78,8 @@ class MainController extends Controller
         return view('profile.profiles')->with('contact', Contact::all());
     }
 
-    public function testprofile(){
-        return view('profile.testprofile')->with('ringtones', Ringtone::all());
+    public function addprofile(){
+        return view('profile.addprofile')->with('ringtones', Ringtone::all());
     }
 
     public function savedProfile($profile){
@@ -88,18 +87,23 @@ class MainController extends Controller
     }
 
     public function store(Request $request){
+
         $contact = new Contact();
         $contact->name = $request->input('name');
 
         // avatar
-        $avatar = $request->input('avatar');
-        $path = $request->file('avatar')->move('img/avatar/', $avatar);
-        $contact->avatar = $path;
+        if($request->has('avatar')){
+          $avatar = $request->input('avatar');
+          $path = $request->file('avatar')->move('img/avatar/', $avatar);
+          $contact->avatar = $path;
+        }
 
         // banner
-        $banner = $request->input('banner');
-        $path = $request->file('banner')->move('img/banner/', $banner);
-        $contact->banner = $path;
+        if($request->has('banner')){
+          $banner = $request->input('banner');
+          $path = $request->file('banner')->move('img/banner/', $banner);
+          $contact->banner = $path;
+        }
 
         $contact->door_access = $request->input('door_access');
         $contact->ringtone = $request->input('ringtone');
@@ -111,12 +115,45 @@ class MainController extends Controller
             return redirect('/profiles');
         } catch(Exception $e){
             toastr()->error('Contact aanmaken is mislukt...');
-            return redirect('/testprofile');
+            return redirect('/history/addprofile');
         }
     }
 
     public function updateProfile($profile){
-        return view('profile.updateprofile')->with('profile', Contact::where('name', '=', $profile)->first());
+        return view('profile.updateprofile')->with('profile', Contact::where('name', '=', $profile)->first())->with('ringtones', Ringtone::all());
+    }
+
+    public function update(Request $request, $contact){
+      $pathAvatar = Contact::where('name', $contact)->get('avatar')[0]->avatar;
+      $pathBanner = Contact::where('name', $contact)->get('banner')[0]->banner;
+
+      if($request->has('avatar')){
+        $avatar = $request->input('avatar');
+        $pathAvatar = $request->file('avatar')->move('img/avatar/', $avatar);
+      }
+
+      // banner
+      if($request->has('banner')){
+        $banner = $request->input('banner');
+        $pathBanner = $request->file('banner')->move('img/banner/', $banner);
+      }
+
+      try{
+        Contact::where('name', $contact)->update([
+            'avatar' => $pathAvatar,
+            'banner' => $pathBanner,
+            'name' => $request->input('name'),
+            'door_access' => $request->input('door_access'),
+            'ringtone' => $request->input('ringtone'),
+            'priority' => $request->input('priority')
+        ]);
+        toastr()->success('Succesvol aangepast!');
+        return redirect("profiles");
+      }
+      catch(Exception $e) {
+        toastr()->error('Dat ging niet goed...');
+        return redirect('profiles');
+      }
     }
 }
 

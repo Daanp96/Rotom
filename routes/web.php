@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth'])->group(function() {
-    // // Oude Login
+    // Oude Login
     // Route::get('main', 'MainController@index');
     // Route::post('main/checklogin', 'MainController@checklogin');
     // Route::get('main/successlogin', 'MainController@successlogin');
@@ -26,21 +26,21 @@ Route::middleware(['auth'])->group(function() {
     // Route::get('create', 'MainController@create');
     // Route::post('checkcreate', 'MainController@checkcreate');
 
-    Route::get('testprofile', 'MainController@testprofile');
-    Route::post('testprofile/store', 'MainController@store');
-
     Route::get('volume', 'MainController@volume');
 
     Route::get('history', 'MainController@history');
+    Route::get('history/addprofile', 'MainController@addprofile');
+    Route::post('history/addprofile/store', 'MainController@store');
 
     Route::get('ringtone', 'MainController@ringtone');
     Route::post('ringtone/add', 'MainController@ringtoneAdd');
     Route::delete('ringtone/remove/{remove}', 'MainController@ringtoneRemove');
     Route::post('ringtone/restore', 'MainController@ringtoneRestore');
 
-    Route::get('profiles', 'MainController@profiles');
-    Route::get('profiles/{profile}', 'MainController@savedProfile');
-    Route::get('profiles/{profile}/update', 'MainController@updateProfile');
+    Route::get('/profiles', 'MainController@profiles');
+    Route::get('/profiles/{profile}', 'MainController@savedProfile');
+    Route::get('/profiles/updateProfile/{profile}', 'MainController@updateProfile');
+    Route::put('/profiles/updateProfile/update/{profile}', 'MainController@update');
 });
 
 Route::get('visitors', 'Maincontroller@visitors');
