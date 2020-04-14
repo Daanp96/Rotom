@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::middleware(['auth'])->group(function() {
 
     Route::get('volume', 'VolumeController@volume');
+    Route::put('volume/update/{id}', 'VolumeController@update');
 
     Route::get('history', 'HistoryController@history');
     Route::get('history/addprofile', 'HistoryController@addprofile');
@@ -36,10 +37,13 @@ Route::middleware(['auth'])->group(function() {
     Route::put('/profiles/updateProfile/update/{profile}', 'ContactsController@update');
 });
 
+Route::get('visitors', 'Maincontroller@visitors');
+
 
 Auth::routes();
 Route::get('home', 'HomeController@index')->name('home');
 
+<<<<<<< HEAD
 // Oude Login
 // Route::get('main', 'MainController@index');
 // Route::post('main/checklogin', 'MainController@checklogin');
@@ -47,3 +51,12 @@ Route::get('home', 'HomeController@index')->name('home');
 // Route::get('main/logout', 'MainController@logout');
 // Route::get('create', 'MainController@create');
 // Route::post('checkcreate', 'MainController@checkcreate');
+=======
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+>>>>>>> 0a4789cf63c008f822f0d207d3e3f4e89a1bf36a
