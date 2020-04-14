@@ -43,6 +43,8 @@ Route::middleware(['auth'])->group(function() {
     Route::put('/profiles/updateProfile/update/{profile}', 'MainController@update');
 });
 
+Route::get('history', 'MainController@history');
+
 
 Auth::routes();
 Route::get('home', 'HomeController@index')->name('home');

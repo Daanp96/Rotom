@@ -2,7 +2,7 @@
 @section('content')
 
 
-<a href="/profiles" class="back">< Terug naar Mijn Contacten</a>
+<a href="/profiles" class="cancel">Terug naar Mijn Contacten</a>
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
