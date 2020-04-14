@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Volume extends Model
+class Settings extends Model
 {
-  protected $table = 'volume';
+  protected $table = 'settings';
   public $timestamps = false;
 }

@@ -3,20 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Volume;
+use App\Settings;
 
-class VolumeController extends Controller
+class SettingsController extends Controller
 {
-  public function volume(){
-      return view('settings')->with('volume', Volume::all()->first());
+  public function settings(){
+      return view('settings')->with('settings', Settings::all()->first());
   }
 
   public function update(Request $request, $id){
-
+    
     try{
-      Volume::where('id', $id)->update([
+      Settings::where('id', $id)->update([
         'volume' => $request->input('volume'),
-        'niet_storen' => $request->input('niet_storen')
+        'niet_storen' => $request->input('niet_storen'),
+        // 'text_display'=> $request->input('text_display'),
       ]);
       toastr()->success('Succesvol bel aangepast!');
       return redirect("settings");

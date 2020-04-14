@@ -56,7 +56,7 @@
                       <option value="0">Uit</option>
                     @else
                       <option value="0" selected>Uit</option>
-                      <option value="1" selected>Aan</option>
+                      <option value="1" >Aan</option>
                     @endif
                   </select>
                 </div>

@@ -15,6 +15,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ContactTableSeeder::class);
         $this->call(RingtoneTableSeeder::class);
         $this->call(UsersTableSeeder::class);
-        $this->call(VolumeTableSeeder::class);
+        $this->call(SettingsTableSeeder::class);
     }
 }

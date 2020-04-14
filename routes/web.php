@@ -19,8 +19,8 @@ Route::get('/', function () {
 
 Route::middleware(['auth'])->group(function() {
 
-    Route::get('settings', 'VolumeController@volume');
-    Route::put('settings/update/{id}', 'VolumeController@update');
+    Route::get('settings', 'SettingsController@settings');
+    Route::put('settings/update/{id}', 'SettingsController@update');
 
     Route::get('history', 'HistoryController@history');
     Route::get('history/addprofile', 'HistoryController@addprofile');
