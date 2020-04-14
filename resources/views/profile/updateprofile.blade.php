@@ -28,9 +28,12 @@
                   <label for="door_access" class="profile__main__options__option__text">Deurtoegang</label>
                   <select class="profile__main__options__option__select" name="door_access">
                     @if($profile->door_access == 'custom')
+                      <option value="custom" selected>Custom</option>
+                      <option value="none">None</option>
+                    @else
+                      <option value="none" selected>None</option>
                       <option value="custom">Custom</option>
                     @endif
-                      <option value="none" selected>None</option>
                   </select>
                 </div>
                 <div class="profile__main__options__option">
@@ -50,12 +53,20 @@
                   <select class="profile__main__options__option__select" name="priority">
                     @if($profile->priority == '1')
                       <option value="1" selected>Aan</option>
-                    @endif
                       <option value="0">Uit</option>
+                    @else
+                      <option value="0" selected>Uit</option>
+                      <option value="1" selected>Aan</option>
+                    @endif
                   </select>
                 </div>
               </div>
-              <button class="profile__main__submit confirm" type="submit" name="button">Maak contact aan</button>
+              <div class="edit">
+                <a href="/profiles/{{$profile->name}}" class="edit__button cancel">Cancel </a>
+                <button class="edit__button confirm" type="submit" name="button">Opslaan</button>
+                <!-- <a href="" class="edit__button confirm">Opslaan</a> -->
+              </div>
+              <!-- <button class="profile__main__submit confirm" type="submit" name="button">Maak contact aan</button> -->
             </div>
         </div>
       </form>
@@ -63,10 +74,10 @@
     </div>
   </div>
 </div>
-<div class="edit">
+<!-- <div class="edit">
   <a href="/profiles/{{$profile->name}}" class="edit__button cancel">Cancel </a>
-  <a href="" class="edit__button confirm">Opslaan</a>
-</div>
+  <button class="edit__button confirm" type="submit" name="button">Opslaan</button>
+</div> -->
 
 
 @endsection

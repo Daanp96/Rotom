@@ -124,6 +124,8 @@ class MainController extends Controller
     }
 
     public function update(Request $request, $contact){
+      $pathAvatar = Contact::where('name', $contact)->get('avatar')[0]->avatar;
+      $pathBanner = Contact::where('name', $contact)->get('banner')[0]->banner;
 
       if($request->has('avatar')){
         $avatar = $request->input('avatar');
