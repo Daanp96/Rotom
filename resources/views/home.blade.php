@@ -6,8 +6,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Dashboard</div>
-
                 <div class="card-body">
+                  <!-- WELKOM BERICHT DASHBOARD-->
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -21,42 +21,57 @@
     </div>
 </div>
 
+<!-- MIJN CONTACTEN -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                  <a href="profiles" class="card-header">Mijn Contacten</a>
+              <a href="contacts" class="card-header home">
+                <img src="{{URL::asset('img/contacts.png')}}" class="home__icon" alt="">
+                <p class="home__title">Mijn Contacten</p>
+              </a>
             </div>
         </div>
     </div>
 </div>
 
+<!-- MIJN GESCHIEDENIS -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <a href="history" class="card-header">Mijn Geschiedenis</a>
+                <a href="history" class="card-header home">
+                  <img src="{{URL::asset('img/history.png')}}" class="home__icon" alt="">
+                  <p class="home__title">Mijn Geschiedenis</p>
+                </a>
             </div>
         </div>
     </div>
 </div>
 
+<!-- MIJN RINGTONES -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <a href="ringtone" class="card-header">Mijn Ringtones</a>
+                <a href="ringtone" class="card-header home">
+                  <img src="{{URL::asset('img/ringtones.png')}}" class="home__icon" alt="">
+                  <p class="home__title">Mijn Ringtones</p>
+                </a>
             </div>
         </div>
     </div>
 </div>
 
-
+<!-- MIJN DEURBEL -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <a href="settings" class="card-header">Instellingen Deurbel</a>
+                <a href="settings" class="card-header home">
+                  <img src="{{URL::asset('img/settings.png')}}" class="home__icon" alt="">
+                  <p class="home__title">Mijn Deurbel</p>
+                </a>
             </div>
         </div>
     </div>

@@ -10,10 +10,20 @@ use File;
 class RingtonesController extends Controller
 {
 
+  /*
+  |--------------------------------------------------------------------------
+  | Ringtones Controller
+  |--------------------------------------------------------------------------
+  | Deze controller regelt alles wat te maken heeft met ringtones,
+  | namelijk het inzien, toevoegen, verwijderen en terughalen ervan
+  */
+
+  // Mijn Ringtones View
   public function ringtone(){
       return view('ringtone')->with('ringtones', Ringtone::all());
   }
 
+  // Functie die ervoor zorgt dat een ringtone toegevoegd wordt
   public function ringtoneAdd(Request $request){
 
       $audio = $request->file('ringtone');
@@ -34,6 +44,7 @@ class RingtonesController extends Controller
       }
     }
 
+  // Functie die ervoor zorgt dat een ringtone verwijderd wordt
   public function ringtoneRemove($remove){
     try{
         Ringtone::where('title', $remove)->delete();
@@ -45,6 +56,7 @@ class RingtonesController extends Controller
     }
   }
 
+  // Functie die ervoor zorgt dat een verwijderde ringtone terug gehaald wordt
   public function ringtoneRestore(){
       try{
           Ringtone::onlyTrashed()->restore();

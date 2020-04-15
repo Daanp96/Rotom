@@ -13,40 +13,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// startpagina
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware(['auth'])->group(function() {
 
+Route::middleware(['auth'])->group(function() {
+    // settings
     Route::get('settings', 'SettingsController@settings');
     Route::put('settings/update/{id}', 'SettingsController@update');
 
+    // geschiedenis & toevoegen contact
     Route::get('history', 'HistoryController@history');
-    Route::get('history/addprofile', 'HistoryController@addprofile');
-    Route::post('history/addprofile/store', 'HistoryController@store');
+    Route::get('history/addcontact', 'HistoryController@addContact');
+    Route::post('history/addcontact/store', 'HistoryController@store');
 
+    // ringtones
     Route::get('ringtone', 'RingtonesController@ringtone');
     Route::post('ringtone/add', 'RingtonesController@ringtoneAdd');
     Route::delete('ringtone/remove/{remove}', 'RingtonesController@ringtoneRemove');
     Route::post('ringtone/restore', 'RingtonesController@ringtoneRestore');
 
-    Route::get('/profiles', 'ContactsController@profiles');
-    Route::get('/profiles/{profile}', 'ContactsController@savedProfile');
-    Route::get('/profiles/updateProfile/{profile}', 'ContactsController@updateProfile');
-    Route::put('/profiles/updateProfile/update/{profile}', 'ContactsController@update');
+    // contacten
+    Route::get('/contacts', 'ContactsController@contacts');
+    Route::get('/contacts/{contact}', 'ContactsController@savedContact');
+    Route::get('/contacts/updatecontact/{contact}', 'ContactsController@updateContact');
+    Route::put('/contacts/updatecontact/update/{contact}', 'ContactsController@update');
 });
-
-// Route::get('visitors', 'Maincontroller@visitors');
-
 
 Auth::routes();
 Route::get('home', 'HomeController@index')->name('home');
-
-// Oude Login
-// Route::get('main', 'MainController@index');
-// Route::post('main/checklogin', 'MainController@checklogin');
-// Route::get('main/successlogin', 'MainController@successlogin');
-// Route::get('main/logout', 'MainController@logout');
-// Route::get('create', 'MainController@create');
-// Route::post('checkcreate', 'MainController@checkcreate');

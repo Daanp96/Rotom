@@ -10977,6 +10977,31 @@ html {
   color: white;
 }
 
+.home {
+  display: inherit;
+  color: black;
+  font-weight: bold;
+  transition: 0.5s ease all;
+  background: white;
+}
+
+.home:hover {
+  color: #FF9C54;
+  text-decoration: none;
+  box-shadow: inset 1px 1px 5px 5px rgba(172, 172, 172, 0.54);
+}
+
+.home__icon {
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.home__title {
+  transform: translateY(50%);
+}
+
 @media (min-width: 1025px) {
   .banner__logo {
     width: 10vw;
@@ -11048,12 +11073,12 @@ html {
   }
 }
 
-.profile {
+.contact {
   flex-direction: column;
   margin: 10px 0;
 }
 
-.profile__edit__img {
+.contact__edit__img {
   border-radius: 10px;
   height: 40px;
   width: 40px;
@@ -11062,18 +11087,19 @@ html {
   right: 25px;
 }
 
-.profile__banner {
+.contact__banner {
   background-color: #333;
   width: 100%;
+  height: 200px;
   position: relative;
   overflow: hidden;
 }
 
-.profile__banner__img {
+.contact__banner__img {
   width: inherit;
 }
 
-.profile__photo {
+.contact__photo {
   width: 110px;
   height: 110px;
   border-radius: 100%;
@@ -11087,23 +11113,23 @@ html {
   z-index: 4;
 }
 
-.profile__photo__img {
+.contact__photo__img {
   width: 100px;
   height: 100px;
   border-radius: 100%;
   overflow: hidden;
 }
 
-.profile__main {
+.contact__main {
   color: white;
 }
 
-.profile__main__name {
+.contact__main__name {
   margin: 0 auto;
   text-align: center;
 }
 
-.profile__main__name__form {
+.contact__main__name__form {
   color: white;
   border: none;
   font-family: "Montserrat", sans-serif;
@@ -11112,7 +11138,7 @@ html {
   font-size: 150%;
 }
 
-.profile__main__name__label {
+.contact__main__name__label {
   font-family: "Montserrat", sans-serif;
   font-weight: 150px;
   transition: 0.2s all;
@@ -11120,32 +11146,32 @@ html {
   overflow: hidden;
 }
 
-.profile__main__options {
+.contact__main__options {
   margin: 20px auto 0;
   display: flex;
   flex-flow: column;
   justify-content: space-around;
 }
 
-.profile__main__options__option {
+.contact__main__options__option {
   margin: 10px;
   display: flex;
   justify-content: space-between;
 }
 
-.profile__main__options__option__text {
+.contact__main__options__option__text {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
 }
 
-.profile__main__options__option__select {
+.contact__main__options__option__select {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   justify-content: flex-start;
   width: 150px;
 }
 
-.profile__main__submit {
+.contact__main__submit {
   margin: 20px 0;
   padding: 10px;
 }
@@ -11163,13 +11189,13 @@ html {
   text-align: center;
 }
 
-.contact {
+.list {
   display: inline-flex;
   width: 100%;
   margin: 10px 0;
 }
 
-.contact__photo {
+.list__photo {
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -11180,14 +11206,14 @@ html {
   position: relative;
 }
 
-.contact__photo__img {
+.list__photo__img {
   width: 45px;
   height: 45px;
   border-radius: 100%;
   overflow: hidden;
 }
 
-.contact__name {
+.list__name {
   transform: translateY(50%);
   margin-left: 20px;
 }
@@ -11213,19 +11239,29 @@ html {
   width: 40px;
 }
 
-.volumeText {
-  font-family: "Montserrat", sans-serif;
-  font-weight: lighter;
-  text-align: center;
+@media (min-width: 480px) {
+  .contact__banner {
+    height: 240px;
+  }
 }
 
-.volumeControl {
+@media (min-width: 768px) {
+  .contact__banner {
+    height: 280px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact__banner {
+    height: 320px;
+  }
+}
+
+.settings {
   width: 100%;
-  margin: 50px auto;
-  text-align: center;
 }
 
-.volumeControl__slider {
+.settings__slider {
   -webkit-appearance: none;
   /* Override default CSS styles */
   -moz-appearance: none;
@@ -11235,7 +11271,7 @@ html {
   width: 100%;
 }
 
-.volumeControl__slider::-moz-range-thumb {
+.settings__slider::-moz-range-thumb {
   -webkit-appearance: none;
   /* Override default look */
   -moz-appearance: none;
@@ -11248,7 +11284,7 @@ html {
   cursor: pointer;
 }
 
-.volumeControl__slider::-webkit-slider-thumb {
+.settings__slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   /* Override default look */
   appearance: none;
@@ -11260,9 +11296,17 @@ html {
   cursor: pointer;
 }
 
-.volumeControl__slider__image {
+.settings__slider__image {
   width: 40px;
   height: 40px;
+}
+
+.settings__submit {
+  text-align: right;
+}
+
+.settings__select {
+  display: block;
 }
 
 .volume_up {
