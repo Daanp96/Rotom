@@ -51,7 +51,7 @@
             <form class="add" action="/ringtone/add" method="POST" enctype="multipart/form-data">
               @csrf
                 <label class="add__label" for="ringtone">Kies een audio bestand:</label>
-                <input class="add__ringtone" type="file" name="ringtone" accept="audio/*">
+                <input class="add__ringtone" type="file" name="ringtone" accept=".mp3">
                 <label class="add__label" for="title">Geef de ringtone een naam:</label>
                 <input class="add__name" type="text" name="title" placeholder="Ringtone naam">
                 <button class="add__submit confirm" type="submit" name="button">Maak ringtone aan</button>
