@@ -15,7 +15,7 @@ port = serial.Serial("/dev/ttyUSB0", baudrate=9600, timeout=1.0)
 pygame.mixer.init()
 pygame.mixer.music.load('/var/www/Rotom/public/ringtones/Default_Bell.mp3')
 pygame.mixer.music.set_volume(1.0)
-DoNotDisturb = " "
+
 while True:
         #volume & niet storen
         mycursor.execute("SELECT * FROM settings")
@@ -23,11 +23,12 @@ while True:
 		volume = float(z[1])/100
 		pygame.mixer.music.set_volume(volume)
 		DoNotDisturb = z[2]
+	
 	acces = False
 	deurbel = 'default Beltoon'
 	id = port.readline().strip()
 	print(id)
-
+	
 	if(DoNotDisturb != 'on'):
                 if (id != ''):
                         mycursor.execute("SELECT * FROM contact WHERE id=%s;",(id,))
@@ -71,4 +72,6 @@ while True:
                                         acces = False
                                 else:
                                         port.write('r')
-	mydb.commit()
+
+	
+mydb.commit()
