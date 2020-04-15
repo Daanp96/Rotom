@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<a href="/history" class="back">< Terug naar Mijn Geschiedenis</a>
+<a href="/history" class="back cancel">Terug naar Mijn Geschiedenis</a>
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
@@ -14,7 +14,7 @@
           </div>
             <div class="profile__photo">
                 <input id="js--avatarInput" type="file" name="avatar" class="image_upload" accept="image/*"/>
-                <img id="js--avatar" src="{{URL::asset("img/pfp_placeholder.png")}}" alt="" class="profile__photo__img">  
+                <img id="js--avatar" src="{{URL::asset("img/pfp_placeholder.png")}}" alt="" class="profile__photo__img">
             </div>
             <div class="profile__main">
                     <!-- <input class="add__name" type="file" name="profile"> -->

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateVolumeTable extends Migration
+class CreateSettingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateVolumeTable extends Migration
      */
     public function up()
     {
-        Schema::create('volume', function (Blueprint $table) {
-            $table->integer('id')->default(1);
-            $table->integer('volume');
-            $table->string('niet_storen')->nullable();
+        Schema::create('settings', function (Blueprint $table) {
+          $table->integer('id')->default(1);
+          $table->integer('volume')->default(50);
+          $table->string('niet_storen')->nullable();
+          $table->string('text_display')->default("default");
         });
     }
 
@@ -27,6 +28,6 @@ class CreateVolumeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('volume');
+        Schema::dropIfExists('settings');
     }
 }

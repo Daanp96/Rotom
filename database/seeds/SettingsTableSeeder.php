@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class VolumeTableSeeder extends Seeder
+class SettingsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,9 +11,10 @@ class VolumeTableSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('volume')->insert([
-          'volume' => 50,
-          'niet_storen' => 'off'
+      DB::table('settings')->insert([
+        'volume' => 50,
+
       ]);
+
     }
 }

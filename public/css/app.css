@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);@import url(https://fonts.googleapis.com/css2?family=Roboto);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);@import url(https://fonts.googleapis.com/css?family=Roboto);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -10933,10 +10933,10 @@ html {
 
 .back {
   font-family: "Roboto", sans-serif;
-  color: #fff;
   font-weight: bold;
-  font-size: 150%;
-  margin: 10px;
+  font-size: 100%;
+  margin: 15px;
+  padding: 10px;
 }
 
 .confirm {
@@ -11065,7 +11065,6 @@ html {
 .profile__banner {
   background-color: #333;
   width: 100%;
-  height: 250px;
   position: relative;
   overflow: hidden;
 }
@@ -11105,10 +11104,12 @@ html {
 }
 
 .profile__main__name__form {
+  color: white;
   border: none;
   font-family: "Montserrat", sans-serif;
   background: transparent;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #fff;
+  font-size: 150%;
 }
 
 .profile__main__name__label {
@@ -11150,6 +11151,7 @@ html {
 }
 
 .edit {
+  margin-top: 50px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -11429,7 +11431,7 @@ input:checked + .slider:before {
 }
 
 .flex__player {
-  width: 85px;
+  width: 120px;
   border-radius: 40px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
 }

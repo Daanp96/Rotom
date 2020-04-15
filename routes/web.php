@@ -19,8 +19,8 @@ Route::get('/', function () {
 
 Route::middleware(['auth'])->group(function() {
 
-    Route::get('volume', 'VolumeController@volume');
-    Route::put('volume/update/{id}', 'VolumeController@update');
+    Route::get('settings', 'SettingsController@settings');
+    Route::put('settings/update/{id}', 'SettingsController@update');
 
     Route::get('history', 'HistoryController@history');
     Route::get('history/addprofile', 'HistoryController@addprofile');
@@ -37,13 +37,8 @@ Route::middleware(['auth'])->group(function() {
     Route::put('/profiles/updateProfile/update/{profile}', 'ContactsController@update');
 });
 
-//Route::get('visitors', 'Maincontroller@visitors');
-
-
 Auth::routes();
 Route::get('home', 'HomeController@index')->name('home');
-
-
 // Oude Login
 // Route::get('main', 'MainController@index');
 // Route::post('main/checklogin', 'MainController@checklogin');
@@ -51,5 +46,4 @@ Route::get('home', 'HomeController@index')->name('home');
 // Route::get('main/logout', 'MainController@logout');
 // Route::get('create', 'MainController@create');
 // Route::post('checkcreate', 'MainController@checkcreate');
-
 
