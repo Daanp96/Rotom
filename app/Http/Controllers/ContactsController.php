@@ -11,28 +11,41 @@ use Auth;
 class ContactsController extends Controller
 {
 
-  public function profiles(){
-      return view('profile.profiles')->with('contact', Contact::all());
+  /*
+  |--------------------------------------------------------------------------
+  | Contacts Controller
+  |--------------------------------------------------------------------------
+  | Deze controller regelt alles wat te maken heeft met bestaande contacten,
+  | namelijk het updaten en inzien
+  */
+
+
+  // Mijn Contacten View
+  public function contacts(){
+      return view('contact.contacts')->with('contact', Contact::all());
   }
 
-  public function savedProfile($profile){
-      return view('profile.savedprofile')->with('profile', Contact::where('name', '=', $profile)->first());
+  // View voor een opgeslagen contact
+  public function savedContact($contact){
+      return view('contact.savedcontact')->with('contact', Contact::where('name', '=', $contact)->first());
   }
 
-  public function updateProfile($profile){
-      return view('profile.updateprofile')->with('profile', Contact::where('name', '=', $profile)->first())->with('ringtones', Ringtone::all());
+  // View voor het aanpassen van een opgeslagen contact
+  public function updateContact($contact){
+      return view('contact.updatecontact')->with('contact', Contact::where('name', '=', $contact)->first())->with('ringtones', Ringtone::all());
   }
 
+  //Functie die ervoor zorgt dat wijzigingen doorgevoerd worden
   public function update(Request $request, $contact){
+    //avatar
     $pathAvatar = Contact::where('name', $contact)->get('avatar')[0]->avatar;
-    $pathBanner = Contact::where('name', $contact)->get('banner')[0]->banner;
-
     if($request->has('avatar')){
       $avatar = $request->input('avatar');
       $pathAvatar = $request->file('avatar')->move('img/avatar/', $avatar);
     }
 
     // banner
+    $pathBanner = Contact::where('name', $contact)->get('banner')[0]->banner;
     if($request->has('banner')){
       $banner = $request->input('banner');
       $pathBanner = $request->file('banner')->move('img/banner/', $banner);
@@ -48,11 +61,11 @@ class ContactsController extends Controller
           'priority' => $request->input('priority')
       ]);
       toastr()->success('Succesvol aangepast!');
-      return redirect("profiles");
+      return redirect("contacts");
     }
     catch(Exception $e) {
       toastr()->error('Dat ging niet goed...');
-      return redirect('profiles');
+      return redirect('contacts');
     }
   }
 }

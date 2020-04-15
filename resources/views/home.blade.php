@@ -6,8 +6,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Dashboard</div>
-
                 <div class="card-body">
+                  <!-- WELKOM BERICHT DASHBOARD-->
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -21,16 +21,18 @@
     </div>
 </div>
 
+<!-- MIJN CONTACTEN -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                  <a href="profiles" class="card-header">Mijn Contacten</a>
+                  <a href="contacts" class="card-header">Mijn Contacten</a>
             </div>
         </div>
     </div>
 </div>
 
+<!-- MIJN GESCHIEDENIS -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -41,6 +43,7 @@
     </div>
 </div>
 
+<!-- MIJN RINGTONES -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -51,12 +54,12 @@
     </div>
 </div>
 
-
+<!-- MIJN DEURBEL -->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <a href="settings" class="card-header">Instellingen Deurbel</a>
+                <a href="settings" class="card-header">Mijn Deurbel</a>
             </div>
         </div>
     </div>

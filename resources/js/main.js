@@ -1,6 +1,6 @@
 window.onload = () =>{
 
-    //NOTIFICATIE
+    //NOTIFICATIE POPUP VOOR OP ELKE PAGINA
     const notification = document.getElementById("js--notification");
     const notification_background = document.getElementsByClassName("notificationBox__background")[0];
     const notification_title = document.getElementById("js--notification_title");
@@ -14,77 +14,81 @@ window.onload = () =>{
       notification_confirm.innerHTML = button_text;
 
       notification.style.display = "block";
-    }
+    };
 
     notification_close.onclick = (event) =>{
       notification.style.display = "none";
-    }
+    };
     notification_background.onclick = (event) =>{
       notification.style.display = "none";
-    }
+    };
 
 
     //temp NOTIIFCATIE TEST
     const header = document.getElementById("js--header");
     const temp_values = {title:"NOTIFICATIE", text:"Er is iets fout met de bel! Er is geen vingerafdruk gescanned. Het is mogelijk dat de scanner vervangen moet worden.", button:"begrepen"};
     header.onclick = () =>{
-      open_notification(temp_values.title,temp_values.text,temp_values.button)
-    }
+      open_notification(temp_values.title,temp_values.text,temp_values.button);
+    };
 
-
-
-  $(function(){
-    if($('div').is('.volumeControl')){
-      //SLIDER
-      const volumeSlider = document.getElementsByClassName("volumeControl__slider")[0];
-      volumeSlider.onchange = () =>{
-        console.log(volumeSlider.value);
+    //---------------------
+    //VOLUME SLIDER FUNCTIE
+    $(function(){
+      if($('div').is('.volumeControl')){
+        //SLIDER
+        const volumeSlider = document.getElementsByClassName("volumeControl__slider")[0];
+        volumeSlider.onchange = () =>{
+          console.log(volumeSlider.value);
+        };
       }
-    }
-  });
+    });
 
-  $(function(){
-    if($('form').is('.addProfile')){
-      function previewBanner(bannerInput) {
-        const banner = document.getElementById('js--banner')
-        var file    = bannerInput.files[0];
-        var reader  = new FileReader();
-        reader.onloadend = function () {
-          banner.src = reader.result;
-        }
+    //-------------------------------------------------------------------
+    //DYNAMISCH VERANDEREN VAN AVATAR & BANNER PREVIEW WANNEER TOEGEVOEGD
+    $(function(){
+    	function previewBanner(bannerInput) {
+          const banner = document.getElementById('js--banner');
+          var file    = bannerInput.files[0];
+          var reader  = new FileReader();
+          reader.onloadend = function () {
+            banner.src = reader.result;
+          };
 
-        if (file) {
-          reader.readAsDataURL(file);
-        } else {
-          banner.src = "";
+          if (file) {
+            reader.readAsDataURL(file);
+          } else {
+            banner.src = "";
+          }
         }
-      }
 
       function previewAvatar(avatarInput) {
-        const avatar = document.getElementById('js--avatar')
-        var file    = avatarInput.files[0];
-        var reader  = new FileReader();
-        reader.onloadend = function () {
-          avatar.src = reader.result;
+          const avatar = document.getElementById('js--avatar');
+          var file    = avatarInput.files[0];
+          var reader  = new FileReader();
+          reader.onloadend = function () {
+            avatar.src = reader.result;
+          };
+
+          if (file) {
+            reader.readAsDataURL(file);
+          } else {
+            avatar.src = "";
+          }
         }
 
-        if (file) {
-          reader.readAsDataURL(file);
-        } else {
-          avatar.src = "";
-        }
-      }
+      if($('form').is('.addContact')){
+
 
       const bannerInput = document.getElementById("js--bannerInput");
       const avatarInput = document.getElementById("js--avatarInput");
 
       bannerInput.onchange = () => {
         previewBanner(bannerInput);
-      }
+      };
 
       avatarInput.onchange = () => {
         previewAvatar(avatarInput);
-      }
+      };
     }
   });
-}
+};

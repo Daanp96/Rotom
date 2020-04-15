@@ -1,5 +1,4 @@
-//Contact & Profile pagina's
-.profile {
+.contact {
     flex-direction: column;
     margin: 10px 0;
 
@@ -14,13 +13,11 @@
       }
     }
 
-
     &__banner {
         background-color: #333;
         width: 100%;
         position: relative;
         overflow: hidden;
-        
 
         &__img{
           width: inherit;
@@ -119,7 +116,7 @@
   }
 
 
-.contact{
+.list{
   display: inline-flex;
   width: 100%;
   margin: 10px 0;

@@ -9,21 +9,28 @@
           <div class="card">
               <div class="card-header">Mijn Ringtones</div>
               <div class="card-body">
+
+                  <!-- FORM VOOR VERWIJDEREN RINGTONE -->
                   @foreach($ringtones as $ringtone)
                     <form action="/ringtone/remove/{{$ringtone->title}}" method="POST">
                     @csrf
                     @method("DELETE")
+
                     <div class="flex">
                       <audio class="flex__player" controls preload>
                           <source src="{{$ringtone->ringtone}}" type="audio/mpeg">
                       </audio>
                       <p class="flex__title">{{$ringtone->title}}</p>
+
+                      <!-- VERWIJDER KNOP-->
                       <button class="flex__delete" type="submit" name="delete">
                         <img class="flex__delete__img" src="img/delete.png" alt="">
                       </button>
                     </div>
                     </form>
                   @endforeach
+
+                  <!-- FORM VOOR TERUGHALEN VERWIJDERDE RINGTONE -->
                   <form class="form undo" action="/ringtone/restore" method="POST">
                     @csrf
                     <button class="undo__button cancel" type="submit" name="button">Verwijderde Ringtones Terughalen</button>
@@ -39,6 +46,8 @@
       <div class="card">
         <div class="card-header">Ringtone Toevoegen</div>
           <div class="card-body">
+            
+            <!-- FORM VOOR TOEVOEGEN RINGTONE -->
             <form class="add" action="/ringtone/add" method="POST" enctype="multipart/form-data">
               @csrf
                 <label class="add__label" for="ringtone">Kies een audio bestand:</label>
