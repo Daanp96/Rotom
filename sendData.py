@@ -17,6 +17,11 @@ pygame.mixer.music.load('/var/www/Rotom/public/ringtones/Default_Bell.mp3')
 pygame.mixer.music.set_volume(1.0)
 
 while True:
+	mycursor.execute("SELECT * FROM settings")
+	for z in mycursor:
+		volume = float(z[1])/100
+		pygame.mixer.music.set_volume(volume)
+
 	acces = False
 	deurbel = 'default Beltoon'
 	id = port.readline().strip()
