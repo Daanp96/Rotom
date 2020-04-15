@@ -10,15 +10,25 @@ use Auth;
 
 class HistoryController extends Controller
 {
+  /*
+  |--------------------------------------------------------------------------
+  | History Controller
+  |--------------------------------------------------------------------------
+  | Deze controller zorgt dat je de geschiedenis kan inzien van mensen die
+  | hebben aangebeld en dat je onbekenden kan toevoegen aan de contactenlijst
+  */
 
+  // Mijn Geschiedenis View
   public function history(){
       return view('history');
   }
 
-  public function addprofile(){
-      return view('profile.addprofile')->with('ringtones', Ringtone::all());
+  // View voor het toevoegen van een onbekend contact
+  public function addContact(){
+      return view('contact.addcontact')->with('ringtones', Ringtone::all());
   }
 
+  // Functie die er voor zorgt dat een nieuw contact aangemaakt wordt
   public function store(Request $request){
 
       $contact = new Contact();
@@ -45,10 +55,10 @@ class HistoryController extends Controller
       try {
           $contact->save();
           toastr()->success('Contact aangemaakt!');
-          return redirect('/profiles');
+          return redirect('/contacts');
       } catch(Exception $e){
           toastr()->error('Contact aanmaken is mislukt...');
-          return redirect('/history/addprofile');
+          return redirect('/history/addcontact');
       }
   }
 

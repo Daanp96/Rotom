@@ -11,13 +11,6 @@ class ContactTableSeeder extends Seeder
      */
     public function run()
     {
-//        DB::table('contact')->insert([
-//            'name' => 'Daan',
-//            'banner' => 'img/banner.jpg',
-//            'profile' => 'img/avatar.jpg',
-//            'door_access' => 'custom',
-//            'ringtone' => 'ringtones/phpa6CkDW',
-//            'priority' => true
-//        ]);
+
     }
 }

@@ -10,10 +10,13 @@
         <div class="col-md-8">
             <div class="card">
                 <form action="settings/update/{{$settings->id}}" method="post">
+
+                  <!-- FORM VOOR AANPASSEN INSTELLING -->
                   @csrf
                   @method('PUT')
                   <div class="card-header">Instellingen Deurbel</div>
                   <div class="card-body">
+                    <!-- VOLUME-->
                     <h1 class="volumeText">Volume</h1>
                     <div class="volumeControl">
                       <input type="range" min="0" max="100" value="{{$settings->volume}}" class="volumeControl__slider" id="volumecontrol" name="volume">
@@ -21,6 +24,7 @@
                       <img src="img/volume_up.png" alt="volume up" class="volumeControl__slider__image volume_down">
                     </div>
 
+                    <!-- NIET STOREN-->
                     <h1 class="volumeText mute">Niet Storen</h1>
                     <div class="volumeControl">
                     <img src="img/mute.png" alt="volume down" class="volumeControl__slider__image">
@@ -35,8 +39,8 @@
                       <p>* Alleen contacten met hoge prioriteit kunnen nog aanbellen.</p>
                   </div>
 
+                  <!-- TEKST DISPLAY-->
                   <h1 class="volumeText">Tekst Display</h1>
-
                   <div class="volumeControl">
                   <label>Dit is de tekst die bezoekers zullen lezen op de display:</label>
                   <select class="" name="">
@@ -48,11 +52,11 @@
                       <option value="johova">Geen Johova's</option>
                     @endif
                   </select>
+
+                <!--SUBMIT-->
                 </div>
-
-
-                  <button class="edit__button confirm" type="submit" name="button">Opslaan</button>
-                  </div>
+                <button class="edit__button confirm" type="submit" name="button">Opslaan</button>
+                </div>
               </form>
             </div>
         </div>
