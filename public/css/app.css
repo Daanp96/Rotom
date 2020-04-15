@@ -11213,19 +11213,11 @@ html {
   width: 40px;
 }
 
-.volumeText {
-  font-family: "Montserrat", sans-serif;
-  font-weight: lighter;
-  text-align: center;
-}
-
-.volumeControl {
+.settings {
   width: 100%;
-  margin: 50px auto;
-  text-align: center;
 }
 
-.volumeControl__slider {
+.settings__slider {
   -webkit-appearance: none;
   /* Override default CSS styles */
   -moz-appearance: none;
@@ -11235,7 +11227,7 @@ html {
   width: 100%;
 }
 
-.volumeControl__slider::-moz-range-thumb {
+.settings__slider::-moz-range-thumb {
   -webkit-appearance: none;
   /* Override default look */
   -moz-appearance: none;
@@ -11248,7 +11240,7 @@ html {
   cursor: pointer;
 }
 
-.volumeControl__slider::-webkit-slider-thumb {
+.settings__slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   /* Override default look */
   appearance: none;
@@ -11260,9 +11252,17 @@ html {
   cursor: pointer;
 }
 
-.volumeControl__slider__image {
+.settings__slider__image {
   width: 40px;
   height: 40px;
+}
+
+.settings__submit {
+  text-align: right;
+}
+
+.settings__select {
+  display: block;
 }
 
 .volume_up {
