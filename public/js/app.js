@@ -49505,6 +49505,8 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./main */ "./resources/js/main.js");
+
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /**
  * The following block of code may be used to automatically register your
@@ -49640,6 +49642,113 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/main.js":
+/*!******************************!*\
+  !*** ./resources/js/main.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.onload = function () {
+  //NOTIFICATIE POPUP VOOR OP ELKE PAGINA
+  var notification = document.getElementById("js--notification");
+  var notification_background = document.getElementsByClassName("notificationBox__background")[0];
+  var notification_title = document.getElementById("js--notification_title");
+  var notification_close = document.getElementById("js--notification_close");
+  var notification_text = document.getElementById("js--notification_text");
+  var notification_confirm = document.getElementById("js--notification_ok");
+
+  var open_notification = function open_notification(title, text, button_text) {
+    notification_title.innerHTML = title;
+    notification_text.innerHTML = text;
+    notification_confirm.innerHTML = button_text;
+    notification.style.display = "block";
+  };
+
+  notification_close.onclick = function (event) {
+    notification.style.display = "none";
+  };
+
+  notification_background.onclick = function (event) {
+    notification.style.display = "none";
+  }; //temp NOTIIFCATIE TEST
+
+
+  var header = document.getElementById("js--header");
+  var temp_values = {
+    title: "NOTIFICATIE",
+    text: "Er is iets fout met de bel! Er is geen vingerafdruk gescanned. Het is mogelijk dat de scanner vervangen moet worden.",
+    button: "begrepen"
+  };
+
+  header.onclick = function () {
+    open_notification(temp_values.title, temp_values.text, temp_values.button);
+  }; //---------------------
+  //VOLUME SLIDER FUNCTIE
+
+
+  $(function () {
+    if ($('div').is('.volumeControl')) {
+      //SLIDER
+      var volumeSlider = document.getElementsByClassName("volumeControl__slider")[0];
+
+      volumeSlider.onchange = function () {
+        console.log(volumeSlider.value);
+      };
+    }
+  }); //-------------------------------------------------------------------
+  //DYNAMISCH VERANDEREN VAN AVATAR & BANNER PREVIEW WANNEER TOEGEVOEGD
+
+  $(function () {
+    function previewBanner(bannerInput) {
+      var banner = document.getElementById('js--banner');
+      var file = bannerInput.files[0];
+      var reader = new FileReader();
+
+      reader.onloadend = function () {
+        banner.src = reader.result;
+      };
+
+      if (file) {
+        reader.readAsDataURL(file);
+      } else {
+        banner.src = "";
+      }
+    }
+
+    function previewAvatar(avatarInput) {
+      var avatar = document.getElementById('js--avatar');
+      var file = avatarInput.files[0];
+      var reader = new FileReader();
+
+      reader.onloadend = function () {
+        avatar.src = reader.result;
+      };
+
+      if (file) {
+        reader.readAsDataURL(file);
+      } else {
+        avatar.src = "";
+      }
+    }
+
+    if ($('form').is('.addContact')) {
+      var bannerInput = document.getElementById("js--bannerInput");
+      var avatarInput = document.getElementById("js--avatarInput");
+
+      bannerInput.onchange = function () {
+        previewBanner(bannerInput);
+      };
+
+      avatarInput.onchange = function () {
+        previewAvatar(avatarInput);
+      };
+    }
+  });
+};
 
 /***/ }),
 

@@ -96,6 +96,32 @@
   }
 }
 
+.home {
+  display: inherit;
+  color: black;
+  font-weight: bold;
+  transition: 0.5s ease all;
+  background: white;
+
+  &:hover {
+    color: #FF9C54;
+    text-decoration: none;
+
+    box-shadow: inset 1px 1px 5px 5px rgba(172,172,172,0.54);
+  }
+
+  &__icon {
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+  }
+
+  &__title {
+    transform: translateY(50%);
+  }
+}
+
 
 
 @media (min-width: 1025px) {
