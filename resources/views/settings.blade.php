@@ -57,24 +57,24 @@
                         @break
                         @case("later")
                           <option value="later" selected>Kom later terug</option>
-                          <option value="mute">Niet storen a.u.b.</option>
                           <option value="default">Leg uw vinger op de scanner.</option>
+                          <option value="mute">Niet storen a.u.b.</option>
                           <option value="away" >Ik ben niet thuis.</option>
                           <option value="johova">Geen Johova's</option>
                         @break
                         @case("johova")
                           <option value="johova" selected>Geen Johova's</option>
+                          <option value="default">Leg uw vinger op de scanner.</option>
                           <option value="later">Kom later terug</option>
                           <option value="mute">Niet storen a.u.b.</option>
-                          <option value="default">Leg uw vinger op de scanner.</option>
                           <option value="away" >Ik ben niet thuis.</option>
                         @break
                         @default
-                          <option value="default" selected>Leg uw vinger op de scanner.</option>
-                          <option value="johova">Geen Johova's</option>
+                          <option value="default" selected>Leg uw vinger op de scanner.</option
                           <option value="later">Kom later terug</option>
                           <option value="mute">Niet storen a.u.b.</option>
                           <option value="away" >Ik ben niet thuis.</option>
+                          <option value="johova">Geen Johova's</option>
                       @endswitch
                   </select>
                 </div>

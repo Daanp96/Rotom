@@ -9,7 +9,9 @@
           <div class="card">
               <div class="card-header">Mijn Geschiedenis</div>
               <div class="card-body">
-                <p>04:20 20/04/2020 - Onbekend Persoon </p>
+                @foreach($history as $his)
+                  <p>{{$his->created_at}} - {{$his->contact_name}}</p>
+                @endforeach
                 <a href="history/addprofile" class="card-header">Klik hier om profiel aan te maken</a>
               </div>
           </div>

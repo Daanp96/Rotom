@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Contact;
 use App\Ringtone;
+use App\History;
 use File;
 use Auth;
 
@@ -12,7 +13,7 @@ class HistoryController extends Controller
 {
 
   public function history(){
-      return view('history');
+      return view('history')->with("history", History::all());
   }
 
   public function addprofile(){
