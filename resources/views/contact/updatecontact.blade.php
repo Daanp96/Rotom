@@ -15,13 +15,13 @@
           <!-- BANNER -->
           <div class="contact__banner">
             <input id="js--bannerInput" type="file" name="banner" class="image_upload" accept="image/*"/>
-            <img src="{{URL::asset($contact->banner)}}" class="contact__banner__img"  alt="">
+            <img id="js--banner" src="{{URL::asset($contact->banner)}}" class="contact__banner__img"  alt="">
           </div>
 
           <!-- AVATAR -->
           <div class="contact__photo">
             <input id="js--avatarInput" type="file" name="avatar" class="image_upload" accept="image/*"/>
-            <img src="{{URL::asset($contact->avatar)}}" alt="" class="contact__photo__img">
+            <img id="js--avatar" src="{{URL::asset($contact->avatar)}}" alt="" class="contact__photo__img">
           </div>
 
           <div class="contact__main">

@@ -26,7 +26,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                  <a href="contacts" class="card-header">Mijn Contacten</a>
+              <a href="contacts" class="card-header home">
+                <img src="{{URL::asset('img/contacts.png')}}" class="home__icon" alt="">
+                <p class="home__title">Mijn Contacten</p>
+              </a>
             </div>
         </div>
     </div>
@@ -37,7 +40,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <a href="history" class="card-header">Mijn Geschiedenis</a>
+                <a href="history" class="card-header home">
+                  <img src="{{URL::asset('img/history.png')}}" class="home__icon" alt="">
+                  <p class="home__title">Mijn Geschiedenis</p>
+                </a>
             </div>
         </div>
     </div>
@@ -48,7 +54,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <a href="ringtone" class="card-header">Mijn Ringtones</a>
+                <a href="ringtone" class="card-header home">
+                  <img src="{{URL::asset('img/ringtones.png')}}" class="home__icon" alt="">
+                  <p class="home__title">Mijn Ringtones</p>
+                </a>
             </div>
         </div>
     </div>
@@ -59,7 +68,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <a href="settings" class="card-header">Mijn Deurbel</a>
+                <a href="settings" class="card-header home">
+                  <img src="{{URL::asset('img/settings.png')}}" class="home__icon" alt="">
+                  <p class="home__title">Mijn Deurbel</p>
+                </a>
             </div>
         </div>
     </div>

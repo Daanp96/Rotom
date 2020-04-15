@@ -10977,6 +10977,31 @@ html {
   color: white;
 }
 
+.home {
+  display: inherit;
+  color: black;
+  font-weight: bold;
+  transition: 0.5s ease all;
+  background: white;
+}
+
+.home:hover {
+  color: #FF9C54;
+  text-decoration: none;
+  box-shadow: inset 1px 1px 5px 5px rgba(172, 172, 172, 0.54);
+}
+
+.home__icon {
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.home__title {
+  transform: translateY(50%);
+}
+
 @media (min-width: 1025px) {
   .banner__logo {
     width: 10vw;
@@ -11065,6 +11090,7 @@ html {
 .contact__banner {
   background-color: #333;
   width: 100%;
+  height: 200px;
   position: relative;
   overflow: hidden;
 }
@@ -11211,6 +11237,24 @@ html {
 .add_img_avatar {
   position: absolute;
   width: 40px;
+}
+
+@media (min-width: 480px) {
+  .contact__banner {
+    height: 240px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact__banner {
+    height: 280px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact__banner {
+    height: 320px;
+  }
 }
 
 .settings {
