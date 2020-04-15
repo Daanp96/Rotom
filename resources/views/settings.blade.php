@@ -58,7 +58,6 @@
               </label>
                 <p>* Alleen contacten met hoge prioriteit kunnen nog aanbellen.</p>
 
-<<<<<<< HEAD
                   <div class="volumeControl">
                   <label>Dit is de tekst die bezoekers zullen lezen op de display:</label>
                   <select name="text_display">
@@ -104,9 +103,6 @@
                   </div>
               </form>
             </div>
-=======
-          </div>
->>>>>>> f99624550df780c2b2ae5efd0d2ef226bfb398b9
         </div>
       </div>
     </div>
@@ -124,7 +120,7 @@
                 @switch($settings->text_display)
                   @case("away")
                     <option value="away" selected>Ik ben niet thuis.</option>
-                    <option value="default">Leg uw vinger op de scanner.</option>
+                    <option value="defarofilesult">Leg uw vinger op de scanner.</option>
                     <option value="mute">Niet storen a.u.b.</option>
                     <option value="later">Kom later terug</option>
                     <option value="johova">Geen Johova's</option>
