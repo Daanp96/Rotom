@@ -71,4 +71,18 @@ while True:
                                         acces = False
                                 else:
                                         port.write('r')
+	mycursor.execute("SELECT * FROM settings;")
+	for w in mycursor:
+		if w[3]== 'mute':
+			port.write('n')
+		elif w[3] == 'away':
+			port.write('y')
+		elif w[3] == 'default':
+			port.write('l')
+		elif w[3] == 'johova':
+			port.write('j')
+		elif w[3] == 'later':
+			port.write('k')
+		else:
+			port.write('l')
 	mydb.commit()
