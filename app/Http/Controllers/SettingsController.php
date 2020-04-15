@@ -28,7 +28,7 @@ class SettingsController extends Controller
       Settings::where('id', $id)->update([
         'volume' => $request->input('volume'),
         'niet_storen' => $request->input('niet_storen'),
-        // 'text_display'=> $request->input('text_display'),
+        'text_display'=> $request->input('text_display'),
       ]);
       toastr()->success('Succesvol bel aangepast!');
       return redirect("settings");

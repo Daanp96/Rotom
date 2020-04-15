@@ -18,7 +18,7 @@ class CreateContactTable extends Migration
             $table->string('name')->unique();
             $table->string('banner')->default("/img/banner_placeholder.jpg");
             $table->string('avatar')->default("/img/pfp_placeholder.png");
-            $table->string('ringtone');
+            $table->string('ringtone')->default('Default Beltoon');
             $table->string('door_access');
             $table->boolean('priority');
             $table->foreign('ringtone')->references('title')->on('ringtone');

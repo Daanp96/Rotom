@@ -43,14 +43,43 @@
                   <h1 class="volumeText">Tekst Display</h1>
                   <div class="volumeControl">
                   <label>Dit is de tekst die bezoekers zullen lezen op de display:</label>
-                  <select class="" name="">
-                    @if($settings->text_display == 'default')
-                      <option value="default" selected>Leg uw vinger op de scanner.</option>
-                      <option value="away" >Ik ben niet thuis.</option>
-                      <option value="mute">Niet storen a.u.b.</option>
-                      <option value="later">Kom later terug</option>
-                      <option value="johova">Geen Johova's</option>
-                    @endif
+                  <select name="text_display">
+                      @switch($settings->text_display)
+                        @case("away")
+                          <option value="away" selected>Ik ben niet thuis.</option>
+                          <option value="default">Leg uw vinger op de scanner.</option>
+                          <option value="mute">Niet storen a.u.b.</option>
+                          <option value="later">Kom later terug</option>
+                          <option value="johova">Geen Johova's</option>
+                        @break
+                        @case("mute")
+                          <option value="mute" selected>Niet storen a.u.b.</option>
+                          <option value="default">Leg uw vinger op de scanner.</option>
+                          <option value="away" >Ik ben niet thuis.</option>
+                          <option value="later">Kom later terug</option>
+                          <option value="johova">Geen Johova's</option>
+                        @break
+                        @case("later")
+                          <option value="later" selected>Kom later terug</option>
+                          <option value="mute">Niet storen a.u.b.</option>
+                          <option value="default">Leg uw vinger op de scanner.</option>
+                          <option value="away" >Ik ben niet thuis.</option>
+                          <option value="johova">Geen Johova's</option>
+                        @break
+                        @case("johova")
+                          <option value="johova" selected>Geen Johova's</option>
+                          <option value="later">Kom later terug</option>
+                          <option value="mute">Niet storen a.u.b.</option>
+                          <option value="default">Leg uw vinger op de scanner.</option>
+                          <option value="away" >Ik ben niet thuis.</option>
+                        @break
+                        @default
+                          <option value="default" selected>Leg uw vinger op de scanner.</option>
+                          <option value="johova">Geen Johova's</option>
+                          <option value="later">Kom later terug</option>
+                          <option value="mute">Niet storen a.u.b.</option>
+                          <option value="away" >Ik ben niet thuis.</option>
+                      @endswitch
                   </select>
 
                 <!--SUBMIT-->
