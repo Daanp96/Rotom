@@ -2,7 +2,7 @@
 
 @section('content')
 
-<img src="{{URL::asset("img/logo.png")}}" alt="placeholder profile picture" class="welcome__logo">
+<img src="{{URL::asset("img/logo.png")}}" alt="" class="welcome__logo">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -21,6 +21,4 @@
         </div>
     </div>
 </div>
-
-
 @endsection
