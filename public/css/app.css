@@ -10940,13 +10940,10 @@ html {
 }
 
 .open {
-<<<<<<< HEAD
-=======
   text-align: center;
 }
 
 .open__button {
->>>>>>> origin/kim
   color: white;
   font-size: 30px;
   background: linear-gradient(90deg, #FFB301 0%, #FF6C01 100%);
@@ -10976,12 +10973,12 @@ html {
   padding: 10px;
 }
 
-.open:hover {
+.confirm:hover {
   text-decoration: none;
   color: black;
 }
 
-.open:active {
+.confirm:active {
   background: linear-gradient(90deg, #FFD646 0%, #FF9C54 100%);
 }
 
@@ -11051,7 +11048,7 @@ html {
 
 .history {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 10px 0;
 }
 

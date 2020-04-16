@@ -49770,6 +49770,7 @@ window.onload = function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 __webpack_require__(/*! /home/mirjam/ipmedt5/Rotom/resources/js/app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! /home/mirjam/ipmedt5/Rotom/resources/sass/app.scss */"./resources/sass/app.scss");
 =======
@@ -49780,6 +49781,10 @@ module.exports = __webpack_require__(/*! /home/kimmymochi/ipmedt5/Rotom/resource
 __webpack_require__(/*! /home/daan96/Laravel/ROTOM/resources/js/app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! /home/daan96/Laravel/ROTOM/resources/sass/app.scss */"./resources/sass/app.scss");
 >>>>>>> origin/daan
+=======
+__webpack_require__(/*! /home/mirjam/ipmedt5/Rotom/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/mirjam/ipmedt5/Rotom/resources/sass/app.scss */"./resources/sass/app.scss");
+>>>>>>> origin/mirjamm
 
 
 /***/ })
