@@ -11,9 +11,10 @@ class HistoryTableSeeder extends Seeder
      */
     public function run()
     {
+/**
       DB::table('history')->insert([
         'created_at' => date("Y-m-d H:i:s")
       ]);
-
+*/
     }
 }
