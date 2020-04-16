@@ -25,6 +25,7 @@ while True:
 		DoNotDisturb = z[2]
 	acces = False
 	deurbel = 'default Beltoon'
+	naam = "Onbekend Persoon"
 	id = port.readline().strip()
 	print(id)
 
@@ -34,6 +35,10 @@ while True:
                         print(mycursor)
                         for x in mycursor:
                                 print(x[1])
+				if(x[1] != " "):
+					naam = x[1]
+				else:
+					naam = 'onbekend persoon'
                                 if(x[5] == 'custom'):
                                         acces = True
                                 deurbel=x[4]
@@ -46,7 +51,7 @@ while True:
                                         path = '/var/www/Rotom/public/' + y[1] 
                                 pygame.mixer.music.load(path)
                                 pygame.mixer.music.play()
-                                naam = x[1]
+
                                 mycursor.execute("INSERT INTO history (contact_name) VALUES (%s)",(naam,))
                         acces = False
 
@@ -56,6 +61,10 @@ while True:
                         print(mycursor)
                         for x in mycursor:
                                 print(x[1])
+				if(x[1] != " "):
+					naam = x[1]
+				else:
+					naam = 'onbekend persoon'
                                 if(x[6] == 1):
                                         if (id != ''):
                                                 if(x[5] == 'custom'):
@@ -70,6 +79,8 @@ while True:
                                                         path = '/var/www/Rotom/public/' + y[1] 
                                                 pygame.mixer.music.load(path)
                                                 pygame.mixer.music.play()
+
+                                                mycursor.execute("INSERT INTO history (contact_name) VALUES (%s)",(naam,))
                                         acces = False
                                 else:
                                         port.write('r')
