@@ -41,7 +41,7 @@ class ContactsController extends Controller
       Buttons::where('button_id', $id)->update([
           'is_pressed' => 1
       ]);
-      toastr()->success('Vinger is gescanned!!');
+      toastr()->warning('Loop nu naar de scanner!');
       return redirect("contacts");
     }
     catch(Exception $e) {
