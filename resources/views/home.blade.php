@@ -80,9 +80,21 @@
 <!-- OPEN DEUR -->
 <div class="container">
     <div class="row justify-content-center">
+<<<<<<< HEAD
       <a href="" class="confirm">
         <p>Open Deur</p>
       </a>
+=======
+        <div class="col-md-8">
+            <div class="card">
+              <form action="opendoor/2" method="post">
+                @csrf
+                @method('PUT')
+                <button name="is_pressed" value="1" type="submit">Open Deur</button>
+              </form>
+            </div>
+        </div>
+>>>>>>> origin/master
     </div>
 </div>
 @endsection
