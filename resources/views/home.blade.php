@@ -14,7 +14,10 @@
                         </div>
                     @endif
                     <h1>Hallo  {{ Auth::user()->name }}!</h1>
-                    <p>Hier kan misschien staan wie er voor het laatst aangebeld heeft?</p>
+                    <p>Laaste aangebeld!</p>
+		    @foreach($history->reverse()->take(1) as $h)
+		    <p>{{ $h-> contact_name }} - {{ $h->created_at }}</p>
+		    @endforeach
                 </div>
             </div>
         </div>
@@ -81,13 +84,11 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-              <form action="opendoor/2" method="post">
-                @csrf
-                @method('PUT')
-                <button name="is_pressed" value="1" type="submit">Open Deur</button>
-              </form>
-            </div>
+            <form action="opendoor/2" method="post">
+              @csrf
+              @method('PUT')
+              <button class="confirm" name="is_pressed" value="1" type="submit">Open Deur</button>
+            </form>
         </div>
     </div>
 </div>

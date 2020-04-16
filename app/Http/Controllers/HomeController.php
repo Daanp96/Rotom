@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+<<<<<<< HEAD
+use App\History;
+=======
 use App\Buttons;
+>>>>>>> origin/master
 
 class HomeController extends Controller
 {
@@ -24,6 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        return view('home')->with("history", History::all());
         return view('home')->with('button', Buttons::where('button_id', "=", 2)->first());
     }
 
