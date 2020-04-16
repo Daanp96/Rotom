@@ -41,6 +41,7 @@ Route::middleware(['auth'])->group(function() {
 
     Route::get('/contacts/{contact}', 'ContactsController@savedContact');
     Route::get('/contacts/updatecontact/{contact}', 'ContactsController@updateContact');
+    Route::put("/contacts/updatecontact/ringbell/{id}" , "ContactsController@ringbell");
     Route::put('/contacts/updatecontact/update/{contact}', 'ContactsController@update');
 });
 

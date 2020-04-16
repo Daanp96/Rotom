@@ -15,7 +15,7 @@
           <!-- BANNER -->
           <div class="contact__banner">
             <input id="js--bannerInput" type="file" name="banner" class="image_upload" accept="image/*"/>
-            <img id="js--banner" src="{{URL::asset($contact->banner)}}" class="contact__banner__img"  alt="">
+            <img id="js--banner" src="{{URL::asset($contact->banner)}}" class="contact__banner__img"  alt="banner">
           </div>
 
           <!-- AVATAR -->
@@ -85,6 +85,12 @@
           </div>
         </form>
       </div>
+      <form class="fingerprint__form" action="/contacts/updatecontact/ringbell/1" method="post">
+        @csrf
+        @method('PUT')
+        <p class="fingerprint__text">Klik hier om je vingerafdruk te scannen...</p>
+        <button class="fingerprint__button" type="submit" name="is_pressed" value="1"></button>
+      </form>
     </div>
   </div>
 </div>
