@@ -9,9 +9,14 @@
           <div class="card">
               <div class="card-header">Mijn Geschiedenis</div>
               <div class="card-body">
-                @foreach($history->reverse()->take(25) as $h)
-		<p>{{ $h->contact_name }} - {{ $h->created_at }}</p>
-		@endforeach
+
+                  @foreach($history->reverse()->take(25) as $h)
+                  <div class="history">
+                    <h3 class="history__name">{{ $h->contact_name }}</h3>
+                    <p class="history__date">{{ $h->created_at }}</p>
+                  </div>
+                  @endforeach
+
               </div>
           </div>
       </div>

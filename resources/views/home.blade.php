@@ -17,8 +17,10 @@
                     <div class="lastcall">
                       <p>Dit contact heeft voor het laatste aangebeld:</p>
                        @foreach($history->reverse()->take(1) as $h)
-                         <h3>{{ $h->contact_name }}</h3>
-                         <p>{{ $h->created_at }}</p>
+                       <div class="history">
+                         <h3 class="history__name">{{ $h->contact_name }}</h3>
+                         <p class="history__date">{{ $h->created_at }}</p>
+                       </div>
                         @endforeach
                     </div>
                 </div>
