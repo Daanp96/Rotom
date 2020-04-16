@@ -11243,6 +11243,27 @@ html {
   text-align: center;
 }
 
+.fingerprint__button {
+  background: url("/img/fingerprint.png");
+  background-size: 100px 130px;
+  height: 130px;
+  width: 100px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.fingerprint__form {
+  position: relative;
+  margin-top: 45px;
+}
+
+.fingerprint__text {
+  color: white;
+  text-align: center;
+  font-size: 22px;
+}
+
 .list {
   display: inline-flex;
   width: 100%;
