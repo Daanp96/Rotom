@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<a href="/history" class="back cancel">Terug naar Mijn Geschiedenis</a>
+<a href="/contacts" class="back cancel">Terug naar Mijn Contacten</a>
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">

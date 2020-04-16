@@ -45,8 +45,7 @@
       <div class="col-md-8">
         <div class="card">
           <div class="card-header">Niet Storen</div>
-          <div class="card-body">
-
+            <div class="card-body">
               <img src="img/mute.png" alt="volume down" class="settings__slider__image">
               <label class="switch">
                 @if($settings->niet_storen == 'on')
@@ -57,11 +56,11 @@
                 <span class="slider round"></span>
               </label>
                 <p>* Alleen contacten met hoge prioriteit kunnen nog aanbellen.</p>
-         </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
   <!-- TEKST DISPLAY-->
   <div class="container">
@@ -71,11 +70,11 @@
           <div class="card-header">Tekst Display</div>
           <div class="card-body">
             <label>Dit is de tekst die bezoekers zullen lezen op de display:</label>
-            <select class="settings__select" name="text_display">
+              <select class="settings__select" name="text_display">
                 @switch($settings->text_display)
                   @case("away")
                     <option value="away" selected>Ik ben niet thuis.</option>
-                    <option value="default">Leg uw vinger op de scanner.</option>
+                    <option value="defarofilesult">Leg uw vinger op de scanner.</option>
                     <option value="mute">Niet storen a.u.b.</option>
                     <option value="later">Kom later terug</option>
                     <option value="johova">Geen Johova's</option>
@@ -89,24 +88,24 @@
                   @break
                   @case("later")
                     <option value="later" selected>Kom later terug</option>
-                    <option value="mute">Niet storen a.u.b.</option>
                     <option value="default">Leg uw vinger op de scanner.</option>
+                    <option value="mute">Niet storen a.u.b.</option>
                     <option value="away" >Ik ben niet thuis.</option>
                     <option value="johova">Geen Johova's</option>
                   @break
                   @case("johova")
                     <option value="johova" selected>Geen Johova's</option>
+                    <option value="default">Leg uw vinger op de scanner.</option>
                     <option value="later">Kom later terug</option>
                     <option value="mute">Niet storen a.u.b.</option>
-                    <option value="default">Leg uw vinger op de scanner.</option>
                     <option value="away" >Ik ben niet thuis.</option>
                   @break
                   @default
                     <option value="default" selected>Leg uw vinger op de scanner.</option>
-                    <option value="johova">Geen Johova's</option>
                     <option value="later">Kom later terug</option>
                     <option value="mute">Niet storen a.u.b.</option>
                     <option value="away" >Ik ben niet thuis.</option>
+                    <option value="johova">Geen Johova's</option>
                 @endswitch
             </select>
           </div>
