@@ -10947,8 +10947,9 @@ html {
   border-radius: 7px;
   border: none;
   transition: 0.5s ease all;
-  padding: 15px 120px 1px 120px;
-  margin: 15px;
+  padding: 15px 120px;
+  margin-top: 10px;
+  margin-left: 150px;
 }
 
 .confirm:hover {
