@@ -84,11 +84,11 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <a href="" class="confirm">
-                  <p class="home__title">Open deur yeet</p>
-                </a>
-            </div>
+            <form action="opendoor/2" method="post">
+              @csrf
+              @method('PUT')
+              <button class="confirm" name="is_pressed" value="1" type="submit">Open Deur</button>
+            </form>
         </div>
     </div>
 </div>
