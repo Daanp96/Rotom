@@ -26,8 +26,6 @@ Route::middleware(['auth'])->group(function() {
 
     // geschiedenis & toevoegen contact
     Route::get('history', 'HistoryController@history');
-    Route::get('history/addcontact', 'HistoryController@addContact');
-    Route::post('history/addcontact/store', 'HistoryController@store');
 
     // ringtones
     Route::get('ringtone', 'RingtonesController@ringtone');
@@ -37,6 +35,10 @@ Route::middleware(['auth'])->group(function() {
 
     // contacten
     Route::get('/contacts', 'ContactsController@contacts');
+
+    Route::get('/contacts/addcontact', 'HistoryController@addContact');
+    Route::post('/contacts/addcontact/store', 'HistoryController@store');
+
     Route::get('/contacts/{contact}', 'ContactsController@savedContact');
     Route::get('/contacts/updatecontact/{contact}', 'ContactsController@updateContact');
     Route::put('/contacts/updatecontact/update/{contact}', 'ContactsController@update');
