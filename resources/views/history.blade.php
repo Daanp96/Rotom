@@ -9,7 +9,9 @@
           <div class="card">
               <div class="card-header">Mijn Geschiedenis</div>
               <div class="card-body">
-                <p>04:20 20/04/2020 - Onbekend Persoon </p>
+                @foreach($history as $h)
+		<p>{{ $h->contact_name }} - {{ $h->created_at }}</p>
+		@endforeach
               </div>
           </div>
       </div>

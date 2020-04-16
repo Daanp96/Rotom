@@ -46,6 +46,8 @@ while True:
                                         path = '/var/www/Rotom/public/' + y[1] 
                                 pygame.mixer.music.load(path)
                                 pygame.mixer.music.play()
+                                naam = x[1]
+                                mycursor.execute("INSERT INTO history (contact_name) VALUES (%s)",(naam,))
                         acces = False
 
 	else:
