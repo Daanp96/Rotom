@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Contact;
 use App\Ringtone;
+use App\Buttons;
 use File;
 use Auth;
 
@@ -33,6 +34,20 @@ class ContactsController extends Controller
   // View voor het aanpassen van een opgeslagen contact
   public function updateContact($contact){
       return view('contact.updatecontact')->with('contact', Contact::where('name', '=', $contact)->first())->with('ringtones', Ringtone::all());
+  }
+
+  public function ringbell(Request $request, $id){
+    try{
+      Buttons::where('button_id', $id)->update([
+          'is_pressed' => 1
+      ]);
+      toastr()->success('Vinger is gescanned!!');
+      return redirect("contacts");
+    }
+    catch(Exception $e) {
+      toastr()->error('Er ging iets mis...');
+      return redirect('contacts');
+    }
   }
 
   //Functie die ervoor zorgt dat wijzigingen doorgevoerd worden
