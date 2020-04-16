@@ -9,7 +9,7 @@
           <div class="card">
               <div class="card-header">Mijn Geschiedenis</div>
               <div class="card-body">
-                @foreach($history as $h)
+                @foreach($history->reverse()->take(25) as $h)
 		<p>{{ $h->contact_name }} - {{ $h->created_at }}</p>
 		@endforeach
               </div>

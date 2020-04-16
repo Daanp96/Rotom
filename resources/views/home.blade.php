@@ -14,7 +14,10 @@
                         </div>
                     @endif
                     <h1>Hallo  {{ Auth::user()->name }}!</h1>
-                    <p>Hier kan misschien staan wie er voor het laatst aangebeld heeft?</p>
+                    <p>Laaste aangebeld!</p>
+		    @foreach($history->reverse()->take(1) as $h)
+		    <p>{{ $h-> contact_name }} - {{ $h->created_at }}</p>
+		    @endforeach
                 </div>
             </div>
         </div>
