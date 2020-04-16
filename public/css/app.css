@@ -10940,13 +10940,10 @@ html {
 }
 
 .open {
-<<<<<<< HEAD
-=======
   text-align: center;
 }
 
 .open__button {
->>>>>>> origin/kim
   color: white;
   font-size: 30px;
   background: linear-gradient(90deg, #FFB301 0%, #FF6C01 100%);
@@ -10976,12 +10973,12 @@ html {
   padding: 10px;
 }
 
-.open:hover {
+.confirm:hover {
   text-decoration: none;
   color: black;
 }
 
-.open:active {
+.confirm:active {
   background: linear-gradient(90deg, #FFD646 0%, #FF9C54 100%);
 }
 
@@ -11354,8 +11351,8 @@ html {
   -webkit-appearance: none;
   /* Override default look */
   appearance: none;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   background: linear-gradient(180deg, #FFB601 0%, #FF5101 100%);
   border-radius: 50%;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
@@ -11525,7 +11522,6 @@ input:checked + .slider:before {
 
 .flex {
   display: flex;
-  justify-content: space-between;
   padding: 20px 0;
 }
 
@@ -11535,6 +11531,7 @@ input:checked + .slider:before {
 }
 
 .flex__delete {
+  margin-left: auto;
   border: none;
   background-color: transparent;
   width: 40px;
@@ -11547,6 +11544,7 @@ input:checked + .slider:before {
 
 .flex__player {
   width: 120px;
+  margin-right: 30px;
   border-radius: 40px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
 }
