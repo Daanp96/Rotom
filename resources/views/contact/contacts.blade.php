@@ -9,6 +9,7 @@
           <div class="card">
               <div class="card-header">Mijn Contacten</div>
               <div class="card-body">
+                <a href="/contacts/addcontact" class="card-header makecontact" id="contact__button">Klik hier om profiel aan te maken</a>
 
                 <!-- LIJST VAN CONTACTEN -->
                 @foreach($contact as $contact)
@@ -21,7 +22,6 @@
                     </p>
                 </div>
                 @endforeach
-                <a href="/contacts/addcontact" class="card-header" id="contact__button">Klik hier om profiel aan te maken</a>
               </div>
           </div>
       </div>
