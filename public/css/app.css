@@ -10940,6 +10940,13 @@ html {
 }
 
 .open {
+<<<<<<< HEAD
+=======
+  text-align: center;
+}
+
+.open__button {
+>>>>>>> origin/kim
   color: white;
   font-size: 30px;
   background: linear-gradient(90deg, #FFB301 0%, #FF6C01 100%);
@@ -10947,9 +10954,26 @@ html {
   border-radius: 7px;
   border: none;
   transition: 0.5s ease all;
-  padding: 15px 120px;
-  margin-top: 10px;
-  margin-left: 150px;
+  padding: 15px 80px;
+}
+
+.open__button:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.open__button:active {
+  background: linear-gradient(90deg, #FFD646 0%, #FF9C54 100%);
+}
+
+.confirm {
+  color: white;
+  background: linear-gradient(90deg, #FFB301 0%, #FF6C01 100%);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  border: none;
+  transition: 0.5s ease all;
+  padding: 10px;
 }
 
 .open:hover {
