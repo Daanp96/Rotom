@@ -34,7 +34,7 @@ class HomeController extends Controller
         Buttons::where('button_id', $id)->update([
             'is_pressed' => 1
         ]);
-        toastr()->success('Deur is geopend!!');
+        toastr()->success('De deur is 6 seconden geopend!');
         return redirect("home");
       }
       catch(Exception $e) {
