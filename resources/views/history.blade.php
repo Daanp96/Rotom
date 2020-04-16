@@ -2,7 +2,7 @@
 
 @section('content')
 
-<a href="home" class="cancel">Terug naar Dashboard</a>
+<a href="home" class="back cancel">Terug naar Dashboard</a>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
