@@ -85,7 +85,7 @@
           </div>
         </form>
       </div>
-      <form class="fingerprint__form" action="/contacts/updatecontact/ringbell/1" method="post">
+      <form class="fingerprint__form" action="/contacts/updatecontact/{{$contact->id}}/ringbell/1" method="post">
         @csrf
         @method('PUT')
         <p class="fingerprint__text">Klik hier om je vingerafdruk te scannen...</p>
