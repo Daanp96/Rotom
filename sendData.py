@@ -53,6 +53,8 @@ while True:
                                 pygame.mixer.music.play()
 
                                 mycursor.execute("INSERT INTO history (contact_name) VALUES (%s)",(naam,))
+				if(naam.upper() == 'ROTOM'):
+					port.write('r')
                         acces = False
 
 	else:
@@ -81,6 +83,8 @@ while True:
                                                 pygame.mixer.music.play()
 
                                                 mycursor.execute("INSERT INTO history (contact_name) VALUES (%s)",(naam,))
+						if(naam.upper() == 'ROTOM'):
+							port.write('r')
                                         acces = False
                                 else:
                                         port.write('r')
