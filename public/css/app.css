@@ -11303,6 +11303,7 @@ html {
 .list__name {
   transform: translateY(50%);
   margin-left: 20px;
+  margin-right: auto;
 }
 
 .makecontact {

@@ -13,7 +13,7 @@
 
                 <!-- LIJST VAN CONTACTEN -->
                 @foreach($contact as $contact)
-                <div class="list">
+                <div class="list history">
                   <div class="list__photo">
                       <img src="{{URL::asset($contact->avatar)}}" alt="" class="list__photo__img">
                   </div>
