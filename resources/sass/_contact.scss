@@ -114,6 +114,30 @@
     }
   }
 
+.fingerprint{
+
+    &__button{
+      background: url("/img/fingerprint.png");
+      background-size: 100px 130px;
+      height: 130px;
+      width: 100px;
+      border: none;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__form{
+      position: relative;
+      margin-top: 45px;
+    }
+
+    &__text{
+      color: white;
+      text-align: center;
+      font-size: 22px;
+    }
+
+  }
 
 .list{
   display: inline-flex;

@@ -36,11 +36,13 @@ Route::middleware(['auth'])->group(function() {
     // contacten
     Route::get('/contacts', 'ContactsController@contacts');
 
-    Route::get('/contacts/addcontact', 'HistoryController@addContact');
-    Route::post('/contacts/addcontact/store', 'HistoryController@store');
+    Route::get('/contacts/addcontact', 'ContactsController@addContact');
+    Route::post('/contacts/addcontact/store', 'ContactsController@store');
+    Route::delete('/contacts/delete/{contact}', 'ContactsController@contactRemove');
 
     Route::get('/contacts/{contact}', 'ContactsController@savedContact');
     Route::get('/contacts/updatecontact/{contact}', 'ContactsController@updateContact');
+    Route::put("/contacts/updatecontact/{contact}/ringbell/{id}" , "ContactsController@ringbell");
     Route::put('/contacts/updatecontact/update/{contact}', 'ContactsController@update');
 });
 

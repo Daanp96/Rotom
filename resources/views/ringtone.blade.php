@@ -24,7 +24,7 @@
 
                       <!-- VERWIJDER KNOP-->
                       <button class="flex__delete" type="submit" name="delete">
-                        <img class="flex__delete__img" src="img/delete.png" alt="">
+                        <img class="flex__delete__img" src="img/delete.png" alt="delete">
                       </button>
                     </div>
                     </form>
@@ -46,7 +46,7 @@
       <div class="card">
         <div class="card-header">Ringtone Toevoegen</div>
           <div class="card-body">
-            
+
             <!-- FORM VOOR TOEVOEGEN RINGTONE -->
             <form class="add" action="/ringtone/add" method="POST" enctype="multipart/form-data">
               @csrf
