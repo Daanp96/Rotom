@@ -11049,6 +11049,16 @@ html {
   transform: translateY(50%);
 }
 
+.history {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0;
+}
+
+.history__date {
+  transform: translateY(10px);
+}
+
 @media (min-width: 1025px) {
   .banner__logo {
     width: 10vw;
