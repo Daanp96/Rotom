@@ -81,7 +81,7 @@
 <div class="container">
     <div class="row justify-content-center">
       <a href="" class="confirm">
-        <p class="home__title">Open Deur</p>
+        <p>Open Deur</p>
       </a>
     </div>
 </div>
