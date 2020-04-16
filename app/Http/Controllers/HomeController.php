@@ -27,7 +27,17 @@ class HomeController extends Controller
         return view('home')->with('button', Buttons::where('button_id', "=", 2)->first());
     }
 
-    public function opendoor(){
-
+    public function opendoor(Request $request, $id){
+      try{
+        Buttons::where('button_id', $id)->update([
+            'is_pressed' => 1
+        ]);
+        toastr()->success('Deur is geopend!!');
+        return redirect("home");
+      }
+      catch(Exception $e) {
+        toastr()->error('Er ging iets mis...');
+        return redirect('home');
+      }
     }
 }
