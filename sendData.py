@@ -109,4 +109,13 @@ while True:
 			port.write('o')
 			mycursor.execute("UPDATE buttons SET is_pressed = 0 WHERE button_id = 2;")
 			time.sleep(2)
+
+	mycursor.execute("SELECT * FROM buttons WHERE button_id = 1;")
+	for j in mycursor:
+		if(j[2] == 1):
+			port.write('r')
+			mycursor.execute("UPDATE buttons SET is_pressed = 0 WHERE button_id = 1;")
+			time.sleep(2)
+
+
 	mydb.commit()
