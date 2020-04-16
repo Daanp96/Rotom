@@ -10935,7 +10935,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 100%;
-  margin: 45px;
+  margin: 15px;
   padding: 10px;
 }
 
@@ -11048,17 +11048,28 @@ html {
 
 .history {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 10px 0;
+  border-bottom: 1px solid #d5d5d5;
+  padding: 10px 0;
 }
 
 .history__date {
   transform: translateY(10px);
 }
 
+.dash {
+  border-bottom: none;
+  border-top: 1px solid #d5d5d5;
+}
+
 @media (min-width: 1025px) {
   .banner__logo {
     width: 10vw;
+  }
+
+  .back {
+    margin: 45px;
   }
 
   .noflexwrap {
@@ -11294,7 +11305,9 @@ html {
 }
 
 .makecontact {
-  float: right;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .image_upload {
@@ -11319,7 +11332,6 @@ html {
 }
 
 #contact__button {
-  margin: 15px 0 0;
   display: inline-block;
 }
 
@@ -11372,8 +11384,8 @@ html {
   -webkit-appearance: none;
   /* Override default look */
   appearance: none;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   background: linear-gradient(180deg, #FFB601 0%, #FF5101 100%);
   border-radius: 50%;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
@@ -11396,6 +11408,7 @@ html {
 .volume {
   display: flex;
   justify-content: space-between;
+  margin-top: 5px;
 }
 
 .volume__up {
