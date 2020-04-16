@@ -17,6 +17,7 @@ class CreateButtonsTable extends Migration
             $table->increments('button_id')->unsigned();
             $table->string("button");
             $table->boolean("is_pressed");
+            $table->string("contact_id")->nullable();
         });
     }
 
