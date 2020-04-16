@@ -31,10 +31,10 @@
                   @endforeach
 
                   <!-- FORM VOOR TERUGHALEN VERWIJDERDE RINGTONE -->
-                  <form class="form undo" action="/ringtone/restore" method="POST">
+                  <!-- <form class="form undo" action="/ringtone/restore" method="POST">
                     @csrf
                     <button class="undo__button cancel" type="submit" name="button">Verwijderde Ringtones Terughalen</button>
-                  </form>
+                  </form> -->
               </div>
           </div>
       </div>
