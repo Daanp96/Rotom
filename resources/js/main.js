@@ -34,10 +34,13 @@ window.onload = () =>{
     //---------------------
     //VOLUME SLIDER FUNCTIE
     $(function(){
-      if($('div').is('.volumeControl')){
+      if($('input').is('.settings__slider')){
+        console.log("yeet");
         //SLIDER
-        const volumeSlider = document.getElementsByClassName("volumeControl__slider")[0];
+        const volumeSlider = document.getElementById('js--slider');
+        const volume = document.getElementById("js--volume");
         volumeSlider.onchange = () =>{
+          volume.innerHTML = volumeSlider.value;
           console.log(volumeSlider.value);
         };
       }

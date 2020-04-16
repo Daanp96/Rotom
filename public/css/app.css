@@ -11314,11 +11314,16 @@ html {
   display: block;
 }
 
-.volume_up {
+.volume {
+  display: flex;
+  justify-content: space-between;
+}
+
+.volume__up {
   float: left;
 }
 
-.volume_down {
+.volume__down {
   float: right;
 }
 
