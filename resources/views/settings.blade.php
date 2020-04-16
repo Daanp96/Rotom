@@ -10,7 +10,7 @@
           <div class="card">
               <div class="card-header">Mijn Deurbel</div>
               <div class="card-body">
-                Hier kunnen de instellingen van de Rotom Deurbel aangepast worden.
+                <p>Hier kunnen de instellingen van de Rotom Deurbel aangepast worden.</p>
               </div>
           </div>
       </div>
@@ -29,9 +29,12 @@
         <div class="card">
           <div class="card-header">Volume</div>
           <div class="card-body settings">
-              <input type="range" min="0" max="100" value="{{$settings->volume}}" class="settings__slider" id="settings" name="volume">
-              <img src="img/volume_down.png" alt="volume down" class="settings__slider__image volume_up">
-              <img src="img/volume_up.png" alt="volume up" class="settings__slider__image volume_down">
+              <input type="range" min="0" max="100" value="{{$settings->volume}}" class="settings__slider" id="js--slider" name="volume">
+              <div class="volume">
+                <img src="img/volume_down.png" alt="volume down" class="settings__slider__image volume__up">
+                <p class="settings__slider__image volume" id="js--volume">{{$settings->volume}}</p>
+                <img src="img/volume_up.png" alt="volume up" class="settings__slider__image volume__down">
+            </div>
           </div>
         </div>
       </div>

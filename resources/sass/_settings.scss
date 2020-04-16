@@ -53,12 +53,19 @@
   }
 }
 
-.volume_up{
-  float: left;
+.volume {
+  display: flex;
+  justify-content: space-between;
+  
+  &__up{
+    float: left;
+  }
+  &__down{
+    float: right;
+  }
+
 }
-.volume_down{
-  float: right;
-}
+
 
 .switch {
   position: relative;
