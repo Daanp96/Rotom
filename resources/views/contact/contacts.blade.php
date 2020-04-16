@@ -20,6 +20,13 @@
                     <p class="list__name">
                       <a href="/contacts/{{$contact->name}}">{{$contact->name}}</a>
                     </p>
+                    <form action="contacts/delete/{{$contact->id}}" method="post">
+                      @csrf
+                      @method('DELETE')
+                      <button class="flex__delete" type="submit" name="delete">
+                        <img class="flex__delete__img" src="img/delete.png" alt="delete">
+                      </button>
+                    </form>
                 </div>
                 @endforeach
               </div>

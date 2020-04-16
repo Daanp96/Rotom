@@ -122,4 +122,17 @@ class ContactsController extends Controller
       return redirect('contacts');
     }
   }
+
+  // Functie die ervoor zorgt dat een contact verwijderd wordt
+  public function contactRemove($remove){
+    try{
+        Contact::where('id', $remove)->delete();
+        toastr()->success('Contact verwijderd!');
+        return redirect('/contacts');
+    } catch(Exception $e){
+        toastr()->error("Contact verwijderen is mislukt...");
+        return redirect('/contacts');
+    }
+  }
+
 }
