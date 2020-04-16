@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Buttons;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,20 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home')->with('button', Buttons::where('button_id', "=", 2)->first());
+    }
+
+    public function opendoor(Request $request, $id){
+      try{
+        Buttons::where('button_id', $id)->update([
+            'is_pressed' => 1
+        ]);
+        toastr()->success('Deur is geopend!!');
+        return redirect("home");
+      }
+      catch(Exception $e) {
+        toastr()->error('Er ging iets mis...');
+        return redirect('home');
+      }
     }
 }
