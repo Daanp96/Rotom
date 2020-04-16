@@ -3,11 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-<<<<<<< HEAD
 use App\History;
-=======
 use App\Buttons;
->>>>>>> origin/master
 
 class HomeController extends Controller
 {
