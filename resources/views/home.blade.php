@@ -80,13 +80,9 @@
 <!-- OPEN DEUR -->
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <a href="" class="confirm">
-                  <p class="home__title">Open deur yeet</p>
-                </a>
-            </div>
-        </div>
+      <a href="" class="confirm">
+        <p class="home__title">Open Deur</p>
+      </a>
     </div>
 </div>
 @endsection
