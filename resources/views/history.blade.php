@@ -10,7 +10,6 @@
               <div class="card-header">Mijn Geschiedenis</div>
               <div class="card-body">
                 <p>04:20 20/04/2020 - Onbekend Persoon </p>
-                <a href="testprofile" class="card-header">Klik hier om profiel aan te maken</a>
               </div>
           </div>
       </div>
