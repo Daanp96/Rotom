@@ -11007,6 +11007,7 @@ html {
   border-radius: 7px;
   transition: 0.5s ease all;
   border: none;
+  color: black;
 }
 
 .cancel:hover {

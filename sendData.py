@@ -113,9 +113,21 @@ while True:
 	mycursor.execute("SELECT * FROM buttons WHERE button_id = 1;")
 	for j in mycursor:
 		if(j[2] == 1):
-			port.write('r')
+			#port.write('r')
+			mycursor.execute("SELECT * FROM buttons WHERE button_id = 1;")
+			for t in mycursor:
+				print(t[3])
+				edit = 'i' + str(t[3])
+				port.write(edit)
+				time.sleep(0.05)
+				port.write('a')
+
 			mycursor.execute("UPDATE buttons SET is_pressed = 0 WHERE button_id = 1;")
 			time.sleep(2)
-
+			#mycursor.execute("SELECT contact_id FROM buttons WHERE button_id = 1;")
+			#print(mycursor)
+			#edit = 'i' + str(mycursor)
+			#port.write(edit)
+			#port.write('a')
 
 	mydb.commit()
