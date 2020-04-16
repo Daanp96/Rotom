@@ -49691,11 +49691,14 @@ window.onload = function () {
 
 
   $(function () {
-    if ($('div').is('.volumeControl')) {
-      //SLIDER
-      var volumeSlider = document.getElementsByClassName("volumeControl__slider")[0];
+    if ($('input').is('.settings__slider')) {
+      console.log("yeet"); //SLIDER
+
+      var volumeSlider = document.getElementById('js--slider');
+      var volume = document.getElementById("js--volume");
 
       volumeSlider.onchange = function () {
+        volume.innerHTML = volumeSlider.value;
         console.log(volumeSlider.value);
       };
     }
