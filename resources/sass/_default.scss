@@ -162,6 +162,20 @@
   }
 }
 
+.history {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0;
+
+  &__name {
+
+  }
+
+  &__date {
+    transform: translateY(10px);
+  }
+}
+
 
 
 @media (min-width: 1025px) {
