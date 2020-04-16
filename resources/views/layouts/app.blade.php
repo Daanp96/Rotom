@@ -24,13 +24,15 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm banner">
             <div class="noflexwrap">
-                <!-- <a href="/home" class="navbar-brand banner__logo">
+                <a href="/home" class="navbar-brand banner__logo">
                     <img src="/img/logo.png" alt="" aria-label="Terug naar beginscherm" class="banner__logo__img">
+                </a>
+
+                <!-- ERROR NOTIFICATIE TEST -->
+                <!-- <a id="js--header" class="navbar-brand banner__logo">
+                    <img src="/img/logo.png" alt="" class="banner__logo__img">
                 </a> -->
 
-                <a id="js--header" class="navbar-brand banner__logo">
-                    <img src="/img/logo.png" alt="" class="banner__logo__img">
-                </a>
                 <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button> -->

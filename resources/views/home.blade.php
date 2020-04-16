@@ -27,6 +27,19 @@
     </div>
 </div>
 
+<!-- OPEN DEUR -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 open">
+            <form action="opendoor/2" method="post">
+              @csrf
+              @method('PUT')
+              <button class="open__button" name="is_pressed" value="1" type="submit">Open Deur</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 <!-- MIJN CONTACTEN -->
 <div class="container">
     <div class="row justify-content-center">
@@ -83,17 +96,4 @@
     </div>
 </div>
 
-<!-- OPEN DEUR -->
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-          </div>
-            <form action="opendoor/2" method="post">
-              @csrf
-              @method('PUT')
-              <button class="confirm" name="is_pressed" value="1" type="submit">Open Deur</button>
-            </form>
-        </div>
-    </div>
-</div>
 @endsection
