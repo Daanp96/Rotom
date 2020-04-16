@@ -11239,6 +11239,11 @@ html {
   width: 40px;
 }
 
+#contact__button {
+  margin: 15px 0 0;
+  display: inline-block;
+}
+
 @media (min-width: 480px) {
   .contact__banner {
     height: 240px;
