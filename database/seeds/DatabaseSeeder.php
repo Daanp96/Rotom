@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         $this->call(SettingsTableSeeder::class);
         $this->call(FingerprintTableSeeder::class);
         $this->call(HistoryTableSeeder::class);
+        $this->call(ButtonsTableSeeder::class);
     }
 }
