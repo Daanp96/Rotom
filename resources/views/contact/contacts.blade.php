@@ -21,6 +21,7 @@
                     </p>
                 </div>
                 @endforeach
+                <a href="/contacts/addcontact" class="card-header" id="contact__button">Klik hier om profiel aan te maken</a>
               </div>
           </div>
       </div>
