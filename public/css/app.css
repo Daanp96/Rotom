@@ -11218,6 +11218,10 @@ html {
   margin-left: 20px;
 }
 
+.makecontact {
+  float: right;
+}
+
 .image_upload {
   opacity: 0;
   position: absolute;
