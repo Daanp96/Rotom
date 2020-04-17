@@ -13,7 +13,7 @@
                   @foreach($history->reverse()->take(25) as $h)
                   <div class="history">
                     <h3 class="history__name">{{ $h->contact_name }}</h3>
-                    <p class="history__date">{{ $h->created_at->format('H:m d/m/Y') }}</p>
+                    <p class="history__date">{{ $h->created_at->format('H:i d/m/Y') }}</p>
                   </div>
                   @endforeach
 
