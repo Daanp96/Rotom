@@ -44,7 +44,13 @@ class ContactsController extends Controller
   public function store(Request $request){
 
       $contact = new Contact();
-      $contact->name = $request->input('name');
+      
+      if(!$request->input('name')){
+        toastr()->warning("Vul een naam in!");
+        return redirect("/contacts/addcontact");
+      } else {
+        $contact->name = $request->input('name');
+      }
 
       // avatar
       if($request->has('avatar')){
@@ -70,7 +76,7 @@ class ContactsController extends Controller
           return redirect('/contacts');
       } catch(Exception $e){
           toastr()->error('Contact aanmaken is mislukt...');
-          return redirect('/history/addcontact');
+          return redirect('/contacts/addcontact');
       }
   }
 

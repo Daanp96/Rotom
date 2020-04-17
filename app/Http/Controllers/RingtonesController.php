@@ -26,13 +26,24 @@ class RingtonesController extends Controller
   // Functie die ervoor zorgt dat een ringtone toegevoegd wordt
   public function ringtoneAdd(Request $request){
 
-      $audio = $request->file('ringtone');
-      $name = time().'.'.$audio->getClientOriginalExtension();
-      $audio->move('ringtones', $name);
-
       $ringtone = new Ringtone();
-      $ringtone->title = $request->input('title');
-      $ringtone->ringtone = "ringtones/".$name;
+
+      if(!$request->input("title")){
+        toastr()->warning("Geef een titel op!");
+        return redirect("/ringtone");
+      } else {
+        $ringtone->title = $request->input('title');
+      }
+
+      if(!$request->has('ringtone')){
+        toastr()->warning("Upload een ringtone!");
+        return redirect("/ringtone");
+      } else {
+        $audio = $request->file('ringtone');
+        $name = time().'.'.$audio->getClientOriginalExtension();
+        $audio->move('ringtones', $name);
+        $ringtone->ringtone = "ringtones/".$name;
+      }
 
       try {
           $ringtone->save();
