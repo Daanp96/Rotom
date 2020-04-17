@@ -39,11 +39,11 @@
                 <label for="door_access" class="contact__main__options__option__text">Deurtoegang</label>
                 <select class="contact__main__options__option__select" name="door_access">
                   @if($contact->door_access == 'custom')
-                    <option value="custom" selected>Openen</option>
-                    <option value="none">None</option>
+                    <option value="custom" selected>Kan openen</option>
+                    <option value="none">Geen</option>
                   @else
-                    <option value="none" selected>None</option>
-                    <option value="custom">Openen</option>
+                    <option value="none" selected>Geen</option>
+                    <option value="custom">Kan openen</option>
                   @endif
                 </select>
               </div>

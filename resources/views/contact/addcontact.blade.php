@@ -37,8 +37,8 @@
                 <div class="contact__main__options__option">
                     <label for="door_access" class="contact__main__options__option__text">Deurtoegang</label>
                     <select class="contact__main__options__option__select" name="door_access">
-                        <option value="none" selected>None</option>
-                        <option value="custom">Openen</option>
+                        <option value="none" selected>Geen</option>
+                        <option value="custom">Kan openen</option>
                     </select>
                 </div>
 

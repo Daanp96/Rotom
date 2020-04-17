@@ -32,7 +32,11 @@
             <!-- DEURTOEGANG -->
             <div class="contact__main__options__option">
                 <p class="contact__main__options__option__text">Deurtoegang</p>
-                <p class="contact__main__options__option__select">{{$contact->door_access}}</p>
+		@if($contact->door_access == 'custom')
+                	<p class="contact__main__options__option__select">Kan openen</p>
+		@else
+			<p class="contact__main__options__option__select">Geen</p>
+		@endif
             </div>
 
             <!-- RINGTONE -->
