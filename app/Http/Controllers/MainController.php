@@ -1,3 +1,5 @@
+// DIT BESTAND WORDT NIET MEER GEBRUIKT
+
 <?php
 
 namespace App\Http\Controllers;
