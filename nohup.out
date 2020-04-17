@@ -106074,3 +106074,22 @@ Traceback (most recent call last):
   File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 483, in read
     ready, _, _ = select.select([self.fd, self.pipe_abort_read_r], [], [], timeout.time_left())
 KeyboardInterrupt
+pygame 1.9.4.post1
+Hello from the pygame community. https://www.pygame.org/contribute.html
+
+
+
+
+
+
+
+
+
+
+
+Traceback (most recent call last):
+  File "sendData.py", line 29, in <module>
+    id = port.readline().strip()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 483, in read
+    ready, _, _ = select.select([self.fd, self.pipe_abort_read_r], [], [], timeout.time_left())
+KeyboardInterrupt

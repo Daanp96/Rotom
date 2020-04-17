@@ -86,8 +86,7 @@ while True:
 						if(naam.upper() == 'ROTOM'):
 							port.write('r')
                                         acces = False
-                                else:
-                                        port.write('r')
+
 	mycursor.execute("SELECT * FROM settings;")
 	for w in mycursor:
 		if w[3]== 'mute':
