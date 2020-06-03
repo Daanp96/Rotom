@@ -11,6 +11,8 @@
               <div class="card-body">
                 <a href="/contacts/addcontact" class="card-header makecontact" id="contact__button">Klik hier om profiel aan te maken</a>
 
+                <input type="text" placeholder="Zoek een contact">
+
                 <!-- LIJST VAN CONTACTEN -->
                 @foreach($contact as $contact)
                 <div class="list history">
