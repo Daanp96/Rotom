@@ -11,7 +11,15 @@
               <div class="card-body">
                 <a href="/contacts/addcontact" class="card-header makecontact" id="contact__button">Klik hier om profiel aan te maken</a>
 
-                <input type="text" placeholder="Zoek een contact">
+                <input id="searchbar" class="searchbar" type="text" placeholder="Zoek een contact">
+
+                <div class="dropdown">
+                  <button class="">Sorteer</button>
+                  <div id="" class="dropdown-content">
+                    <a href="#">Alfabet</a>
+                    <a href="#">Datum</a>
+                  </div>
+                </div>
 
                 <!-- LIJST VAN CONTACTEN -->
                 @foreach($contact as $contact)
