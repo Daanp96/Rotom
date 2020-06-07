@@ -9,11 +9,14 @@
           <div class="card">
               <div class="card-header">Mijn Contacten</div>
               <div class="card-body">
-                <a href="/contacts/addcontact" class="card-header makecontact" id="contact__button">Klik hier om profiel aan te maken</a>
 
-                <input id="js--searchbar" class="searchbar" type="text" placeholder="Zoek een contact">
-                <button class = "confirm" id="js--sbtn">Zoek</button>
-                <button class = "cancel" id="js--bbtn">Alle contacten</button>
+
+
+                <div class="searchbox">
+                  <input id="js--searchbar" class="searchbar" type="text" placeholder="Zoek een contact">
+                  <button class = "confirm search" id="js--sbtn">ZOEK</button>
+                  <button class = "cancel search" id="js--bbtn">RESET</button>
+                </div>
 
                 <div class="dropdown">
                   <button class="">Sorteer</button>
@@ -41,9 +44,19 @@
                     </form>
                 </div>
                 @endforeach
+
+
               </div>
           </div>
       </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 settings__submit">
+      <a href="/contacts/addcontact" class="confirm" id="contact__button">Klik hier om profiel aan te maken</a>
+    </div>
   </div>
 </div>
 @endsection
