@@ -49665,7 +49665,7 @@ window.onload = function () {
   //   notification_title.innerHTML = title;
   //   notification_text.innerHTML = text;
   //   notification_confirm.innerHTML = button_text;
-  // 
+  //
   //   notification.style.display = "block";
   // };
   //
@@ -49745,6 +49745,23 @@ window.onload = function () {
         previewAvatar(avatarInput);
       };
     }
+  }); //SEARCHBAR FUNCTIE
+
+  $(function () {
+    console.log(" testttt ");
+
+    function search(filter) {
+      var searchbar = document.getElementById("js--searchbar");
+      var listItems = document.getElementsByClassName("list__name");
+
+      for (var i = 0; i < listItems.length; i++) {
+        if (listItems[i].innerHTML.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
+          listItems[i].style.display = " ";
+        } else {
+          listItems[i].style.display = " none";
+        }
+      }
+    }
   });
 };
 
@@ -49768,8 +49785,8 @@ window.onload = function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/Rotom/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /var/www/Rotom/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/mirjam/ipmedt5/Rotom/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/mirjam/ipmedt5/Rotom/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

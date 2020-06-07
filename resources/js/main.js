@@ -97,9 +97,10 @@ window.onload = () =>{
 
   //SEARCHBAR FUNCTIE
   $(function(){
+    console.log(" testttt ")
     function search(filter){
       var searchbar = document.getElementById("js--searchbar");
-      var listItems = document.getElementsByClassName("list__name")
+      var listItems = document.getElementsByClassName("list__name");
       for (var i = 0; i < listItems.length; i++) {
         if (listItems[i].innerHTML.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
           listItems[i].style.display = " ";
@@ -109,5 +110,5 @@ window.onload = () =>{
         }
       }
     }
-  }
+  });
 };
