@@ -49751,9 +49751,15 @@ window.onload = function () {
     console.log(" testttt ");
     var searchbar = document.getElementById("js--searchbar");
     var listItems = document.getElementsByClassName("list history");
+    var sbtn = document.getElementById("js--sbtn");
+    var bbtn = document.getElementById("js--bbtn");
 
-    searchbar.onkeyup = function (event) {
-      search(this.value);
+    sbtn.onclick = function (event) {
+      search(searchbar.value);
+    };
+
+    bbtn.onclick = function (event) {
+      search("");
     };
 
     function search(filter) {
