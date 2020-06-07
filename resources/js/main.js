@@ -102,7 +102,7 @@ window.onload = () =>{
     var searchbar = document.getElementById("js--searchbar");
     var listItems = document.getElementsByClassName("list history");
 
-    searchbar.onkeydown = function(event){
+    searchbar.onkeyup = function(event){
       search(this.value);
     }
     function search(filter){
