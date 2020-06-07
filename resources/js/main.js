@@ -12,7 +12,7 @@ window.onload = () =>{
     //   notification_title.innerHTML = title;
     //   notification_text.innerHTML = text;
     //   notification_confirm.innerHTML = button_text;
-    // 
+    //
     //   notification.style.display = "block";
     // };
     //
@@ -94,4 +94,20 @@ window.onload = () =>{
       };
     }
   });
+
+  //SEARCHBAR FUNCTIE
+  $(function(){
+    function search(filter){
+      var searchbar = document.getElementById(" js--searchbar");
+      var listItems = document.getElementsByClassName("list__name")
+      for (var i = 0; i < listItems.length; i++) {
+        if (listItems[i].innerHTML.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
+          listItems[i].style.display = " ";
+
+        }else {
+          listItems[i].style.display = " none";
+        }
+      }
+    }
+  }
 };

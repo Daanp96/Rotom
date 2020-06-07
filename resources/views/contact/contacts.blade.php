@@ -11,7 +11,7 @@
               <div class="card-body">
                 <a href="/contacts/addcontact" class="card-header makecontact" id="contact__button">Klik hier om profiel aan te maken</a>
 
-                <input id="searchbar" class="searchbar" type="text" placeholder="Zoek een contact">
+                <input id="js--searchbar" class="searchbar" type="text" placeholder="Zoek een contact">
 
                 <div class="dropdown">
                   <button class="">Sorteer</button>
