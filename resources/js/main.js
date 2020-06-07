@@ -98,7 +98,7 @@ window.onload = () =>{
   //SEARCHBAR FUNCTIE
   $(function(){
     function search(filter){
-      var searchbar = document.getElementById(" js--searchbar");
+      var searchbar = document.getElementById("js--searchbar");
       var listItems = document.getElementsByClassName("list__name")
       for (var i = 0; i < listItems.length; i++) {
         if (listItems[i].innerHTML.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
