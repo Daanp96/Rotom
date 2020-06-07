@@ -102,13 +102,13 @@ window.onload = () =>{
     var searchbar = document.getElementById("js--searchbar");
     var listItems = document.getElementsByClassName("list history");
 
-    searchbar.onkeyup = function(event){
+    searchbar.onkeydown = function(event){
       search(this.value);
     }
     function search(filter){
       for (var i = 0; i < listItems.length; i++) {
         if (listItems[i].innerHTML.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
-          listItems[i].style.display = " ";
+          listItems[i].style.display = "";
 
         }else {
           listItems[i].style.display = "none";
