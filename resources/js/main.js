@@ -100,7 +100,7 @@ window.onload = () =>{
     console.log(" testttt ")
 
     var searchbar = document.getElementById("js--searchbar");
-    var listItems = document.getElementsByClassName("list__name");
+    var listItems = document.getElementsByClassName("list history");
 
     searchbar.onkeyup = function(event){
       search(this.value);
