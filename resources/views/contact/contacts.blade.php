@@ -2,7 +2,7 @@
 
 @section('content')
 
-<a href="home" class="back cancel">Terug naar Dashboard</a>
+<a href="/home" class="back cancel">Terug naar Dashboard</a>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -10,15 +10,15 @@
               <div class="card-header">Mijn Contacten</div>
               <div class="card-body">
 
-
+                <!-- ZOEKBALK -->
                 <div class="searchbox">
                   <input id="js--searchbar" class="searchbar" type="text" placeholder="Zoek een contact">
                   <button class = "confirm search" id="js--sbtn">ZOEK</button>
                   <button class = "cancel search" id="js--bbtn">RESET</button>
                 </div>
 
-
-                <form class="" action="contacts/filter" method="get">
+                <!-- FILTEREN -->
+                <form class="" action="/contacts/filter" method="get">
                   <div class="filter">
                     <div class="filter_option">
                       <p>Filter op: </p>
@@ -33,6 +33,7 @@
                   </div>
                 </form>
 
+                <!-- SORTEREN -->
                 <form class="" action="" method=>
                   <div class="sort">
                     <div class="sort_option">
@@ -45,9 +46,7 @@
                     </div>
                   </div>
 
-
                 </form>
-
 
 
 
@@ -64,7 +63,7 @@
                       @csrf
                       @method('DELETE')
                       <button class="flex__delete" type="submit" name="delete">
-                        <img class="flex__delete__img" src="img/delete.png" alt="delete">
+                        <img class="flex__delete__img" src="/img/delete.png" alt="delete">
                       </button>
                     </form>
                 </div>
