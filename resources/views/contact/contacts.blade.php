@@ -34,18 +34,17 @@
                 </form>
 
                 <!-- SORTEREN -->
-                <form class="" action="" method="">
+                <form class="" action="/contacts/sort" method="get">
                   <div class="sort">
                     <div class="sort_option">
                       <p>Sorteer op: </p>
-                      <select class="sort_options" name="">
+                      <select class="sort_options" name="sort_option">
                         <option value="alphabetical">Naam (A-Z)</option>
-                        <option value="date">Datum toegevoegd</option>
+                        <option value="reverse">Naam (Z-A)</option>
                       </select>
-                      <input type="submit" name="" value="Sorteer">
+                      <input type="submit" name="sort_submit" value="Sorteer">
                     </div>
                   </div>
-
                 </form>
 
 

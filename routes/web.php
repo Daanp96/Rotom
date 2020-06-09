@@ -36,6 +36,7 @@ Route::middleware(['auth'])->group(function() {
     // contacten
     Route::get('/contacts', 'ContactsController@contacts');
     Route::get('/contacts/filter', 'ContactsController@filter');
+    Route::get('/contacts/sort', 'ContactsController@sort');
 
     Route::get('/contacts/addcontact', 'ContactsController@addContact');
     Route::post('/contacts/addcontact/store', 'ContactsController@store');
