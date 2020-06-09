@@ -11,20 +11,38 @@
               <div class="card-body">
 
 
-
                 <div class="searchbox">
                   <input id="js--searchbar" class="searchbar" type="text" placeholder="Zoek een contact">
                   <button class = "confirm search" id="js--sbtn">ZOEK</button>
                   <button class = "cancel search" id="js--bbtn">RESET</button>
                 </div>
 
-                <div class="dropdown">
+
+                <form class="" action="contacts/filter" method="get">
+                  <div class="filter">
+                    <div class="filter_option">
+                      <p>Filter op: </p>
+                      <input type="checkbox" id="high_priority" name="high_priority">
+                      <label for="high_priority">Hoge Prioriteit</label>
+                    </div>
+                    <div class="filter_option">
+                      <input type="checkbox" id="door_access" name="door_access">
+                      <label for="door_access">Deurtoegang</label>
+                    </div>
+                    <button class="filter_button" type="submit" name="filter_submit">Filter</button>
+                  </div>
+                </form>
+
+                <div class="sort">
+                  <p>Sorteer op:</p>
                   <button class="">Sorteer</button>
                   <div id="" class="dropdown-content">
                     <a href="#">Alfabet</a>
                     <a href="#">Datum</a>
                   </div>
                 </div>
+
+
 
                 <!-- LIJST VAN CONTACTEN -->
                 @foreach($contact as $contact)
