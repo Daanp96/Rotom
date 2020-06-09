@@ -44,7 +44,7 @@ class ContactsController extends Controller
   public function store(Request $request){
 
       $contact = new Contact();
-      
+
       if(!$request->input('name')){
         toastr()->warning("Vul een naam in!");
         return redirect("/contacts/addcontact");
@@ -139,6 +139,30 @@ class ContactsController extends Controller
         toastr()->error("Contact verwijderen is mislukt...");
         return redirect('/contacts');
     }
+  }
+
+  public function filter(Request $request){
+    if($request->filter_high_priority && $request->filter_door_access){
+      $matchThese = ['door_access'=>'custom', 'priority'=>True];
+      return view('contact.contacts')->with('contact', Contact::where($matchThese)->get());
+
+    } else if($request->filter_high_priority) {
+      return view('contact.contacts')->with('contact', Contact::where('priority', '=', True)->get());
+
+    } else if($request->filter_door_access){
+      return view('contact.contacts')->with('contact', Contact::where('door_access', '=', "custom")->get());
+
+    } else {
+      return view('contact.contacts')->with('contact', Contact::all());
+
+    }
+  }
+
+  public function sort(Request $request){
+    if($request->sort_option === "reverse"){
+      return view('contact.contacts')->with('contact', Contact::orderBy('name', 'DESC')->get());
+    }
+    return view('contact.contacts')->with('contact', Contact::all());
   }
 
 }
