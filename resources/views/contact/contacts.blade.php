@@ -33,14 +33,21 @@
                   </div>
                 </form>
 
-                <div class="sort">
-                  <p>Sorteer op:</p>
-                  <button class="">Sorteer</button>
-                  <div id="" class="dropdown-content">
-                    <a href="#">Alfabet</a>
-                    <a href="#">Datum</a>
+                <form class="" action="" method=>
+                  <div class="sort">
+                    <div class="sort_option">
+                      <p>Sorteer op: </p>
+                      <select class="sort_options" name="">
+                        <option value="alphabetical">Naam (A-Z)</option>
+                        <option value="date">Datum toegevoegd</option>
+                      </select>
+                      <input type="submit" name="" value="Sorteer">
+                    </div>
                   </div>
-                </div>
+
+
+                </form>
+
 
 
 
