@@ -158,7 +158,7 @@ class ContactsController extends Controller
     }
   }
 
-  public function sort(Request &request){
+  public function sort(Request $request){
     if($request->sort_option === "reverse"){
       return view('contact.contacts')->with('contact', Contact::orderBy('name', 'DESC')->get());
     }
