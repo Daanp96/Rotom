@@ -22,11 +22,11 @@
                   <div class="filter">
                     <div class="filter_option">
                       <p>Filter op: </p>
-                      <input type="checkbox" id="high_priority" name="high_priority">
+                      <input type="checkbox" id="high_priority" name="filter_high_priority">
                       <label for="high_priority">Hoge Prioriteit</label>
                     </div>
                     <div class="filter_option">
-                      <input type="checkbox" id="door_access" name="door_access">
+                      <input type="checkbox" id="door_access" name="filter_door_access">
                       <label for="door_access">Deurtoegang</label>
                     </div>
                     <button class="filter_button" type="submit" name="filter_submit">Filter</button>
@@ -34,7 +34,7 @@
                 </form>
 
                 <!-- SORTEREN -->
-                <form class="" action="" method=>
+                <form class="" action="" method="">
                   <div class="sort">
                     <div class="sort_option">
                       <p>Sorteer op: </p>
