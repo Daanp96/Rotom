@@ -44,6 +44,8 @@ Route::middleware(['auth'])->group(function() {
     Route::get('/contacts/updatecontact/{contact}', 'ContactsController@updateContact');
     Route::put("/contacts/updatecontact/{contact}/ringbell/{id}" , "ContactsController@ringbell");
     Route::put('/contacts/updatecontact/update/{contact}', 'ContactsController@update');
+
+    Route::get('/contacts/filter', 'ContactsController@filter');
 });
 
 Auth::routes();
