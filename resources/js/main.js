@@ -35,7 +35,7 @@ window.onload = () =>{
     //VOLUME SLIDER FUNCTIE
     $(function(){
       if($('input').is('.settings__slider')){
-        console.log("yeet");
+        // console.log("yeet");
         //SLIDER
         const volumeSlider = document.getElementById('js--slider');
         const volume = document.getElementById("js--volume");
@@ -97,32 +97,34 @@ window.onload = () =>{
 
   //SEARCHBAR FUNCTIE
   $(function(){
-    console.log(" testttt ")
+    if($('input').is('.searchbar')){
+      // console.log(" testttt ")
 
-    var searchbar = document.getElementById("js--searchbar");
-    var listItems = document.getElementsByClassName("list history");
-    var sbtn = document.getElementById("js--sbtn");
-    var bbtn = document.getElementById("js--bbtn")
+      var searchbar = document.getElementById("js--searchbar");
+      var listItems = document.getElementsByClassName("list history");
+      var sbtn = document.getElementById("js--sbtn");
+      // var bbtn = document.getElementById("js--bbtn")
 
-    sbtn.onclick = function(event){
-      search(searchbar.value);
-    }
-    bbtn.onclick = function(event){
-      search("");
-    }
+      sbtn.onclick = function(event){
 
-
-    function search(filter){
-      for (var i = 0; i < listItems.length; i++) {
-        if (listItems[i].innerHTML.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
-          listItems[i].style.display = "";
-
-        }else {
-          listItems[i].style.display = "none";
-        }
+        search(searchbar.value);
       }
+      // bbtn.onclick = function(event){
+      //   search("");
+      // }
 
+
+      function search(filter){
+        for (var i = 0; i < listItems.length; i++) {
+          if (listItems[i].innerHTML.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
+            listItems[i].style.display = "";
+
+          }else {
+            listItems[i].style.display = "none";
+          }
+        }
+
+      }
     }
-
   });
 };
