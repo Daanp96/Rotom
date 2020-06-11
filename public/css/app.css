@@ -11349,11 +11349,11 @@ html {
 }
 
 .sort__button {
-  margin-top: 37px;
+  margin-top: 38px;
 }
 
 .sort {
-  margin-right: 8vw;
+  margin-right: 4vw;
 }
 
 .image_upload {
@@ -11388,6 +11388,10 @@ html {
 
   .search {
     width: 20vw;
+  }
+
+  .sort {
+    margin-right: 0;
   }
 }
 
