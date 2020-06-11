@@ -22,7 +22,7 @@ class ContactsController extends Controller
 
   // Mijn Contacten View
   public function contacts(){
-      return view('contact.contacts')->with('contact', Contact::all());
+      return view('contact.contacts')->with('contact', Contact::orderBy(strtolower('name'), 'ASC')->get());
   }
 
   // View voor een opgeslagen contact
@@ -161,6 +161,10 @@ class ContactsController extends Controller
   public function sort(Request $request){
     if($request->sort_option === "reverse"){
       return view('contact.contacts')->with('contact', Contact::orderBy(strtolower('name'), 'DESC')->get());
+    } else if($request->sort_option === "last_added"){
+      return view('contact.contacts')->with('contact', Contact::orderBy('id', 'DESC')->get());
+    } else if($request->sort_option === "first_added"){
+      return view('contact.contacts')->with('contact', Contact::orderBy('id', 'ASC')->get());
     }
     return view('contact.contacts')->with('contact', Contact::orderBy(strtolower('name'), 'ASC')->get());
   }

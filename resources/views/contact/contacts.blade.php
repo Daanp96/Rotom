@@ -44,6 +44,8 @@
                         <select class="sort_options" name="sort_option">
                           <option value="alphabetical">Naam (A-Z)</option>
                           <option value="reverse">Naam (Z-A)</option>
+                          <option value="last_added">Laatst toegevoegd</option>
+                          <option value="first_added">Eerst toegevoegd</option>
                         </select>
                       </div>
                       <input class="confirm filter__button sort__button" type="submit" name="sort_submit" value="Sorteer">
