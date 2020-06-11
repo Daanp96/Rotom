@@ -85,7 +85,10 @@ while True:
                                                 mycursor.execute("INSERT INTO history (contact_name) VALUES (%s)",(naam,))
 						if(naam.upper() == 'ROTOM'):
 							port.write('r')
-                                        acces = False
+                                else:
+					if(x[5] == 'custom'):
+						port.write('o')
+			        acces = False
 
 	mycursor.execute("SELECT * FROM settings;")
 	for w in mycursor:
