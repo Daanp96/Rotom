@@ -160,9 +160,9 @@ class ContactsController extends Controller
 
   public function sort(Request $request){
     if($request->sort_option === "reverse"){
-      return view('contact.contacts')->with('contact', Contact::orderBy('name', 'DESC')->get());
+      return view('contact.contacts')->with('contact', Contact::orderBy(strtolower('name'), 'DESC')->get());
     }
-    return view('contact.contacts')->with('contact', Contact::all());
+    return view('contact.contacts')->with('contact', Contact::orderBy(strtolower('name'), 'ASC')->get());
   }
 
 }
