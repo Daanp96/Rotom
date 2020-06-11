@@ -195,6 +195,7 @@
   width: 20%;
   margin-right: 11px;
   padding: 10px;
+  text-align: center;
 }
 
 .filter_sort {
@@ -215,7 +216,7 @@
 }
 
 .sort{
-  margin-right: 45px;
+  margin-right: 8vw;
 }
 
 .image_upload{
@@ -241,6 +242,15 @@
 
 #contact__button{
   display: inline-block;
+}
+
+@media (max-width: 480px) {
+    .searchbar {
+      width: 40vw;
+    }
+    .search {
+      width: 20vw;
+    }
 }
 
 

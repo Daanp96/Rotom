@@ -14,7 +14,8 @@
                 <div class="searchbox">
                   <input id="js--searchbar" class="searchbar" type="text" placeholder="Zoek een contact">
                   <button class = "confirm search" id="js--sbtn">ZOEK</button>
-                  <button class = "cancel search" id="js--bbtn">RESET</button>
+                  <a href="/contacts" class="cancel search">RESET</a>
+                  <!-- <a class = "cancel search" id="js--bbtn">RESET</button> -->
                 </div>
 
                 <div class="filter_sort">

@@ -49961,8 +49961,8 @@ window.onload = function () {
   //VOLUME SLIDER FUNCTIE
   $(function () {
     if ($('input').is('.settings__slider')) {
-      console.log("yeet"); //SLIDER
-
+      // console.log("yeet");
+      //SLIDER
       var volumeSlider = document.getElementById('js--slider');
       var volume = document.getElementById("js--volume");
 
@@ -50022,28 +50022,28 @@ window.onload = function () {
   }); //SEARCHBAR FUNCTIE
 
   $(function () {
-    console.log(" testttt ");
-    var searchbar = document.getElementById("js--searchbar");
-    var listItems = document.getElementsByClassName("list history");
-    var sbtn = document.getElementById("js--sbtn");
-    var bbtn = document.getElementById("js--bbtn");
-
-    sbtn.onclick = function (event) {
-      search(searchbar.value);
-    };
-
-    bbtn.onclick = function (event) {
-      search("");
-    };
-
-    function search(filter) {
-      for (var i = 0; i < listItems.length; i++) {
-        if (listItems[i].innerHTML.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
-          listItems[i].style.display = "";
-        } else {
-          listItems[i].style.display = "none";
+    if ($('input').is('.searchbar')) {
+      // bbtn.onclick = function(event){
+      //   search("");
+      // }
+      var search = function search(filter) {
+        for (var i = 0; i < listItems.length; i++) {
+          if (listItems[i].innerHTML.toLowerCase().indexOf(filter.toLowerCase()) !== -1) {
+            listItems[i].style.display = "";
+          } else {
+            listItems[i].style.display = "none";
+          }
         }
-      }
+      };
+
+      // console.log(" testttt ")
+      var searchbar = document.getElementById("js--searchbar");
+      var listItems = document.getElementsByClassName("list history");
+      var sbtn = document.getElementById("js--sbtn"); // var bbtn = document.getElementById("js--bbtn")
+
+      sbtn.onclick = function (event) {
+        search(searchbar.value);
+      };
     }
   });
 };
